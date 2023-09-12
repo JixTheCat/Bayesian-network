@@ -1,0 +1,1617 @@
+Tue Sep 12 13:59:51 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    year
+This component is a clique of cost 9
+
+Triangulating prime component with 1 member:
+    region
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 22
+
+
+Cliques:
+
+Clique 5, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 4, 1 member, table size = 1 + 2:
+    water
+
+Clique 3, 1 member, table size = 4:
+    region
+
+Clique 2, 1 member, table size = 9:
+    year
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 16 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 5 as root ...
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node year assigned to clique 2
+    Node region assigned to clique 3
+    Node water assigned to clique 4
+    Node emissions assigned to clique 5
+
+
+Checking conditional probability potentials:
+
+Potential for year has an invalid value (-0.0963343) for:
+    year = "2012/2013"
+
+Potential for year has an invalid value (-0.0664463) for:
+    year = "2013/2014"
+
+Potential for year has an invalid value (-0.0529676) for:
+    year = "2017/2018"
+
+Potential for year has an invalid value (-0.234895) for:
+    year = "2018/2019"
+
+Potential for year has an invalid value (-0.0135509) for:
+    year = "2021/2022"
+
+Potential for region has an invalid value (-0.0993362) for:
+    region = "Coonawarra"
+
+Potential for region has an invalid value (-0.307218) for:
+    region = "Barossa Valley"
+
+Potential for region has an invalid value (-0.0630456) for:
+    region = "Mclaren Vale"
+Tue Sep 12 14:00:28 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    year
+This component is a clique of cost 9
+
+Triangulating prime component with 1 member:
+    region
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 22
+
+
+Cliques:
+
+Clique 5, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 4, 1 member, table size = 1 + 2:
+    water
+
+Clique 3, 1 member, table size = 4:
+    region
+
+Clique 2, 1 member, table size = 9:
+    year
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 16 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 5 as root ...
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node year assigned to clique 2
+    Node region assigned to clique 3
+    Node water assigned to clique 4
+    Node emissions assigned to clique 5
+
+
+Checking conditional probability potentials:
+
+Potential for year has an invalid value (-0.0963343) for:
+    year = "2012/2013"
+
+Potential for year has an invalid value (-0.0664463) for:
+    year = "2013/2014"
+
+Potential for year has an invalid value (-0.0529676) for:
+    year = "2017/2018"
+
+Potential for year has an invalid value (-0.234895) for:
+    year = "2018/2019"
+
+Potential for year has an invalid value (-0.0135509) for:
+    year = "2021/2022"
+
+Potential for region has an invalid value (-0.0993362) for:
+    region = "Coonawarra"
+
+Potential for region has an invalid value (-0.307218) for:
+    region = "Barossa Valley"
+
+Potential for region has an invalid value (-0.0630456) for:
+    region = "Mclaren Vale"
+Tue Sep 12 14:00:42 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    year
+This component is a clique of cost 9
+
+Triangulating prime component with 1 member:
+    region
+This component is a clique of cost 4
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 22
+
+
+Cliques:
+
+Clique 5, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 4, 1 member, table size = 1 + 2:
+    water
+
+Clique 3, 1 member, table size = 4:
+    region
+
+Clique 2, 1 member, table size = 9:
+    year
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 16 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 5 as root ...
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node year assigned to clique 2
+    Node region assigned to clique 3
+    Node water assigned to clique 4
+    Node emissions assigned to clique 5
+
+
+Checking conditional probability potentials:
+
+Potential for year has an invalid value (-0.0963343) for:
+    year = "2012/2013"
+
+Potential for year has an invalid value (-0.0664463) for:
+    year = "2013/2014"
+
+Potential for year has an invalid value (-0.0529676) for:
+    year = "2017/2018"
+
+Potential for year has an invalid value (-0.234895) for:
+    year = "2018/2019"
+
+Potential for year has an invalid value (-0.0135509) for:
+    year = "2021/2022"
+
+Potential for region has an invalid value (-0.0993362) for:
+    region = "Coonawarra"
+
+Potential for region has an invalid value (-0.307218) for:
+    region = "Barossa Valley"
+
+Potential for region has an invalid value (-0.0630456) for:
+    region = "Mclaren Vale"
+Tue Sep 12 14:05:01 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 9
+
+
+Cliques:
+
+Clique 3, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 2, 1 member, table size = 1 + 2:
+    water
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 3 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node water assigned to clique 2
+    Node emissions assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 0
+Tue Sep 12 14:05:48 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 9
+
+
+Cliques:
+
+Clique 3, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 2, 1 member, table size = 1 + 2:
+    water
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 3 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node water assigned to clique 2
+    Node emissions assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 0
+Tue Sep 12 14:06:34 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 9
+
+
+Cliques:
+
+Clique 3, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 2, 1 member, table size = 1 + 2:
+    water
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 3 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node water assigned to clique 2
+    Node emissions assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 1   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 0.0673105
+Using model for DF1 to generate a conditional probability table
+Node DF1 does not have a (unique) state labeled `HR_Syntax_Error:'
+Tue Sep 12 14:12:48 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    C1
+This component is a clique of cost 2
+
+Triangulating prime component with 1 member:
+    DF1
+This component is a clique of cost 1
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 12
+
+
+Cliques:
+
+Clique 5, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 4, 1 member, table size = 1 + 2:
+    water
+
+Clique 3, 1 member, table size = 1 + 2:
+    area
+
+Clique 2, 1 member, table size = 1:
+    DF1
+
+Clique 1, 1 member, table size = 2:
+    C1
+
+Total clique table size: 6 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 5 as root ...
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node C1 assigned to clique 1
+    Node DF1 assigned to clique 2
+    Node area assigned to clique 3
+    Node water assigned to clique 4
+    Node emissions assigned to clique 5
+
+
+Checking conditional probability potentials:
+
+    No errors found
+Using model for DF1 to generate a conditional probability table
+Node DF1 does not have a (unique) state labeled `HR_Syntax_Error:'
+Using model for DF1 to generate a conditional probability table
+Node DF1 does not have a (unique) state labeled `HR_Syntax_Error:'
+Tue Sep 12 14:12:56 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    C1
+This component is a clique of cost 2
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 11
+
+
+Cliques:
+
+Clique 4, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 3, 1 member, table size = 1 + 2:
+    water
+
+Clique 2, 1 member, table size = 1 + 2:
+    area
+
+Clique 1, 1 member, table size = 2:
+    C1
+
+Total clique table size: 5 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node C1 assigned to clique 1
+    Node area assigned to clique 2
+    Node water assigned to clique 3
+    Node emissions assigned to clique 4
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    C1:
+	State 1    0.333333
+	State 2    0.666667
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 0
+Tue Sep 12 14:15:21 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    C1
+This component is a clique of cost 2
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 11
+
+
+Cliques:
+
+Clique 4, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 3, 1 member, table size = 1 + 2:
+    water
+
+Clique 2, 1 member, table size = 1 + 2:
+    area
+
+Clique 1, 1 member, table size = 2:
+    C1
+
+Total clique table size: 5 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node C1 assigned to clique 1
+    Node area assigned to clique 2
+    Node water assigned to clique 3
+    Node emissions assigned to clique 4
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    C1:
+	State 1    0.5
+	State 2    0.5
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:16:30 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    C1
+This component is a clique of cost 2
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 11
+
+
+Cliques:
+
+Clique 4, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 3, 1 member, table size = 1 + 2:
+    water
+
+Clique 2, 1 member, table size = 1 + 2:
+    area
+
+Clique 1, 1 member, table size = 2:
+    C1
+
+Total clique table size: 5 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node C1 assigned to clique 1
+    Node area assigned to clique 2
+    Node water assigned to clique 3
+    Node emissions assigned to clique 4
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    C1:
+	State 1    0.909091
+	State 2    0.0909091
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:16:56 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    C1
+This component is a clique of cost 1
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 10
+
+
+Cliques:
+
+Clique 4, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 3, 1 member, table size = 1 + 2:
+    water
+
+Clique 2, 1 member, table size = 1 + 2:
+    area
+
+Clique 1, 1 member, table size = 1:
+    C1
+
+Total clique table size: 4 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node C1 assigned to clique 1
+    Node area assigned to clique 2
+    Node water assigned to clique 3
+    Node emissions assigned to clique 4
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    C1 --> "State 1"
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:17:05 2023
+
+
+Moral links:
+
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 1 member:
+    C1
+This component is a clique of cost 1
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 10
+
+
+Cliques:
+
+Clique 4, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 3, 1 member, table size = 1 + 2:
+    water
+
+Clique 2, 1 member, table size = 1 + 2:
+    area
+
+Clique 1, 1 member, table size = 1:
+    C1
+
+Total clique table size: 4 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 4 as root ...
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node C1 assigned to clique 1
+    Node area assigned to clique 2
+    Node water assigned to clique 3
+    Node emissions assigned to clique 4
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    C1 --> "State 1"
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:18:54 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 9
+
+
+Cliques:
+
+Clique 3, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 2, 1 member, table size = 1 + 2:
+    water
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 3 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node water assigned to clique 2
+    Node emissions assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 1   Variance: 1   SD: 1
+
+    water:
+	Mean: 1   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 1   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:20:49 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 9
+
+
+Cliques:
+
+Clique 3, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 2, 1 member, table size = 1 + 2:
+    water
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 3 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node water assigned to clique 2
+    Node emissions assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 1   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 963.624
+Tue Sep 12 14:21:52 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 9
+
+
+Cliques:
+
+Clique 3, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 2, 1 member, table size = 1 + 2:
+    water
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 3 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node water assigned to clique 2
+    Node emissions assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 1   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 963.624
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+Tue Sep 12 14:51:06 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 2 members:
+    area, water
+This component is a clique of cost 6
+
+Triangulating prime component with 2 members:
+    area, emissions
+This component is a clique of cost 6
+
+
+Total cost of triangulation for all prime components is 12
+
+
+Cliques:
+
+Clique 2, 2 members, table size = 1 + 5:
+    area, emissions
+
+Clique 1, 2 members, table size = 1 + 5:
+    area, water
+
+Total clique table size: 2 + 10
+
+
+The junction forest:
+
+Creating junction tree with clique 2 as root ...
+
+Cliques 1 and 2 linked, separator has 1 member and table size = 1 + 2:
+    area
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 2
+    Node water assigned to clique 1
+    Node emissions assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1.6889   SD: 1.29958
+
+    emissions:
+	Mean: 0   Variance: 1.6889   SD: 1.29958
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:52:14 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 1 member:
+    area
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    water
+This component is a clique of cost 3
+
+Triangulating prime component with 1 member:
+    emissions
+This component is a clique of cost 3
+
+
+Total cost of triangulation for all prime components is 9
+
+
+Cliques:
+
+Clique 3, 1 member, table size = 1 + 2:
+    emissions
+
+Clique 2, 1 member, table size = 1 + 2:
+    water
+
+Clique 1, 1 member, table size = 1 + 2:
+    area
+
+Total clique table size: 3 + 6
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Creating junction tree with clique 2 as root ...
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 1
+    Node water assigned to clique 2
+    Node emissions assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1   SD: 1
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:53:34 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 2 members:
+    area, water
+This component is a clique of cost 6
+
+Triangulating prime component with 2 members:
+    area, emissions
+This component is a clique of cost 6
+
+
+Total cost of triangulation for all prime components is 12
+
+
+Cliques:
+
+Clique 2, 2 members, table size = 1 + 5:
+    area, emissions
+
+Clique 1, 2 members, table size = 1 + 5:
+    area, water
+
+Total clique table size: 2 + 10
+
+
+The junction forest:
+
+Creating junction tree with clique 2 as root ...
+
+Cliques 1 and 2 linked, separator has 1 member and table size = 1 + 2:
+    area
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 2
+    Node water assigned to clique 1
+    Node emissions assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1.6084   SD: 1.26823
+
+    emissions:
+	Mean: 0   Variance: 1   SD: 1
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:53:53 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 2 members:
+    area, water
+This component is a clique of cost 6
+
+Triangulating prime component with 2 members:
+    area, emissions
+This component is a clique of cost 6
+
+
+Total cost of triangulation for all prime components is 12
+
+
+Cliques:
+
+Clique 2, 2 members, table size = 1 + 5:
+    area, emissions
+
+Clique 1, 2 members, table size = 1 + 5:
+    area, water
+
+Total clique table size: 2 + 10
+
+
+The junction forest:
+
+Creating junction tree with clique 2 as root ...
+
+Cliques 1 and 2 linked, separator has 1 member and table size = 1 + 2:
+    area
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 2
+    Node water assigned to clique 1
+    Node emissions assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1.6084   SD: 1.26823
+
+    emissions:
+	Mean: 0   Variance: 1.6889   SD: 1.29958
+
+
+Values for real-valued function nodes:
+
+    F1: 775.7
+Tue Sep 12 14:55:27 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 2 members:
+    area, water
+This component is a clique of cost 6
+
+Triangulating prime component with 2 members:
+    area, emissions
+This component is a clique of cost 6
+
+
+Total cost of triangulation for all prime components is 12
+
+
+Cliques:
+
+Clique 2, 2 members, table size = 1 + 5:
+    area, emissions
+
+Clique 1, 2 members, table size = 1 + 5:
+    area, water
+
+Total clique table size: 2 + 10
+
+
+The junction forest:
+
+Creating junction tree with clique 2 as root ...
+
+Cliques 1 and 2 linked, separator has 1 member and table size = 1 + 2:
+    area
+
+
+Assignment of potentials to cliques:
+
+    Node area assigned to clique 2
+    Node water assigned to clique 1
+    Node emissions assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: 0   Variance: 1.6084   SD: 1.26823
+
+    emissions:
+	Mean: 0   Variance: 1.6889   SD: 1.29958
+
+
+Values for real-valued function nodes:
+
+    F1: 703.656

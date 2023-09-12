@@ -1,0 +1,133 @@
+class base_line
+{
+    inputs = ();
+    outputs = ();
+    node_size = (80 40);
+    HR_CPT_Font_Size = "-12";
+    HR_CPT_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
+    HR_CPT_Font_Italic = "0";
+    HR_CPT_Font_Weight = "400";
+    HR_DBN_Num_Slices = "5";
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "100";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Utility_Link = "63";
+    HR_Probabilistic_Link = "63";
+    HR_Functional_Link = "63";
+    HR_Binding_Link = "63";
+    HR_Information_Arc = "63";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_DiscreteFunction = "5";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Variance_Utility = "1";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Display_Prob_DD = "0";
+    HR_Monitor_Chance_Utility = "0";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    function F2
+    {
+	label = "";
+	position = (516 200);
+	HR_LinkGroup = "[F1:0][emissions:0][water:0]";
+	HR_LinkMode = "[F1:0][emissions:0][water:0]";
+    }
+
+    function F1
+    {
+	label = "";
+	position = (979 201);
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+    }
+
+    continuous node area
+    {
+	label = "";
+	position = (284 201);
+	HR_LinkControlPoints = "";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkGroup = "[F2:0]";
+	HR_LinkMode = "[F2:0]";
+    }
+
+    continuous node water
+    {
+	label = "";
+	position = (732 327);
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkGroup = "[F1:0]";
+	HR_LinkMode = "[F1:0]";
+    }
+
+    continuous node emissions
+    {
+	label = "";
+	position = (710 56);
+	HR_LinkControlPoints = "";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkGroup = "[F1:0]";
+	HR_LinkMode = "[F1:0]";
+    }
+
+    potential (F2 | area)
+    {
+	model_nodes = ();
+	model_data = ( log (area * 10000) );
+    }
+
+    potential (F1 | emissions water F2)
+    {
+	model_nodes = ();
+	model_data = ( (F2 * 0.74177 + emissions * 0.0673105 + water * 0.0866007 - 0.0332) * 2170 + 775.7 );
+    }
+
+    potential (area)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (water | F2)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (emissions | F2)
+    {
+	data = normal ( 0, 1 );
+    }
+} % class base_line
