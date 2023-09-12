@@ -56,78 +56,123 @@ class base_line
     HR_Grid_Y = "40";
     HR_Grid_X = "40";
 
-    function F2
+    function water_transformed
     {
 	label = "";
-	position = (516 200);
-	HR_LinkGroup = "[F1:0][emissions:0][water:0]";
-	HR_LinkMode = "[F1:0][emissions:0][water:0]";
+	position = (796 456);
+	HR_NodeSize = "(179, 60)";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkGroup = "[Yield:0]";
+	HR_LinkMode = "[F1:0]";
     }
 
-    function F1
+    function emission_transformed
     {
 	label = "";
-	position = (979 201);
+	position = (820 111);
+	HR_NodeSize = "(185, 69)";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkGroup = "[Yield:0]";
+	HR_LinkMode = "[F1:0]";
+    }
+
+    function area_transformed
+    {
+	label = "";
+	position = (647 264);
+	HR_NodeSize = "(161, 68)";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[Yield:0]";
+	HR_LinkMode = "[F1:0]";
+    }
+
+    function Yield
+    {
+	label = "";
+	position = (1148 266);
+	HR_NodeSize = "(160, 87)";
+	HR_Group = "0";
+	HR_Desc = "";
 	HR_LinkGroup = "";
-	HR_LinkMode = "";
+	HR_LinkMode = "[F1:0]";
     }
 
     continuous node area
     {
 	label = "";
-	position = (284 201);
+	position = (288 264);
+	HR_NodeSize = "(136, 84)";
 	HR_LinkControlPoints = "";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[F2:0]";
+	HR_LinkGroup = "[area_transformed:0]";
 	HR_LinkMode = "[F2:0]";
     }
 
     continuous node water
     {
 	label = "";
-	position = (732 327);
+	position = (401 455);
+	HR_NodeSize = "(131, 87)";
+	HR_LinkControlPoints = "";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[F1:0]";
-	HR_LinkMode = "[F1:0]";
+	HR_LinkGroup = "[water_transformed:0]";
+	HR_LinkMode = "[F4:0]";
     }
 
     continuous node emissions
     {
 	label = "";
-	position = (710 56);
+	position = (468 112);
+	HR_NodeSize = "(155, 83)";
 	HR_LinkControlPoints = "";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[F1:0]";
-	HR_LinkMode = "[F1:0]";
+	HR_LinkGroup = "[emission_transformed:0]";
+	HR_LinkMode = "[F3:0]";
     }
 
-    potential (F2 | area)
+    potential (water_transformed | water)
     {
 	model_nodes = ();
-	model_data = ( log (area * 10000) );
+	model_data = ( (log (water) - log (7.471E+06)) / log (5.646E+08) );
     }
 
-    potential (F1 | emissions water F2)
+    potential (emission_transformed | emissions)
     {
 	model_nodes = ();
-	model_data = ( (F2 * 0.74177 + emissions * 0.0673105 + water * 0.0866007 - 0.0332) * 2170 + 775.7 );
+	model_data = ( (log (emissions) - log (41730)) / log (85710) );
+    }
+
+    potential (area_transformed | area)
+    {
+	model_nodes = ();
+	model_data = ( (log (area) - log (66.7)) / log (133.7) );
+    }
+
+    potential (Yield | area_transformed water_transformed emission_transformed)
+    {
+	model_nodes = ();
+	model_data = ( (exp (area_transformed * 0.74177 + water_transformed * 0.0866007 + emission_transformed * 0.0673105 - 0.0331811) + log (775.7)) * log (2179) );
     }
 
     potential (area)
     {
-	data = normal ( 0, 1 );
+	data = normal ( 66.7, 17875.69 );
     }
 
-    potential (water | F2)
+    potential (water)
     {
-	data = normal ( 0, 1 );
+	data = normal ( 7471000, 3.1877316E+17 );
     }
 
-    potential (emissions | F2)
+    potential (emissions)
     {
-	data = normal ( 0, 1 );
+	data = normal ( 41730, 7.3462041E+09 );
     }
 } % class base_line
