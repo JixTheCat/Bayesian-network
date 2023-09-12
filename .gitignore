@@ -1,0 +1,33 @@
+# Exclude SWA specific libraries for data handling
+data.py
+carbon_converter.py
+conn.py
+
+# Do not store any data online
+*.feather
+*.csv
+*.png
+*.ods
+
+# Exclude virtual environments
+venv/*
+data/*
+
+# We remove caches
+__pycache__/*
+.~*
+.git
+# Below are latex left overs.
+*.aux
+*.bbl
+*.bcf
+*.fdb_latexmk
+*.fls
+#*.log We keep logs so that if something is broken others know why!
+*.xml
+*.gz
+
+# Images will be manually uploaded - this is to prevent the inclusion of place holders such as the duck.
+*.jpg
+*.tiff
+*.jpeg
