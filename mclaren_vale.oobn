@@ -1,4 +1,4 @@
-class base_line
+class mclaren_vale
 {
     inputs = ();
     outputs = ();
@@ -11,7 +11,7 @@ class base_line
     HR_Desc = "";
     HR_OOBN_CheckConsistency = "1";
     HR_OOBN_FitExpand = "1";
-    HR_Zoom_ZoomFactor = "100";
+    HR_Zoom_ZoomFactor = "65";
     HR_Groups_GroupColors = "";
     HR_Groups_GroupNames = "";
     HR_Groups_UserGroupsNo = "0";
@@ -56,124 +56,135 @@ class base_line
     HR_Grid_Y = "40";
     HR_Grid_X = "40";
 
-    function Yield_Area
+    function yield_by_area
     {
 	label = "";
-	position = (1286 704);
-	HR_NodeSize = "(139, 83)";
+	position = (429 486);
+	HR_NodeSize = "(152, 58)";
 	HR_Group = "0";
 	HR_Desc = "";
     }
 
-    function water_transformed
+    function water_actual
     {
 	label = "";
-	position = (1258 444);
-	HR_NodeSize = "(179, 60)";
+	position = (425 415);
+	HR_NodeSize = "(143, 61)";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[Yield:0]";
-	HR_LinkMode = "[F1:0][Yield:0]";
     }
 
-    function emission_transformed
+    function emission_actual
     {
 	label = "";
-	position = (1251 118);
-	HR_NodeSize = "(185, 69)";
+	position = (426 51);
+	HR_NodeSize = "(155, 59)";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[Yield:0]";
-	HR_LinkMode = "[F1:0][Yield:0]";
     }
 
-    function area_transformed
+    function area_actual
     {
 	label = "";
-	position = (930 261);
-	HR_NodeSize = "(161, 68)";
+	position = (44 214);
+	HR_NodeSize = "(133, 58)";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkControlPoints = "";
-	HR_LinkGroup = "[Yield:0]";
-	HR_LinkMode = "[F1:0][Yield:0]";
+	HR_LinkGroup = "[yield_by_area:0]";
+	HR_LinkMode = "[F4:0]";
     }
 
-    function Yield
+    function Yield_actual
     {
 	label = "";
-	position = (1558 261);
-	HR_NodeSize = "(160, 87)";
+	position = (790 216);
+	HR_LinkGroup = "[yield_by_area:0]";
+	HR_LinkMode = "[F4:0]";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[Yield_Area:0]";
-	HR_LinkMode = "[F1:0][Yield_Area:0]";
+	HR_NodeSize = "(152, 64)";
+    }
+
+    continuous node Yield
+    {
+	label = "";
+	position = (650 217);
+	HR_LinkGroup = "[Yield_actual:0]";
+	HR_LinkMode = "[F1:0]";
+	HR_NodeSize = "(137, 73)";
+	HR_Group = "0";
+	HR_Desc = "";
     }
 
     continuous node area
     {
 	label = "";
-	position = (599 261);
+	position = (193 215);
 	HR_NodeSize = "(136, 84)";
 	HR_LinkControlPoints = "";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[area_transformed:0][Yield_Area:0][emissions:0]";
-	HR_LinkMode = "[F2:0][Yield_Area:0][emissions:0][area_transformed:0]";
+	HR_LinkGroup = "[emissions:0][water:0][Yield:0][area_actual:0]";
+	HR_LinkMode = "[F2:0][emissions:0][water:0][C1:0][F1:0]";
     }
 
     continuous node water
     {
 	label = "";
-	position = (978 445);
+	position = (425 335);
 	HR_NodeSize = "(131, 87)";
 	HR_LinkControlPoints = "";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[water_transformed:0]";
-	HR_LinkMode = "[F4:0][water_transformed:0]";
+	HR_LinkGroup = "[emissions:0][Yield:0][water_actual:0]";
+	HR_LinkMode = "[F4:0][emissions:0][C1:0][F3:0]";
     }
 
     continuous node emissions
     {
 	label = "";
-	position = (953 117);
+	position = (425 120);
 	HR_NodeSize = "(155, 83)";
 	HR_LinkControlPoints = "";
 	HR_Group = "0";
 	HR_Desc = "";
-	HR_LinkGroup = "[emission_transformed:0]";
-	HR_LinkMode = "[F3:0][emission_transformed:0]";
+	HR_LinkGroup = "[Yield:0][emission_actual:0]";
+	HR_LinkMode = "[F3:0][C1:0][F2:0]";
     }
 
-    potential (Yield_Area | area Yield)
+    potential (yield_by_area | area_actual Yield_actual)
     {
 	model_nodes = ();
-	model_data = ( Yield / area );
+	model_data = ( Yield_actual / area_actual );
     }
 
-    potential (water_transformed | water)
+    potential (water_actual | water)
     {
 	model_nodes = ();
-	model_data = ( (log (water) - log (7.471E+06)) / log (5.646E+08) );
+	model_data = ( exp (water) * 4.16548 + 16.945 );
     }
 
-    potential (emission_transformed | emissions)
+    potential (emission_actual | emissions)
     {
 	model_nodes = ();
-	model_data = ( (log (emissions) - log (41730)) / log (85710) );
+	model_data = ( exp (emissions) * 19.8124 + 2216.53 );
     }
 
-    potential (area_transformed | area)
+    potential (area_actual | area)
     {
 	model_nodes = ();
-	model_data = ( (log (area) - log (66.7)) / log (133.7) );
+	model_data = ( exp (area) * 2.8486 + 15.8231 );
     }
 
-    potential (Yield | area_transformed water_transformed emission_transformed)
+    potential (Yield_actual | Yield)
     {
 	model_nodes = ();
-	model_data = ( (area_transformed * 0.74177 + water_transformed * 0.0866007 + emission_transformed * 0.0673105 - 0.0331811) * 2179 + 775.7 );
+	model_data = ( exp (Yield) * 4.20783 + 82.1059 );
+    }
+
+    potential (Yield | area water emissions)
+    {
+	data = normal ( -0.0009848 + 0.7121393 * area + 0.0801902 * water + 0.0657961 * emissions, 1 );
     }
 
     potential (area)
@@ -181,13 +192,13 @@ class base_line
 	data = normal ( 0, 1 );
     }
 
-    potential (water)
+    potential (water | area)
     {
-	data = normal ( 7471000, 3.1877316E+17 );
+	data = normal ( -0.0008846 + 0.7708476 * area, 1 );
     }
 
-    potential (emissions | area)
+    potential (emissions | area water)
     {
-	data = normal ( 100 * area, 1 );
+	data = normal ( -0.0007394 + 0.4688445 * area + 0.0187578 * water, 1 );
     }
-} % class base_line
+} % class mclaren_vale
