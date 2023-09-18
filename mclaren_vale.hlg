@@ -1,0 +1,67 @@
+Fri Sep 15 09:48:29 2023
+
+
+Moral links:
+
+
+
+Triangulating prime component with 4 members:
+    Yield, area, water, emissions
+This component is a clique of cost 15
+
+
+Total cost of triangulation for all prime components is 15
+
+
+Cliques:
+
+Clique 1, 4 members, table size = 1 + 14:
+    Yield, area, water, emissions
+
+Total clique table size: 1 + 14
+
+
+The junction forest:
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node Yield assigned to clique 1
+    Node area assigned to clique 1
+    Node water assigned to clique 1
+    Node emissions assigned to clique 1
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Yield:
+	Mean: -0.00110548   Variance: 1.6602   SD: 1.28849
+
+    area:
+	Mean: 0   Variance: 1   SD: 1
+
+    water:
+	Mean: -0.0008846   Variance: 1.59421   SD: 1.26262
+
+    emissions:
+	Mean: -0.000755993   Variance: 1.23393   SD: 1.11083
+
+
+Values for real-valued function nodes:
+
+    yield_by_area: 4.62245
+
+    water_actual: 21.1068
+
+    emission_actual: 2236.33
+
+    area_actual: 18.6717
+
+    Yield_actual: 86.3091
