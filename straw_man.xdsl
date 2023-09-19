@@ -61,8 +61,8 @@
 			<probabilities>0.9 0.1</probabilities>
 		</cpt>
 		<cpt id="Government_Support">
-			<state id="High" />
-			<state id="Low" />
+			<state id="Strong" />
+			<state id="Weak" />
 			<probabilities>0.6 0.4</probabilities>
 		</cpt>
 		<cpt id="Bio_Diversity">
