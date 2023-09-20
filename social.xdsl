@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network3" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="People">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Government_Support">
+			<state id="Strong" />
+			<state id="Weak" />
+			<probabilities>0.6 0.4</probabilities>
+		</cpt>
+		<cpt id="Bio_Diversity">
+			<state id="Good" />
+			<state id="Bad" />
+			<probabilities>0.7 0.3</probabilities>
+		</cpt>
+		<cpt id="Social">
+			<state id="Good" />
+			<state id="Bad" />
+			<parents>People Government_Support Bio_Diversity</parents>
+			<probabilities>0.9 0.1 0.9 0.1 0.9 0.1 0.9 0.1 0.3 0.7 0.1 0.9 0.2 0.8 0.1 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.3005.0 ACADEMIC" name="Network3">
+			<node id="Social">
+				<name>Social Impact</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>222 186 306 240</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="People">
+				<name>People</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>219 83 311 133</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Government_Support">
+				<name>Government Support</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>378 120 475 177</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Bio_Diversity">
+				<name>Bio Diversity</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>44 114 151 184</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
