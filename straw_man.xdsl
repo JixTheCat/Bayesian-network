@@ -55,12 +55,12 @@
 			<state id="Good" />
 			<state id="Bad" />
 			<parents>Grape_revenue Operating_Cost</parents>
-			<probabilities>0.9 0.1 0.9 0.1 0.1 0.9 0.1 0.9</probabilities>
+			<probabilities>0.75 0.25 0.9 0.1 0.1 0.9 0.25 0.75</probabilities>
 		</cpt>
 		<cpt id="People">
 			<state id="High" />
 			<state id="Low" />
-			<probabilities>0.9 0.1</probabilities>
+			<probabilities>0.1 0.9</probabilities>
 		</cpt>
 		<cpt id="Government_Support">
 			<state id="Strong" />
@@ -105,7 +105,7 @@
 				<interior color="ff99cc" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>478 702 576 764</position>
+				<position>192 459 290 521</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Social">
@@ -113,7 +113,7 @@
 				<interior color="ff99cc" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>809 706 893 760</position>
+				<position>557 467 641 521</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Environmental">
@@ -121,7 +121,7 @@
 				<interior color="ff99cc" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>630 706 729 763</position>
+				<position>369 374 468 431</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Sustainability">
@@ -129,95 +129,95 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>620 821 744 890</position>
+				<position>353 492 477 561</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Yield">
 				<name>Yield</name>
-				<interior color="00ff00" />
+				<interior color="00dc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>355 316 445 365</position>
+				<position>38 250 128 299</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Water">
 				<name>Water</name>
-				<interior color="00ff00" />
+				<interior color="00dc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>916 165 975 207</position>
+				<position>56 118 115 160</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Fuel">
 				<name>Fuel</name>
-				<interior color="00ff00" />
+				<interior color="00dc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>482 44 552 81</position>
+				<position>332 30 402 67</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Electricity">
 				<name>Electricity</name>
-				<interior color="00ff00" />
+				<interior color="00dc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>211 50 291 98</position>
-				<barchart active="true" />
+				<position>130 27 210 75</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Grape_revenue">
 				<name>Grape Revenue</name>
-				<interior color="ff0000" />
+				<interior color="dc0000" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>485 433 567 479</position>
+				<position>43 387 125 433</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Operating_Cost">
 				<name>Operating Cost</name>
-				<interior color="00ff00" />
+				<interior color="00dc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>156 258 241 311</position>
+				<position>202 335 287 388</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Emissions">
 				<name>Emissions</name>
-				<interior color="00ff00" />
+				<interior color="00dc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>983 301 1086 359</position>
-				<barchart active="true" />
+				<position>367 243 470 301</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="People">
 				<name>People</name>
 				<interior color="00ccff" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>1263 528 1355 578</position>
-				<barchart active="true" />
+				<position>769 419 861 469</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Government_Support">
 				<name>Government Support</name>
 				<interior color="00ccff" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>1248 664 1345 721</position>
-				<barchart active="true" />
+				<position>756 518 853 575</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Operating_Footprint">
 				<name>Operating Footprint</name>
-				<interior color="00ff00" />
+				<interior color="00ccff" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>662 413 766 478</position>
-				<barchart active="true" />
+				<position>554 196 658 261</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Cover_Crops">
 				<name>Cover Crop</name>
-				<interior color="00ff00" />
+				<interior color="00dc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>1148 30 1254 113</position>
+				<position>763 100 869 183</position>
 				<barchart active="true" width="185" height="118" />
 			</node>
 			<node id="Bio_Diversity">
@@ -225,8 +225,8 @@
 				<interior color="00ccff" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>1183 298 1290 368</position>
-				<barchart active="true" />
+				<position>593 353 700 423</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 		</genie>
 	</extensions>
