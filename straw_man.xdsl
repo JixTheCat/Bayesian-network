@@ -14,18 +14,18 @@
 			<state id="High" />
 			<state id="Low" />
 			<parents>Cover_Crops</parents>
-			<probabilities>0.85 0.15 0.95 0.05 0.07000000000000001 0.93 0.75 0.25 0.9 0.1</probabilities>
+			<probabilities>0.38 0.62 0.4 0.6 0.47 0.53 0.42 0.58 0.45 0.55</probabilities>
 		</cpt>
 		<cpt id="Electricity">
 			<state id="High" />
 			<state id="Low" />
-			<probabilities>0.5 0.5</probabilities>
+			<probabilities>0.64 0.36</probabilities>
 		</cpt>
 		<cpt id="Fuel">
 			<state id="High" />
 			<state id="Low" />
 			<parents>Cover_Crops</parents>
-			<probabilities>0.8 0.2 0.92 0.08 0.89 0.11 0.66 0.34 0.85 0.15</probabilities>
+			<probabilities>0.5600000000000001 0.44 0.55 0.45 0.52 0.48 0.48 0.52 0.55 0.45</probabilities>
 		</cpt>
 		<cpt id="Emissions">
 			<state id="High" />
@@ -37,25 +37,25 @@
 			<state id="High" />
 			<state id="Low" />
 			<parents>Water Electricity Fuel</parents>
-			<probabilities>0.84 0.16 0.87 0.13 0.84 0.16 0.87 0.13 0.74 0.26 0.74 0.26 0.74 0.26 0.74 0.26</probabilities>
+			<probabilities>0.68 0.32 0.5600000000000001 0.44 0.68 0.32 0.87 0.13 0.72 0.28 0.66 0.34 0.64 0.36 0.48 0.52</probabilities>
 		</cpt>
 		<cpt id="Yield">
 			<state id="High" />
 			<state id="Low" />
 			<parents>Water Emissions</parents>
-			<probabilities>0.9 0.1 0.6 0.4 0.3 0.7 0.05 0.95</probabilities>
+			<probabilities>0.7 0.3 0.7 0.3 0.7 0.3 0.3 0.7</probabilities>
 		</cpt>
-		<cpt id="Profit">
+		<cpt id="Grape_revenue">
 			<state id="High" />
 			<state id="Low" />
-			<parents>Operating_Cost Yield</parents>
-			<probabilities>0.2 0.8 0.3 0.7 0.4 0.6 0.7 0.3</probabilities>
+			<parents>Yield</parents>
+			<probabilities>0.83 0.17 0.52 0.48</probabilities>
 		</cpt>
 		<cpt id="Economic">
 			<state id="Good" />
 			<state id="Bad" />
-			<parents>Profit</parents>
-			<probabilities>0.9 0.1 0.1 0.9</probabilities>
+			<parents>Grape_revenue Operating_Cost</parents>
+			<probabilities>0.9 0.1 0.9 0.1 0.1 0.9 0.1 0.9</probabilities>
 		</cpt>
 		<cpt id="People">
 			<state id="High" />
@@ -137,7 +137,7 @@
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>372 294 462 343</position>
+				<position>355 316 445 365</position>
 				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Water">
@@ -164,21 +164,21 @@
 				<position>211 50 291 98</position>
 				<barchart active="true" />
 			</node>
-			<node id="Profit">
-				<name>Profit</name>
+			<node id="Grape_revenue">
+				<name>Grape Revenue</name>
 				<interior color="ff0000" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>241 413 323 459</position>
-				<barchart active="true" />
+				<position>485 433 567 479</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Operating_Cost">
 				<name>Operating Cost</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>129 246 214 299</position>
-				<barchart active="true" />
+				<position>156 258 241 311</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Emissions">
 				<name>Emissions</name>
