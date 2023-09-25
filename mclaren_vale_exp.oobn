@@ -3,6 +3,13 @@ class mclaren_vale_exp
     inputs = ();
     outputs = ();
     node_size = (80 40);
+    HR_TextLabel_1_BackgroundColor = "#ffffff";
+    HR_TextLabel_1_TextColor = "#333333";
+    HR_TextLabel_1_Font = "Dialog.plain-PLAIN-24";
+    HR_TextLabel_1_Size = "363,188";
+    HR_TextLabel_1_Position = "20,9";
+    HR_TextLabel_1_Description = "Demonstration model:\nThis model predicts yield in Mclaren Vale for 2021/2022\n\nA once in a decade rain eventis included.";
+    HR_TextLabel_IDs = "1";
     HR_CPT_Font_Size = "-12";
     HR_CPT_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
     HR_CPT_Font_Italic = "0";
@@ -105,7 +112,7 @@ class mclaren_vale_exp
 	HR_Group = "0";
 	HR_Desc = "";
 	HR_LinkGroup = "[yield_by_area:0]";
-	HR_LinkMode = "[F4:0]";
+	HR_LinkMode = "[F4:0][yield_by_area:0]";
     }
 
     function Yield_actual
@@ -113,7 +120,7 @@ class mclaren_vale_exp
 	label = "";
 	position = (1083 296);
 	HR_LinkGroup = "[yield_by_area:0]";
-	HR_LinkMode = "[F4:0]";
+	HR_LinkMode = "[F4:0][yield_by_area:0]";
 	HR_Group = "0";
 	HR_Desc = "";
 	HR_NodeSize = "(152, 64)";
@@ -124,7 +131,7 @@ class mclaren_vale_exp
 	label = "";
 	position = (891 298);
 	HR_LinkGroup = "[Yield_actual:0]";
-	HR_LinkMode = "[F1:0]";
+	HR_LinkMode = "[F1:0][Yield_actual:0]";
 	HR_NodeSize = "(137, 73)";
 	HR_Group = "0";
 	HR_Desc = "";
@@ -139,7 +146,7 @@ class mclaren_vale_exp
 	HR_Group = "0";
 	HR_Desc = "";
 	HR_LinkGroup = "[emissions:0][water:0][Yield:0][area_actual:0]";
-	HR_LinkMode = "[F2:0][emissions:0][water:0][C1:0][F1:0]";
+	HR_LinkMode = "[F2:0][emissions:0][water:0][C1:0][F1:0][area_actual:0][Yield:0]";
     }
 
     continuous node water
@@ -151,7 +158,7 @@ class mclaren_vale_exp
 	HR_Group = "0";
 	HR_Desc = "";
 	HR_LinkGroup = "[emissions:0][Yield:0][water_actual:0]";
-	HR_LinkMode = "[F4:0][emissions:0][C1:0][F3:0]";
+	HR_LinkMode = "[F4:0][emissions:0][C1:0][F3:0][water_actual:0][Yield:0]";
     }
 
     continuous node emissions
@@ -163,7 +170,7 @@ class mclaren_vale_exp
 	HR_Group = "0";
 	HR_Desc = "";
 	HR_LinkGroup = "[Yield:0][emission_actual:0]";
-	HR_LinkMode = "[F3:0][C1:0][F2:0]";
+	HR_LinkMode = "[F3:0][C1:0][F2:0][emission_actual:0][Yield:0]";
     }
 
     potential (rain)
