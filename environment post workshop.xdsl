@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network3" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Cover_Crops">
+			<state id="Non_Native" />
+			<state id="Bare_Soil" />
+			<state id="Native" />
+			<state id="Sward" />
+			<state id="Annual_Crop" />
+			<probabilities>0.22 0.05 0.11 0.4 0.22</probabilities>
+		</cpt>
+		<cpt id="Water">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Cover_Crops</parents>
+			<probabilities>0.38 0.62 0.4 0.6 0.47 0.53 0.42 0.58 0.45 0.55</probabilities>
+		</cpt>
+		<cpt id="Electricity">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.64 0.36</probabilities>
+		</cpt>
+		<cpt id="Fuel">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Cover_Crops</parents>
+			<probabilities>0.5600000000000001 0.44 0.55 0.45 0.52 0.48 0.48 0.52 0.55 0.45</probabilities>
+		</cpt>
+		<cpt id="Emissions">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Electricity Fuel</parents>
+			<probabilities>0.95 0.05 0.6 0.4 0.8 0.2 0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="Operating_Footprint">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Electricity Fuel Water</parents>
+			<probabilities>0.9 0.1 0.3 0.7 0.4 0.6 0.2 0.8 0.8 0.2 0.6 0.4 0.3 0.7 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Environmental">
+			<state id="Good" />
+			<state id="Bad" />
+			<parents>Water Emissions Operating_Footprint</parents>
+			<probabilities>0.1 0.9 0.3 0.7 0.7 0.3 0.4 0.6 0.7 0.3 0.4 0.6 0.4 0.6 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Agro_Chemical_Mix">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Fertiliser">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.3005.0 ACADEMIC" name="Network3">
+			<node id="Environmental">
+				<name>Environmental Impact</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>232 222 331 279</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Water">
+				<name>Water Usage (Environmental Impact)</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>427 175 486 217</position>
+				<barchart active="true" width="146" height="64" />
+			</node>
+			<node id="Fuel">
+				<name>Fuel</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>245 28 315 65</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Electricity">
+				<name>Electricity</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>59 22 139 70</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Emissions">
+				<name>Emissions</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>49 117 152 175</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Operating_Footprint">
+				<name>Operating Footprint</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>227 113 331 178</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Cover_Crops">
+				<name>Cover Crop</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>402 35 508 118</position>
+				<barchart active="true" width="142" height="118" />
+			</node>
+			<node id="Agro_Chemical_Mix">
+				<name>Agro-Chemical Mix</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>16 191 118 254</position>
+			</node>
+			<node id="Fertiliser">
+				<name>Fertiliser</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>102 248 157 282</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

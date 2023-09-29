@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network3" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Water">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.38 0.62</probabilities>
+		</cpt>
+		<cpt id="Electricity">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.64 0.36</probabilities>
+		</cpt>
+		<cpt id="Fuel">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.5600000000000001 0.44</probabilities>
+		</cpt>
+		<cpt id="Emissions">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Electricity Fuel</parents>
+			<probabilities>0.95 0.05 0.6 0.4 0.8 0.2 0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="Operating_Cost">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Water Electricity Fuel</parents>
+			<probabilities>0.68 0.32 0.5600000000000001 0.44 0.68 0.32 0.87 0.13 0.72 0.28 0.66 0.34 0.64 0.36 0.48 0.52</probabilities>
+		</cpt>
+		<cpt id="Yield">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Water Emissions</parents>
+			<probabilities>0.7 0.3 0.7 0.3 0.7 0.3 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Grape_revenue">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Yield</parents>
+			<probabilities>0.83 0.17 0.52 0.48</probabilities>
+		</cpt>
+		<cpt id="Economic">
+			<state id="Good" />
+			<state id="Bad" />
+			<parents>Grape_revenue Operating_Cost</parents>
+			<probabilities>0.75 0.25 0.9 0.1 0.1 0.9 0.25 0.75</probabilities>
+		</cpt>
+		<cpt id="Other_factors">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Seasonal_Conditions">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Other_factors</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Fertiliser">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Price_per_tonne">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Region">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Water_Price">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Water_Availability">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.3005.0 ACADEMIC" name="Network3">
+			<node id="Economic">
+				<name>Economic Impact</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>344 374 442 436</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Yield">
+				<name>Yield</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>331 224 421 273</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Water">
+				<name>Water</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>84 228 143 270</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Fuel">
+				<name>Fuel</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>342 30 412 67</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Electricity">
+				<name>Electricity</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>177 25 257 73</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Grape_revenue">
+				<name>Grape Revenue</name>
+				<interior color="dc0000" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>512 297 594 343</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Operating_Cost">
+				<name>Operating Cost</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>194 307 279 360</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Emissions">
+				<name>Emissions</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>325 120 428 178</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Seasonal_Conditions">
+				<name>Seasonal Conditions</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>530 91 637 157</position>
+			</node>
+			<node id="Other_factors">
+				<name>Other factors</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>672 100 747 146</position>
+			</node>
+			<node id="Fertiliser">
+				<name>Fertiliser</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>507 194 576 237</position>
+			</node>
+			<node id="Price_per_tonne">
+				<name>Price per tonne</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>645 224 730 277</position>
+			</node>
+			<node id="Region">
+				<name>Region</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>5 144 95 200</position>
+			</node>
+			<node id="Water_Price">
+				<name>Water Price</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>32 71 100 113</position>
+			</node>
+			<node id="Water_Availability">
+				<name>Water Availability</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>124 94 216 151</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
