@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Operating_Footprint">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Emissions">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.95 0.05</probabilities>
+		</cpt>
+		<cpt id="Impact_on_Vine_and_Vineyard_Sward_Vigour">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Water_Scarcity">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Irrigation_Leaching">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Water_Efficiency">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Water_Quality">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Environmental">
+			<state id="Good" />
+			<state id="Bad" />
+			<parents>Operating_Footprint Emissions Impact_on_Vine_and_Vineyard_Sward_Vigour Water_Scarcity Irrigation_Leaching Water_Efficiency Water_Quality</parents>
+			<probabilities>0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.1 0.9 0.2 0.8</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.3005.0 ACADEMIC" name="Network2">
+			<node id="Environmental">
+				<name>Environmental Impact</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>207 179 306 236</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Emissions">
+				<name>Emissions</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>15 239 118 297</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Operating_Footprint">
+				<name>Operating Footprint</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>30 89 134 154</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Water_Scarcity">
+				<name>Water Scarcity</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>152 332 235 383</position>
+			</node>
+			<node id="Irrigation_Leaching">
+				<name>Irrigation Leaching</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>185 11 283 72</position>
+			</node>
+			<node id="Water_Efficiency">
+				<name>Water Efficiency</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>310 312 398 367</position>
+			</node>
+			<node id="Water_Quality">
+				<name>Water Quality</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>342 77 419 125</position>
+			</node>
+			<node id="Impact_on_Vine_and_Vineyard_Sward_Vigour">
+				<name>Impact on Vine and Vineyard Sward Vigour</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>404 190 515 259</position>
+			</node>
+			<arcformat parent="Operating_Footprint" child="Environmental" width="1" color="0000ff" />
+			<arcformat parent="Impact_on_Vine_and_Vineyard_Sward_Vigour" child="Environmental" width="1" color="0000ff" />
+			<arcformat parent="Water_Scarcity" child="Environmental" width="1" color="0000ff" />
+			<arcformat parent="Irrigation_Leaching" child="Environmental" width="1" color="0000ff" />
+			<arcformat parent="Water_Efficiency" child="Environmental" width="1" color="0000ff" />
+			<arcformat parent="Water_Quality" child="Environmental" width="1" color="0000ff" />
+		</genie>
+	</extensions>
+</smile>

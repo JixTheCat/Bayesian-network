@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Grape_Price">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Canopy_Management_Practices">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Weather_Conditions">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="water">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Grape_Price Canopy_Management_Practices Weather_Conditions</parents>
+			<probabilities>0.1 0.9 0.2 0.8 0.5 0.5 0.6 0.4 0.9 0.1 0.1 0.9 0.4 0.6 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Pest_and_Disease_Management">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Grape_Price Canopy_Management_Practices Weather_Conditions water</parents>
+			<probabilities>0.1 0.9 0.2 0.8 0.3 0.7 0.4 0.6 0.5 0.5 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.6 0.4 0.7 0.3 0.8 0.2 0.9 0.1 0.7 0.3 0.8 0.2 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Fuel">
+			<state id="High" />
+			<state id="Low" />
+			<parents>Canopy_Management_Practices Pest_and_Disease_Management Weather_Conditions</parents>
+			<probabilities>0.1 0.9 0.3 0.7 0.5 0.5 0.7 0.3 0.9 0.1 0.2 0.8 0.4 0.6 0.6 0.4</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.3005.0 ACADEMIC" name="Network2">
+			<node id="water">
+				<name>        Water      (Mega Litres used)</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>36 192 149 259</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Fuel">
+				<name>Fuel</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>154 31 224 68</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Weather_Conditions">
+				<name>Weather Conditions</name>
+				<interior color="ffcc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>246 75 350 140</position>
+			</node>
+			<node id="Grape_Price">
+				<name>Grape Price</name>
+				<interior color="00dc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>153 301 223 344</position>
+			</node>
+			<node id="Pest_and_Disease_Management">
+				<name>Pest and Disease Management</name>
+				<interior color="ffcc00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>172 166 267 225</position>
+			</node>
+			<node id="Canopy_Management_Practices">
+				<name>Canopy Management Practices</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>22 77 117 136</position>
+			</node>
+			<arcformat parent="Grape_Price" child="water" width="2" color="ff9900" />
+			<arcformat parent="Canopy_Management_Practices" child="water" width="2" color="ff9900" />
+			<arcformat parent="Weather_Conditions" child="water" width="2" color="ff9900" />
+			<arcformat parent="Canopy_Management_Practices" child="Fuel" width="2" color="ff9900" />
+			<arcformat parent="Pest_and_Disease_Management" child="Fuel" width="2" color="ff9900" />
+			<arcformat parent="Weather_Conditions" child="Fuel" width="2" color="ff9900" />
+			<arcformat parent="Grape_Price" child="Pest_and_Disease_Management" width="2" color="ff9900" />
+			<arcformat parent="Canopy_Management_Practices" child="Pest_and_Disease_Management" width="2" color="ff9900" />
+			<arcformat parent="Weather_Conditions" child="Pest_and_Disease_Management" width="2" color="ff9900" />
+			<arcformat parent="water" child="Pest_and_Disease_Management" width="2" color="ff9900" />
+		</genie>
+	</extensions>
+</smile>
