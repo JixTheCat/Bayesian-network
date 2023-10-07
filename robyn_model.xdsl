@@ -284,7 +284,7 @@
 				<interior color="00ccff" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>238 484 336 545</position>
+				<position>215 477 313 538</position>
 			</node>
 			<node id="Water_Efficiency">
 				<name>Water Efficiency</name>
