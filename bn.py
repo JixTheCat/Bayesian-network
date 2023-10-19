@@ -14,11 +14,6 @@ from pyro.nn import PyroModule
 assert issubclass(PyroModule[nn.Linear], nn.Linear)
 assert issubclass(PyroModule[nn.Linear], PyroModule)
 
-# The tutorial sure does some bad things.
-# this is why you always define function first!
-# 
-# I feel like it is a massive weakness of python
-
 from pyro.nn import PyroSample
 from pyro.infer.autoguide import AutoDiagonalNormal
 
