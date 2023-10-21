@@ -217,6 +217,10 @@ fig = plt.figure(figsize=(10, 6))
 sns.distplot(weight, kde_kws={"label": "vineyards"},)
 fig.suptitle("a figure");
 
+graph = pyro.render_model(linear_reg_model, model_args=(x_data,), filename="path.pdf", render_params=True)
+
+graph.format="pdf"
+graph.render("path")
 
 plt.show()
 
