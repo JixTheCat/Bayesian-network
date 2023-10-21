@@ -10,3 +10,4 @@ holoviews
 bokeh
 chord
 seaborn
+graphviz
