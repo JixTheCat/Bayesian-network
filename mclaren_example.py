@@ -1,9 +1,7 @@
 import os
 import torch
-import torch.nn.functional as F
 import pyro
 import pyro.distributions as dist
-import pyro.distributions.constraints as constraints
 
 smoke_test = ('CI' in os.environ)
 assert pyro.__version__.startswith('1.8.6')
