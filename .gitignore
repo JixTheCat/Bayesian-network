@@ -31,3 +31,6 @@ __pycache__/*
 *.jpg
 *.tiff
 *.jpeg
+
+# We do not include builds...
+build/
