@@ -4,7 +4,7 @@ import torch
 import numpy as np
 import pandas as pd
 import pyro
-import pyro.distributions as dist
+import torch.distributions as dist
 import seaborn as sns
 import matplotlib.pyplot as plt
 
@@ -281,3 +281,81 @@ plt.show()
 #                 pl.where(S, pl.where(R, .99, .9), pl.where(R, .8, 0.)),
 #                 doc='Pr[G|S,R]')
 # G = mc.Bernoulli('G', p_G, value=G_obs, observed=True)
+
+class Node:
+    def __init__(self) -> None:
+        self.name = None
+        self.parents = []
+        self.children = []
+        self.distribution = None
+        self.distribution_args = None
+        self.data = None
+        self.samples = {-1: None}
+        self.edges = []
+        self.id = 0
+    def emit(self, id: int = None):
+        if id is None:
+            self.id = max(self.samples.keys()) + 1
+            self.samples[self.id] = self.distribution(*self.distribution_args).sample()
+            return self.id, self.samples[self.id]
+        else:
+            if id not in self.samples:
+                self.samples[id] = self.distribution(*self.distribution_args).sample()
+            return id, self.samples[id]
+    def sample(self, id: int = None):
+        emit = self.emit(id)
+        self.samples[emit[0]] = emit[1]
+        return emit[1]
+
+class Edge:
+    def __init__(self) -> None:
+        self.parent = None
+        self.child = None
+        self.relation = None
+
+# we define the nodes
+
+ha = Node()
+ha.name = "harvest area"
+ha.distribution = dist.Normal
+ha.distribution_args = {0, 1}
+ha.emit()
+
+wu = Node()
+wu.name = "water used"
+
+wu.distribution = dist.Normal
+wu.distribution_args = {
+            [ha.sample(wu.id)][0]*0.7708476 -
+            8.846E-4
+            , 0.6372}
+wu.name = "water_used"
+wu.emit()
+
+so = Node()
+so.name = "scope one"
+ha_so = Edge()
+wu_so = Edge()
+so.distribution = dist.Normal(
+            [ha.sample(so.id)][0]*0.4688445 +
+            [wu.sample(so.id)][0]*0.0187578 -
+            7.394E-4
+            , 0.8762)
+so.emit()
+
+harvest = Node()
+harvest.name = "yield"
+harvest.distribution = dist.Normal(
+            [ha.sample(harvest.id)][0]* 0.7121393 +
+            [wu.sample(harvest.id)][0]*0.0801902 +
+            [so.sample(harvest.id)][0]*0.0657961 -
+            9.848E-4
+            , 0.5874) # Note that the variance is the standard deviation in the residuals as we are linearly estimating the parameter. this is also equal to the RSE. Notably this should not be rse and actually SS_y, we only want the distance on the predictor axis (to any where on the vertical line of a point), not from the mean to the point.
+
+samples = {"yield": []
+           , "area": []
+           , "water use": []
+           , "emissions": []}
+for i in range(1000):
+    samples["yield"].append(harvest.sample())
+
