@@ -1,20 +1,25 @@
- #include <torch/torch.h>
- #include <iostream>
+// This is my happy BN
 
-// class Z
-// {
-//       double& mean;
-//       double& std;
-//   public:
-//     Z(double& mean, double& std) : mean(mean), std(std) { }
-//     operator torch::normal() { return torch::normal(mean, std, 1); }
-// };
-// torch::Tensor dist = torch::normal(0.0, 1.0, 3);
+ #include <iostream>
+ #include<map>
+ #include <torch/torch.h>
+ 
+ struct Node
+ {
+  // auto distribution;
+  char name;
+  int id;
+
+  // torch::Tensor emit()
+  //   {
+  //     if (id = )
+  //   }
+ };
 
 int main() {
 
-  // double mean;
-  // double std;
+  
+
   torch::Tensor dist = torch::normal(0.0, 1.0, 3);
   std::cout << "basic operation" << std::endl;
   std::cout << dist << std::endl;
