@@ -1,0 +1,519 @@
+class Workshop
+{
+    inputs = ();
+    outputs = ();
+    node_size = (80 40);
+    HR_DBN_Num_Slices = "5";
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "100";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Utility_Link = "63";
+    HR_Probabilistic_Link = "63";
+    HR_Functional_Link = "63";
+    HR_Binding_Link = "63";
+    HR_Information_Arc = "63";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_DiscreteFunction = "5";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Variance_Utility = "1";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Display_Prob_DD = "0";
+    HR_Monitor_Chance_Utility = "0";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Dialog,name=Dialog,style=bold,size=12]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    continuous node Emissions
+    {
+	label = "";
+	position = (48 347);
+	HR_Desc = "";
+	HR_LinkMode = "[C1_18_4_6:0]";
+	HR_LinkGroup = "[Environmental:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Impact_on_Vine_and_Vineyard_Sward_Vigour
+    {
+	label = "";
+	position = (81 426);
+	HR_Desc = "";
+	HR_LinkGroup = "[Environmental:0]";
+	HR_LinkMode = "[C1_18_4_6:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Environmental
+    {
+	label = "";
+	position = (188 505);
+	HR_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "0";
+    }
+
+    continuous node Water_Scarcity
+    {
+	label = "";
+	position = (440 446);
+	HR_Desc = "";
+	HR_LinkGroup = "[Environmental:0]";
+	HR_LinkMode = "[C1_18_4_6:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Irrigation_Leaching
+    {
+	label = "";
+	position = (320 438);
+	HR_Desc = "";
+	HR_LinkGroup = "[Environmental:0]";
+	HR_LinkMode = "[C1_18_4_6:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Soil_Compaction
+    {
+	label = "";
+	position = (276 382);
+	HR_Desc = "";
+	HR_LinkGroup = "[Impact_on_Vine_and_Vineyard_Sward_Vigour:0]";
+	HR_LinkMode = "[Impact_on_Vine_and_Vineyard_Sward_Vigour:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Operating_Footprint
+    {
+	label = "";
+	position = (192 325);
+	HR_Desc = "";
+	HR_LinkGroup = "[Environmental:0]";
+	HR_LinkMode = "[C1_18_4_6:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Fertiliser
+    {
+	label = "";
+	position = (40 225);
+	HR_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "0";
+    }
+
+    continuous node Electricity
+    {
+	label = "";
+	position = (111 181);
+	HR_Desc = "";
+	HR_LinkMode = "[C1_18_4_2:0][C1_18_4_7_1:0]";
+	HR_LinkGroup = "[Operating_Footprint:0][Emissions:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Fuel
+    {
+	label = "";
+	position = (231 175);
+	HR_Desc = "";
+	HR_LinkMode = "[C1_18_4_7_1:0]";
+	HR_LinkGroup = "[Emissions:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Weather_Conditions
+    {
+	label = "";
+	position = (372 54);
+	HR_Desc = "";
+	HR_LinkMode = "[C1_6:0][C1_18_1:0][C1_18_3:0]";
+	HR_LinkGroup = "[Water_Price:0][Agro_Chemical_Mix:0][Fuel:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Agro_Chemical_Mix
+    {
+	label = "";
+	position = (500 36);
+	HR_Desc = "";
+	HR_LinkMode = "";
+	HR_LinkGroup = "";
+	HR_Group = "0";
+    }
+
+    continuous node Conventional_vs_Organic
+    {
+	label = "";
+	position = (628 94);
+	HR_Desc = "";
+	HR_LinkGroup = "[Agro_Chemical_Mix:0][Pest_and_Disease_Management:0][Cover_Crops:0]";
+	HR_LinkMode = "[C1_18_1:0][C1_8:0][Cover_Crops:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Cover_Crops
+    {
+	label = "";
+	position = (784 120);
+	HR_Desc = "";
+	HR_LinkGroup = "[Pest_and_Disease_Management:0][Fuel:0][Tractor_Passes:0][water:0]";
+	HR_LinkMode = "[C1_8:0][Fuel:0][Tractor_Passes:0][water:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Soil_management
+    {
+	label = "";
+	position = (870 163);
+	HR_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "0";
+    }
+
+    continuous node Canopy_Management_Practices
+    {
+	label = "";
+	position = (855 284);
+	HR_Desc = "";
+	HR_LinkGroup = "[Pest_and_Disease_Management:0][Fuel:0][water:0]";
+	HR_LinkMode = "[C1_8:0][C1_18_3:0][water:0][Fuel:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Water_Efficiency
+    {
+	label = "";
+	position = (510 493);
+	HR_Desc = "";
+	HR_LinkGroup = "[Environmental:0]";
+	HR_LinkMode = "[C1_18_4_6:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Yield_and_Quality_targets
+    {
+	label = "";
+	position = (648 494);
+	HR_Desc = "";
+	HR_LinkGroup = "[water:0]";
+	HR_LinkMode = "[C1_5:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Water_Quality
+    {
+	label = "";
+	position = (561 542);
+	HR_Desc = "";
+	HR_LinkGroup = "[Environmental:0]";
+	HR_LinkMode = "[C1_18_4_6:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Market_Supply_and_Demmand
+    {
+	label = "";
+	position = (660 634);
+	HR_Desc = "";
+	HR_LinkGroup = "[Grape_Price:0]";
+	HR_LinkMode = "[C1_7:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Water_Licence
+    {
+	label = "";
+	position = (804 515);
+	HR_Desc = "";
+	HR_LinkGroup = "[water:0]";
+	HR_LinkMode = "[C1_5:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Agro_chemical_regulations
+    {
+	label = "";
+	position = (901 435);
+	HR_Desc = "";
+	HR_LinkGroup = "[Pest_and_Disease_Management:0]";
+	HR_LinkMode = "[C1_8:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Pest_and_Disease_Management
+    {
+	label = "";
+	position = (799 368);
+	HR_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "0";
+    }
+
+    continuous node Grape_Price
+    {
+	label = "";
+	position = (721 436);
+	HR_Desc = "";
+	HR_LinkGroup = "[water:0][Pest_and_Disease_Management:0]";
+	HR_LinkMode = "[C1_5:0][Pest_and_Disease_Management:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Water_Price
+    {
+	label = "";
+	position = (499 109);
+	HR_Desc = "";
+	HR_LinkGroup = "";
+	HR_LinkMode = "";
+	HR_Group = "0";
+    }
+
+    continuous node water
+    {
+	label = "";
+	position = (577 413);
+	HR_Desc = "";
+	HR_LinkGroup = "[Irrigation_Leaching:0][Water_Scarcity:0][Water_Efficiency:0][Water_Quality:0][Operating_Footprint:0]";
+	HR_LinkMode = "[C1_18_4_4:0][C1_18_4_5:0][C1_14:0][C1_12:0][Operating_Footprint:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Tractor_Passes
+    {
+	label = "";
+	position = (389 250);
+	HR_Desc = "";
+	HR_LinkGroup = "[Fertiliser:0][Impact_on_Vine_and_Vineyard_Sward_Vigour:0][Soil_Compaction:0]";
+	HR_LinkMode = "[C1_18_4_1:0][Impact_on_Vine_and_Vineyard_Sward_Vigour:0][Soil_Compaction:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Soil_type
+    {
+	label = "";
+	position = (250 278);
+	HR_Desc = "";
+	HR_LinkGroup = "[water:0]";
+	HR_LinkMode = "[C1_5:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Electricity_Source
+    {
+	label = "";
+	position = (214 109);
+	HR_Desc = "";
+	HR_LinkGroup = "[Electricity:0]";
+	HR_LinkMode = "[C1_18_4:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Region
+    {
+	label = "";
+	position = (235 44);
+	HR_Desc = "";
+	HR_LinkGroup = "[Electricity_Price:0][Weather_Conditions:0][Grape_Price:0]";
+	HR_LinkMode = "[C1:0][C1_18_2:0][Grape_Price:0]";
+	HR_Group = "0";
+    }
+
+    continuous node Electricity_Price
+    {
+	label = "";
+	position = (100 91);
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkMode = "[C1_18_4:0]";
+	HR_LinkGroup = "[Electricity:0]";
+    }
+
+    potential (Emissions | Electricity Fuel)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Impact_on_Vine_and_Vineyard_Sward_Vigour | Soil_Compaction Tractor_Passes)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Environmental | Emissions Impact_on_Vine_and_Vineyard_Sward_Vigour Operating_Footprint Water_Quality Water_Efficiency Water_Scarcity Irrigation_Leaching)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Water_Scarcity | water)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Irrigation_Leaching | water)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Soil_Compaction | Tractor_Passes)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Operating_Footprint | Electricity water)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Fertiliser | Tractor_Passes)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Electricity | Electricity_Price Electricity_Source)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Fuel | Canopy_Management_Practices Weather_Conditions Cover_Crops)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Weather_Conditions | Region)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Agro_Chemical_Mix | Conventional_vs_Organic Weather_Conditions)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Conventional_vs_Organic)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Cover_Crops | Conventional_vs_Organic)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Soil_management)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Canopy_Management_Practices)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Water_Efficiency | water)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Yield_and_Quality_targets)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Water_Quality | water)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Market_Supply_and_Demmand)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Water_Licence)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Agro_chemical_regulations)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Pest_and_Disease_Management | Agro_chemical_regulations Canopy_Management_Practices Cover_Crops Conventional_vs_Organic Grape_Price)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Grape_Price | Market_Supply_and_Demmand Region)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Water_Price | Weather_Conditions)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (water | Soil_type Yield_and_Quality_targets Grape_Price Water_Licence Canopy_Management_Practices Cover_Crops)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Tractor_Passes | Cover_Crops)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Soil_type)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Electricity_Source)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Region)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (Electricity_Price | Region)
+    {
+	data = normal ( 0, 1 );
+    }
+} % class Workshop
