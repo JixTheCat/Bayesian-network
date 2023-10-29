@@ -73,203 +73,129 @@ df = pd.concat([df_floats, df_o, df_int], axis=1)
 # as singular pandas operations but at least a bit more
 # verbose as to what is going on and easier to check.
 
+def pr_root_node(df, node):
+    # We set nans to -10 to show that they are less than 0.
+    df = df.replace({np.nan: -10})
+    high = len(df[
+    (df[node]>0)
+    ].index)/len(df)
+    return {
+        "high": high
+    , "low": 1-high
+    }
+
+
+def pr_child_node(df: pd.DataFrame, node: str, parent: str):
+    ok = df[df[node].notnull()] 
+    length = len(ok[ok[parent].notnull()])
+    return {
+        "high": 
+        len(ok[
+        (
+            (ok[node]>0) # H
+        ) & 
+        (
+            (ok[parent].notnull())
+        )
+        ])/length
+        , "low": len(ok[
+        (
+            (ok[node]<0)
+        ) & 
+        (
+            (ok[parent].notnull())
+        )
+        ])/length
+    }
+
 ###############
 # Cover Crops #
 ###############
-length = len(df)
-# We set nans to -10 to show that they are less than 0.
-df = df.replace({np.nan: -10})
+# length = len(df)
+
 # this is sanity checked there are no values of -10 in the dataframe
 
 # we will reset this after cover crops as a nan here represents not utilising that type of cover crop!
+cover_crops = [
+    "bare_soil"
+    , "permanent_cover_crop_native"
+    , "permanent_cover_crop_non_native"
+    , "permanent_cover_crop_volunteer_sward"
+    , "annual_cover_crop"
+]
 
-len(df[
-    (df["bare_soil"]>0) # High
-    ].index)/length
-# 0.06386471843703825
-
-len(df[
-    (df["permanent_cover_crop_native"]>0) # high
-    ].index)/length
-# 0.10868494500082089
-
-len(df[
-    (df["permanent_cover_crop_non_native"]>0) # High
-    ].index)/length
-# 0.19947463470694468
-
-len(df[
-    (df["permanent_cover_crop_volunteer_sward"]>0) # High
-    ].index)/length
-# 0.3401740272533246
-
-len(df[
-    (df["annual_cover_crop"]>0) # high
-    ].index)/length
-# 0.13938597931374158
-
-df = df.replace({-10: np.nan})
+for node in cover_crops:
+    high, low = pr_root_node(df, node).values()
+    print("{}:\n\t high: {}\n\t low: {}".format(node, high, low))
 
 ##############
 # Water
 
 # It is important to narrow the values down first so that you are dealing with proportions relavant to the slice of data you are working with and not the whole thing. We want sums to 100%.
-ok = df[df["water_used"].notnull()] 
 
 # you have to set the length to the field you measure or the proportions are incorrect.
-
-length = len(ok[ok["bare_soil"].notnull()])
-len(ok[
-    (
-        # (ok["water_used"]<0) # L
-        (ok["water_used"]>0) # H
-    ) & 
-    (
-        (ok["bare_soil"].notnull())
-    )
-    ])/length
+pr_child_node(df_slice, "water_used", "bare_soil")
 # 0.40559440559440557 # H
 # 0.5944055944055944 # L
-
-length = len(ok[ok["permanent_cover_crop_native"].notnull()])
-len(ok[
-    (
-        # (ok["water_used"]> 0) # H
-        (ok["water_used"]< 0) # L
-     ) & 
-    (ok["permanent_cover_crop_native"].notnull())
-])/length
+pr_child_node(df_slice, "water_used", "permanent_cover_crop_native")
 # 0.47535596933187296 # H
 # 0.524644030668127 # L
-
-length = len(ok[ok["permanent_cover_crop_non_native"].notnull()])
-len(ok[
-    (
-        (ok["water_used"]> 0) # H
-        # (ok["water_used"]< 0) # L
-     ) & 
-    (ok["permanent_cover_crop_non_native"].notnull())
-])/length
+pr_child_node(df, "water_used", "permanent_cover_crop_non_native")
 # 0.3810650887573965 # H
 # 0.6189349112426036 # L
-
-length = len(ok[ok["permanent_cover_crop_volunteer_sward"].notnull()])
-len(ok[
-    (
-        # (ok["water_used"]> 0) # H
-        (ok["water_used"]< 0) # L
-     ) & 
-    (ok["permanent_cover_crop_volunteer_sward"].notnull())
-])/length
+pr_child_node(df, "water_used", "permanent_cover_crop_volunteer_sward")
 # 0.42350332594235035 # H
 # 0.5764966740576497 # L
-
-
-length = len(ok[ok["annual_cover_crop"].notnull()])
-len(ok[
-    (
-        (ok["water_used"]> 0) # H
-        # (ok["water_used"]< 0) # L
-     ) & 
-    (ok["annual_cover_crop"].notnull())
-])/length
+pr_child_node(df, "water_used", "annual_cover_crop")
 # 0.45770392749244715 # H
 # 0.5422960725075529 # L
 
 ##############
 # Fuel
+df["fuel"] = df["petrol_vineyard"].replace({np.nan: 0}) + df["diesel_vineyard"].replace({np.nan: 0})
 
-ok = df[
+df_slice = df[
     (df["petrol_vineyard"].notnull()) |
     (df["diesel_vineyard"].notnull())
 ] 
 
-ok["petrol_vineyard"] = ok["petrol_vineyard"].replace({np.nan: 0})
-ok["diesel_vineyard"] = ok["diesel_vineyard"].replace({np.nan: 0})
-# you have to set the length to the field you measure or the proportions are incorrect.
 
-length = len(ok[ok["bare_soil"].notnull()])
-len(ok[
-    (
-        # ((ok["petrol_vineyard"] +
-        # ok["diesel_vineyard"])>0) # H
-        ((ok["petrol_vineyard"] +
-        ok["diesel_vineyard"])<0)  # L
-    ) & 
-    (
-        (ok["bare_soil"].notnull())
-    )
-    ])/length
-# 0.5573997233748271 # H
-# 0.4426002766251729 # L
+print("fuel:")
+for cover_crop in cover_crops:
+    high, low = pr_child_node(df_slice, "fuel", cover_crop).values()
+    print("{}:\n\t high: {}\n\t low: {}".format(cover_crop, high, low))
 
-length = len(ok[ok["permanent_cover_crop_native"].notnull()])
-len(ok[
-    (
-        # ((ok["petrol_vineyard"] +
-        # ok["diesel_vineyard"])>0) # H
-        ((ok["petrol_vineyard"] +
-        ok["diesel_vineyard"])<0)  # L
-    ) & 
-    (ok["permanent_cover_crop_native"].notnull())
-])/length
-# 0.5265536723163842 # H
-# 0.47344632768361583 # L
-
-length = len(ok[ok["permanent_cover_crop_non_native"].notnull()])
-len(ok[
-    (
-        # ((ok["petrol_vineyard"] +
-        # ok["diesel_vineyard"])>0) # H
-        ((ok["petrol_vineyard"] +
-        ok["diesel_vineyard"])<0)  # L
-    ) & 
-    (ok["permanent_cover_crop_non_native"].notnull())
-])/length
-# 0.5606242496998799 # H
-# 0.43937575030012005 # L
-
-length = len(ok[ok["permanent_cover_crop_volunteer_sward"].notnull()])
-len(ok[
-    (
-        # ((ok["petrol_vineyard"] +
-        # ok["diesel_vineyard"])>0) # H
-        ((ok["petrol_vineyard"] +
-        ok["diesel_vineyard"])<0)  # L
-    ) & 
-    (ok["permanent_cover_crop_volunteer_sward"].notnull())
-])/length
-# 0.4821897262842145 # H
-# 0.5178102737157855 # L
-
-length = len(ok[ok["annual_cover_crop"].notnull()])
-len(ok[
-    (
-        # ((ok["petrol_vineyard"] +
-        # ok["diesel_vineyard"])>0) # H
-        ((ok["petrol_vineyard"] +
-        ok["diesel_vineyard"])<0)  # L
-    ) & 
-    (ok["annual_cover_crop"].notnull())
-])/length
-# 0.5481425322213798 # H
-# 0.4518574677786202 # L
+# fuel:
+# bare_soil:
+#          high: 0.5573997233748271
+#          low: 0.4426002766251729
+# permanent_cover_crop_native:
+#          high: 0.5265536723163842
+#          low: 0.47344632768361583
+# permanent_cover_crop_non_native:
+#          high: 0.56062424969988
+#          low: 0.43937575030012005
+# permanent_cover_crop_volunteer_sward:
+#          high: 0.48218972628421447
+#          low: 0.5178102737157855
+# annual_cover_crop:
+#          high: 0.5481425322213799
+#          low: 0.4518574677786202
 
 #####################
 # We do electricity #
 #####################
 
-ok = df[
+df_slice = df[
     (df["electricity_vineyard"].notnull()) |
     (df["total_irrigation_electricity"].notnull())
 ]
 
-ok["electricity"] = \
-    ok["electricity_vineyard"].replace({np.nan: 0}).copy() +\
-    ok["total_irrigation_electricity"].replace({np.nan: 0}).copy()
+df_slice["electricity"] = \
+    df_slice["electricity_vineyard"].replace({np.nan: 0}).copy() +\
+    df_slice["total_irrigation_electricity"].replace({np.nan: 0}).copy()
 
-len(ok[ok["electricity"]>0])/len(ok) # H
-len(ok[ok["electricity"]<0])/len(ok) # L
+pr_root_node(df_slice, "electricity")
 # 0.35777126099706746 # L
 # 0.6367226061204343 # H
 
