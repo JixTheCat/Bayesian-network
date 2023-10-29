@@ -203,6 +203,8 @@ pr_root_node(df_slice, "electricity")
 # operating cost #
 ##################
 
+#  TODO: We could make a node structure and use recursive functions...
+
 ok = df[df["total_operating_costs"].notnull()]
 
 ok["petrol_vineyard"] = ok["petrol_vineyard"].replace({np.nan: 0})
