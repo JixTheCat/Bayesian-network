@@ -382,7 +382,7 @@
 - Parametarisation
 - dealing with utilities
 
-Korb and Nicholson also describe 8 common problems that occur during the construction of Bayesian. Korb and Nicholson suggest methods for overcoming this similarly to Pitchforth:
+Korb and Nicholson also describe 16 common problems that occur during the construction of Bayesian. Korb and Nicholson suggest methods for overcoming this similarly to Pitchforth:
 \subsection{The process}
 \subsubsection{Parameterizing before evaluating the structure}
 \begin{enumerate}
@@ -414,14 +414,18 @@ It is crucial to gain a clear understanding of the problem and its context. This
 \begin{enumerate}
         \item what do you want to reason about?
         \item What dont you know?
-        \item What infomration do you have?
+        \item What information do you have?
         \item What do you know?
 These questions are well addressed in prior research. The creation of baseline models showed strong linear relationships between many variables. The creation of XGBoosted trees uncovered the ability to well inform any particular variable but with no real causal structure or understandability. here we seek to pursue causality and link these variables together in a way that is more aligned with a decision support structure than purely as a predictive exercise.
+\subsubsection{Complexity without value}
+A very common impulse, when something isk nown about thep roblem, is to want to put it in the model. But including everything known, just because it is known, simply adds complexity to the model without adding any value (and in fact often reduces value). Instead, the knowledge engineer must focus on the problem:
+"Which of the known variables are most relevant to the problem?"
+- This issue in its the simplest form has attempted to be overcome through trying to mediate the workshop and inform experts of the potential probelsm that will come with a cumbersome model.
 \end{enumerate}
 \subsection{Structure - Nodes}
-\subsubsection{Getting the node values wrong. An exhaustive list below}
+The list below is each of the problems, which can be addressed together in some fashion as the approaches of solving them overlap.
 \begin{enumerate}
-        \item Node values aren't exhaustive
+        \item Getting the node values wrong
         \item Node values aren't exhaustive
         \item Node values aren't mutually exclusive
         \item Incorrect modelling of mutually exclusive outcomes
@@ -451,12 +455,16 @@ Sometimes it is unavoidable that a node is affected by many factors, or other no
 
 \end{enumerate}
 We have attempted to overcome this with two methods. A diverse and varried expert panel. Those participanting have experience in multiple vineyards as managers and other duties as well as the panel itself having varied manager/owners from different regions and scale. With some experts being more specialised in specific areas such as agro-chemicals.
-\subsubsection{Incoherent/Incoherent probabilities}
+\subsubsection{Inconsistent probabilities}
 The collection of probabilities for when the CPT is large can result in inconsistent probabilities. The collection of probabilities at different times or if probabilities are supplied by different experts can result in inconsistent probabilities as well.
 The use of desciptors such as very high or low can be of assistance \cite{vandergaag2013elicit}. In this study we overcame this through the use of worded response such as high and low. We then assigned probabilities to those broader cases. We had every expert agree upon each of the probabilities so that they could argue for or against any particular bias and so that the probabilities would even out to a more broader applicability, across all of the experts experiences.
 % \item Inconsistent "filling in" of large CPTs:
 -       -       - Being dead certain.
-
+\subsubsection{Incoherent probabilities (not summing to 1)}
+We used software that automatically detected incoherent probabilities when filling in the CPT values to overocme this problem.
+\subsubsection{Being dead certain}
+It is important that we limit over confidence (A quote form mark twain was used in the korb and Nicholson). 
+Our best defence against this was to use multiple experts with different experiences and to challenge them when something was certain. To ask why and to check in about their thoughts.
 
 \citep{morganUncertaintyGuideDealing1990}
 Two attributes of good elicitation process are:
