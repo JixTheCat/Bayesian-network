@@ -377,17 +377,115 @@
 
 % These are transcribed notes from Korb & Nicholson:
 
-Korb & Nicholson describe Knowledge Engineering with Bayesian Networks (KEBN) as ocurring in stages:
+Korb & Nicholson describe three major issues in the creation of Bayesian Networks though knowledge Engineering:
 - Generating Arc Structure
 - Parametarisation
 - dealing with utilities
 
-Pitchforth agrees with this style of structure naming these steps as:
+Korb and Nicholson also describe 8 common problems that occur during the construction of Bayesian. Korb and Nicholson suggest methods for overcoming this similarly to Pitchforth:
+\subsection{The process}
+\subsubsection{Parameterizing before evaluating the structure}
+\begin{enumerate}
+        \item Are the nodes in the BN the right ones?
+        \item Are the state spaces (values) for each node correct?
+        \item Are the arcs right?
+\end{enumerate}
+If the answer to any of the above questions is no; then the structure will not be sufficiently defined for the parametarisation of the CPT. In this paper we explicitly defined the structure of the BN prior to CPT parametarisation. This involved:
+\begin{enumerate}
+        \item exposing the panel to a strawman model in an intial workshop
+        \item Describing the model and the process invovled in defining the structure of a BN
+        \item The expert panel reviewing possible nodes and arcs, defining their own structures prior to a second workshop (with correspondence between expert panel members prior to the next workshop)
+        \item A second workshop to agree upon the final structure of the model
+\end{enumerate}
+\subsubsection{Trying to build the full model all at once}
+Korb & Nicholson say that it is nearly impossible to build a complex BN all in one go. They recommend:
+\begin{enumerate}
+        \item dividing models into subcomponents
+        \item breaking down the problem into a single target variable
+        \item reducing the scope of the problem
+        \item Setting a single time frame for the problem
+\end{enumerate}
+The strawman was presented as three subcomponents that pertained to the triple bottom line's environment, economy and social aspects.
+Within the first workshop it was agreed on by the expert panel to reduce the scope from a triple bottom line to only reviewing the environmental impacts of vineyards. This also reduced the BN to a single terminal node. It was further decided to create the BN as a single season to limit its complexity.
+
+\subsection{The problem}
+\subsubsection{Not understanding the problem context, complexity without value.}
+It is crucial to gain a clear understanding of the problem and its context. This can be seen as answering the following questions:
+\begin{enumerate}
+        \item what do you want to reason about?
+        \item What dont you know?
+        \item What infomration do you have?
+        \item What do you know?
+These questions are well addressed in prior research. The creation of baseline models showed strong linear relationships between many variables. The creation of XGBoosted trees uncovered the ability to well inform any particular variable but with no real causal structure or understandability. here we seek to pursue causality and link these variables together in a way that is more aligned with a decision support structure than purely as a predictive exercise.
+\end{enumerate}
+\subsection{Structure - Nodes}
+\subsubsection{Getting the node values wrong. An exhaustive list below}
+\begin{enumerate}
+        \item Node values aren't exhaustive
+        \item Node values aren't exhaustive
+        \item Node values aren't mutually exclusive
+        \item Incorrect modelling of mutually exclusive outcomes
+        \item Trying to model fuzzy categories
+        \item Confusing state and Probability
+        \item Confusion about what the node represents
+\end{enumerate}
+Two major strategies were employed to overcome these problems. Tying nodes explicitly to a data source that corroberated the definition and state in some manner as the node. For node s that did not have data set they were sought to be defined with an explicit explanation that experts agreed upon or had some external explanation such as legislation.
+\subsection{Structure Arcs}
+\subsubsection{Getting the arc directions wrong}
+Arc directions are commonly wrong for the following reasons:
+\begin{enumerate}
+        \item Modelling reasoning rather than causation
+        \item Inverting cause and effect
+        \item Missing variables
+\end{enumerate}
+To note: Korb and Nicholson do not actually suggest a method for overcoming these problems. There is an inherint risk in creating a model and not having knowledge of a missing variable or of a causation. It is important to acknowledge that there is always a possibility that causation is mixed up with reasoning, and that not all variables are always known.
+\subsubsection{Too many parents}
+Sometimes it is unavoidable that a node is affected by many factors, or other nodes. There are some methods to help overcome this such as divorcing, in which a node is created to capture the cumulative affects of several parents on a child. This technique was employed in the creation of the structure of the BN with the expert panel.
+\subsection{Parameters}
+\subsubsection{Experts estimates of probabilities are biased}
+-       -       - overconfidence
+-       -       - Anchoring
+-       -       - Availability
+-       -       - Inconsistent "filling in" of large CPTs
+\subsubsection{Incoherent probabilities (not summing to 1)}
+-       -       - Being dead certain.
+
+
+
+- 
+
+
+Boneh 2010 describe Knowledge Engineering with Bayesian Networks (KEBN) as occurring in a 4 stage life cycle:
+- Bayesian Network Structure
+- Probability Parameters
+- Decision Structure
+- Utilities Preference
+
+Pitchforth \citep{pitchforthProposedValidationFramework2013} agrees with this style of structure naming these steps as:
 - Structure
 - Discretisation
 - Parametarisation
 - Model behaviour
 - Validation
+
+Korb & Nicholson have a similar view to Pitchforth. utilising a waterfall style developemental approach which include 5 stages:
+- Building the BN
+-       - Structure
+-       - Parameters
+-       - Preferences
+- Validation
+-       - Sensitivity Analysis
+-       - Accuracy testing
+- Field testing
+-       - Alpha/Beta testing
+-       - Acceptance testing
+- Industrial use
+-       - Collection of Statistics
+- Refinement
+-       - Updating procedures
+-       - Regression testing
+
+
 
 Where discretisation and validation are additional steps to assign intervals to continuous factors (discretisation) and to ensure the models appropriateness (validation)
 
