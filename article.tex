@@ -377,7 +377,7 @@
 
 % These are transcribed notes from Korb & Nicholson:
 
-Korb & Nicholson describe three major issues in the creation of Bayesian Networks though knowledge Engineering:
+\citep{korbBayesianArtificialIntelligence2011} Korb & Nicholson describe three major issues in the creation of Bayesian Networks though knowledge Engineering:
 - Generating Arc Structure
 - Parametarisation
 - dealing with utilities
@@ -443,18 +443,30 @@ To note: Korb and Nicholson do not actually suggest a method for overcoming thes
 Sometimes it is unavoidable that a node is affected by many factors, or other nodes. There are some methods to help overcome this such as divorcing, in which a node is created to capture the cumulative affects of several parents on a child. This technique was employed in the creation of the structure of the BN with the expert panel.
 \subsection{Parameters}
 \subsubsection{Experts estimates of probabilities are biased}
--       -       - overconfidence
--       -       - Anchoring
--       -       - Availability
--       -       - Inconsistent "filling in" of large CPTs
-\subsubsection{Incoherent probabilities (not summing to 1)}
+\begin{enumerate}
+        \item Overconfidence: The attribution of higher than justifiable probabilities to nodes/events.
+        \indent The tendency to attribute higher than justifiable probabilities (\citep{lichtensteinCalibrationProbabilitiesState1982} 
+        \item Anchoring: The tendency towards higher/lower based off of an arbitrary point of comparison. "Anchoring" people at a higher or lower than normal prediction because of some assumption or example  \citep{kahnemanPsychologyPrediction1973}.
+        \item Availability: The assessing of an event as more probable than is justifiable becaues it is more memorable or noticeable \citep{tverskyJudgmentUncertaintyHeuristics1974}.
+
+\end{enumerate}
+We have attempted to overcome this with two methods. A diverse and varried expert panel. Those participanting have experience in multiple vineyards as managers and other duties as well as the panel itself having varied manager/owners from different regions and scale. With some experts being more specialised in specific areas such as agro-chemicals.
+\subsubsection{Incoherent/Incoherent probabilities}
+The collection of probabilities for when the CPT is large can result in inconsistent probabilities. The collection of probabilities at different times or if probabilities are supplied by different experts can result in inconsistent probabilities as well.
+The use of desciptors such as very high or low can be of assistance \cite{vandergaag2013elicit}. In this study we overcame this through the use of worded response such as high and low. We then assigned probabilities to those broader cases. We had every expert agree upon each of the probabilities so that they could argue for or against any particular bias and so that the probabilities would even out to a more broader applicability, across all of the experts experiences.
+% \item Inconsistent "filling in" of large CPTs:
 -       -       - Being dead certain.
 
 
-
+\citep{morganUncertaintyGuideDealing1990}
+Two attributes of good elicitation process are:
+\begin{enumerate}
+        \item The expert should be apprised of what is known about the process, especially the nearly universal tendency to overcomefidence and other forms of bias. In order to avoid some problems, values should be elicited in random order and the expert not given feedback on how the different values fit together until a complet set has been elicited.
+        \item The elicitation process is not simply one of requesting and recording numbers but also one of the refining the definitions of variables and terms to be used in the model. What values are elicited depends directly upon the interpretation of terms and these should be made as explicit as possible and recorded during the elicitation. This is part of the process management described earlier.
+\end{enumerate}
 - 
 
-
+\citep{Boneh2021} Boneh, T. (2010). Ontology and Bayesian decision networks for supporting the meterological forecasting process. Ph. D thesis, Clayton School of infomration technology, Monash university
 Boneh 2010 describe Knowledge Engineering with Bayesian Networks (KEBN) as occurring in a 4 stage life cycle:
 - Bayesian Network Structure
 - Probability Parameters
