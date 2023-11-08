@@ -66,7 +66,7 @@
 			<state id="State0" />
 			<state id="State1" />
 			<parents>Tractor_Passes Conventional_vs_Organic Soil_type</parents>
-			<probabilities>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</probabilities>
+			<probabilities>0.1 0.9 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</probabilities>
 		</cpt>
 		<cpt id="Water_Licence">
 			<state id="State0" />
@@ -111,19 +111,19 @@
 			<state id="High" />
 			<state id="Low" />
 			<parents>Electricity Fuel Fertiliser</parents>
-			<probabilities>0.9 0.1 0.9 0.1 0.6 0.4 0.6 0.4 0.8 0.2 0.8 0.2 0.05 0.95 0.05 0.95</probabilities>
+			<probabilities>0.9 0.1 0.4 0.6 0.6 0.4 0.6 0.4 0.8 0.2 0.3 0.7 0.05 0.95 0.05 0.95</probabilities>
 		</cpt>
 		<cpt id="Operating_Footprint">
 			<state id="High" />
 			<state id="Low" />
 			<parents>Electricity Fuel water Fertiliser</parents>
-			<probabilities>0.9 0.1 0.9 0.1 0.3 0.7 0.3 0.7 0.4 0.6 0.4 0.6 0.2 0.8 0.2 0.8 0.8 0.2 0.8 0.2 0.6 0.4 0.6 0.4 0.3 0.7 0.3 0.7 0.1 0.9 0.1 0.9</probabilities>
+			<probabilities>0.9 0.1 0.2 0.8 0.3 0.7 0.3 0.7 0.4 0.6 0.4 0.6 0.2 0.8 0.2 0.8 0.8 0.2 0.8 0.2 0.6 0.4 0.6 0.4 0.3 0.7 0.3 0.7 0.1 0.9 0.1 0.9</probabilities>
 		</cpt>
 		<cpt id="Soil_Compaction">
 			<state id="State0" />
 			<state id="State1" />
 			<parents>Tractor_Passes Soil_type</parents>
-			<probabilities>0.1 0.9 0.1 0.9 0.2 0.8 0.2 0.8</probabilities>
+			<probabilities>0.1 0.9 0.2 0.8 0.7 0.3 0.2 0.8</probabilities>
 		</cpt>
 		<cpt id="Irrigation_Leaching">
 			<state id="State0" />
@@ -171,7 +171,7 @@
 				<interior color="00dc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>293 141 363 178</position>
+				<position>272 138 342 175</position>
 				<barchart width="128" height="64" />
 			</node>
 			<node id="Electricity">
@@ -217,7 +217,7 @@
 				<interior color="ff0000" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>430 89 498 131</position>
+				<position>445 33 513 75</position>
 			</node>
 			<node id="Market_Supply_and_Demmand">
 				<name>Market Supply and Demmand</name>
@@ -231,7 +231,7 @@
 				<interior color="ffcc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>603 247 698 306</position>
+				<position>643 284 738 343</position>
 			</node>
 			<node id="Canopy_Management_Practices">
 				<name>Canopy Management Practices</name>
@@ -252,14 +252,14 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>700 77 783 128</position>
+				<position>619 70 702 121</position>
 			</node>
 			<node id="Irrigation_Leaching">
 				<name>Irrigation Leaching  + Water_Efficiency</name>
 				<interior color="00ccff" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>303 530 440 609</position>
+				<position>370 531 507 610</position>
 			</node>
 			<node id="Water_Quality">
 				<name>Water Quality</name>
@@ -273,7 +273,7 @@
 				<interior color="00ccff" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>306 259 392 312</position>
+				<position>281 262 367 315</position>
 			</node>
 			<node id="Soil_Compaction">
 				<name>Soil Compaction</name>
@@ -294,7 +294,7 @@
 				<interior color="ffcc00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>499 36 601 99</position>
+				<position>595 174 697 237</position>
 			</node>
 			<node id="Soil_type">
 				<name>Soil type</name>
@@ -308,7 +308,7 @@
 				<interior color="ff0000" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>499 108 580 158</position>
+				<position>521 30 602 80</position>
 			</node>
 			<node id="Yield_and_Quality_targets">
 				<name>Yield and Quality targets</name>
@@ -322,14 +322,14 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>788 23 877 78</position>
+				<position>723 104 812 159</position>
 			</node>
 			<node id="Soil_management">
 				<name>Soil management</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>714 150 806 207</position>
+				<position>751 204 843 261</position>
 			</node>
 			<textbox>
 				<caption>Local?</caption>
@@ -346,32 +346,42 @@
 			<textbox>
 				<caption>External Influences</caption>
 				<font color="000000" name="Arial" size="8" bold="true" />
-				<position>444 169 545 181</position>
+				<position>468 87 569 99</position>
 			</textbox>
 			<textbox>
 				<caption>Also cover cropping</caption>
 				<font color="000000" name="Arial" size="8" />
-				<position>735 187 787 211</position>
+				<position>777 247 829 271</position>
+			</textbox>
+			<textbox>
+				<caption>important</caption>
+				<font color="000000" name="Arial" size="8" bold="true" />
+				<position>335 633 387 645</position>
 			</textbox>
 			<arcformat parent="Weather_Conditions" child="Water_Price" width="2" color="ff9900" />
+			<arcformat parent="Conventional_vs_Organic" child="Fertiliser" width="2" color="993366" />
+			<arcformat parent="Soil_type" child="Fertiliser" width="2" color="993366" />
 			<arcformat parent="Canopy_Management_Practices" child="Pest_and_Disease_Management" width="2" color="ff9900" />
 			<arcformat parent="Weather_Conditions" child="Pest_and_Disease_Management" width="2" color="ff9900" />
+			<arcformat parent="Water_Price" child="water" width="2" color="ff9900" />
+			<arcformat parent="Weather_Conditions" child="water" width="2" color="ff9900" />
 			<arcformat parent="Canopy_Management_Practices" child="Fuel" width="2" color="ff9900" />
 			<arcformat parent="Pest_and_Disease_Management" child="Fuel" width="2" color="ff9900" />
 			<arcformat parent="Tractor_Passes" child="Fuel" width="1" color="0000ff" />
-			<arcformat parent="Water_Price" child="water" width="2" color="ff9900" />
-			<arcformat parent="Weather_Conditions" child="water" width="2" color="ff9900" />
 			<arcformat parent="Electricity_Price" child="Electricity" width="2" color="ff9900" />
 			<arcformat parent="Electricity_Source" child="Electricity" width="2" color="ff9900" />
 			<arcformat parent="Electricity" child="Emissions" width="1" color="808080" />
 			<arcformat parent="Fuel" child="Emissions" width="1" color="808080" />
+			<arcformat parent="Fertiliser" child="Emissions" width="2" color="993366" />
 			<arcformat parent="Electricity" child="Operating_Footprint" width="1" color="000000" />
 			<arcformat parent="Fuel" child="Operating_Footprint" width="1" color="000000" />
 			<arcformat parent="water" child="Operating_Footprint" width="1" color="000000" />
+			<arcformat parent="Fertiliser" child="Operating_Footprint" width="2" color="993366" />
 			<arcformat parent="Tractor_Passes" child="Soil_Compaction" width="1" color="0000ff" />
 			<arcformat parent="Operating_Footprint" child="Environmental" width="1" color="000000" />
 			<arcformat parent="Emissions" child="Environmental" width="1" color="000000" />
-			<arcformat parent="Soil_type" child="Soil_management" width="1" color="993366" />
+			<arcformat parent="Soil_type" child="Soil_management" width="2" color="993366" />
+			<arcformat parent="Soil_type" child="Soil_Compaction" width="2" color="993366" />
 		</genie>
 	</extensions>
 </smile>
