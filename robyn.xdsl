@@ -192,14 +192,14 @@
 				<interior color="339966" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>177 485 272 544</position>
+				<position>176 493 271 552</position>
 			</node>
 			<node id="Soil_organic_carbon_management">
 				<name>Soil organic carbon management</name>
 				<interior color="339966" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>284 573 379 632</position>
+				<position>239 588 334 647</position>
 			</node>
 			<node id="Renewable_energy">
 				<name>Renewable energy</name>
@@ -220,14 +220,14 @@
 				<interior color="339966" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>433 533 521 588</position>
+				<position>448 552 536 607</position>
 			</node>
 			<node id="Water_use_">
 				<name>Water use </name>
 				<interior color="339966" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>560 461 624 501</position>
+				<position>556 467 620 507</position>
 			</node>
 			<node id="Electricity_price">
 				<name>Electricity price</name>
@@ -255,21 +255,21 @@
 				<interior color="339966" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>770 260 838 302</position>
+				<position>799 260 867 302</position>
 			</node>
 			<node id="Water_licences">
 				<name>Water licences</name>
 				<interior color="339966" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>679 387 762 438</position>
+				<position>724 410 807 461</position>
 			</node>
 			<node id="Water_scarcity">
 				<name>Water scarcity</name>
 				<interior color="339966" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>816 387 897 437</position>
+				<position>833 369 914 419</position>
 			</node>
 			<node id="Water_use_efficiency">
 				<name>Water use efficiency</name>
