@@ -8,7 +8,6 @@ def calculate_LH(x_L, x_H, weights):
 def create_boolean_matrix(x_L, x_H, num_weights):
     # Generate all possible combinations of True and False for the given number
     all_combinations = list(itertools.product([False, True], repeat=num_weights))
-    list(itertools.product([False, True], repeat=3))
     # Create a boolean matrix with each combination as a row
     boolean_matrix = [[x_L if bit else x_H for bit in combination] for combination in all_combinations]
 
@@ -23,7 +22,7 @@ def calculate_CPT(weights, x_L, x_H):
     return sum(np.transpose(np.array([weights]*len(boolean_matrix))*boolean_matrix))
 
 if __name__ == "__main__":
-    weights = [2,3,5]
+    weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     x_L = 0.1
     x_H = 0.9
     matrix = calculate_CPT(weights, x_L, x_H)
