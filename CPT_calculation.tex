@@ -1,0 +1,28 @@
+This method utilises interpolation between two tethered ends. The ends represent the two cases, all factors being true/contributing and all factors being false/not contributing. Each factor is attributed a weight that indicates its overall influence; for this application the participants decided to score a factors influence out of 10.
+
+Using this method, we calculate any given probability, using
+
+\begin{equation}
+p=x\sum_{i}^{n} + y\sum_{m}^{i} 
+\end{equation},
+
+for n number of true or contributing factors and m false or not contributing factors. We know the solutions when there are only true ($p_t$) or only false ($p_f$). Where,
+
+\begin{equation}
+p_t=x\sum_{i}^{n} 
+\text{ and }
+p_f=y\sum_{m}^{i}
+\end{equation}.
+
+From here we derive values for $x$ and $y$ using the sum of the provided weights. For example if the weights were 2, 3 and 5. And, $p_t=0.6$ and $p_f=0.5$. We have:
+
+\begin{equation}
+p_t=x\sum_{i}^{n}\\
+0.6=x(2+3+5)
+x=0.05\\
+\text{ and }
+p_t=x\sum_{i}^{n}
+0.6=x(2+3+5)
+x=0.05
+\end{equation}
+

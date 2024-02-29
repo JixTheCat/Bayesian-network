@@ -3,14 +3,18 @@
 %%%%%%%%%%%%%%%
 
 % What is your topic?
+The topic of this paper is the environmental sustainability of vineyards within Australia.
 % What is the context for your reserach?
+The context of this research is that the Australian wine sector in general has gone through many tribulations due to economic, environmental and social pressures. Previously we attempted to highlight areas of concern through the use of statistical models, which were able to show strong correlations between various environmental and economic factors. However, discussions with industry and experts helped to identify that these relationships were not entirely causal, with some management and process of winegrowers obfuscating effects by directly contracting them. A key example of this was the lack of water use change during drought periods due to various methods that were used to obtain either more water or to circumvent the detrimental effects of lacking water resources.
 % What do you want to achieve?
+The identification of key factors; and their relation and contribution, direct or indirect, to the environmental sustainability of Australian winegrowing.
 % Are there any relationships you want to explore?
+This is key to this study. The relationships are in many ways more important to the research than the effects.
 
 %%%%%%%%%%%%%%%%
 % Working title
 %
-\title{Measuring sustainability with Australian vine growers using a Bayesian Network}
+\title{Measuring environmental sustainability with Australian vine growers using Bayesian Networks}
 
 % Description
 % NB Avoid titles along the lines of: “Effects of ...”, “The role of ...”, etc.  Be specific about the effect and its significance so that your reader knows what is on offer.
@@ -59,33 +63,41 @@
 %%%%%%%%%%%%
 
 % TODO: review the following questions:
-% What are the key factors/indicators of sustainability in the australian winegrowing industry?
-%  How can we measure and relate the factors that contribute to sustainability in the australian winegrowing industry?
+What are the key factors/indicators of environmental  sustainability in the australian winegrowing industry?
+How can we measure and relate the factors that contribute to sustainability in the australian winegrowing industry?
+What are the key factors that relate directly to environmental sustainability, and what in turn are the factors that contribute to these (and thus indirectly to environmental sustainability)?
 
 % Things to consider
 %
 % Why is the knowledge important?
+This was identified as a gap within our own prior research and is helpful in creating a basis for scenario assessment and comparison. This will allow a greater understanding of how these factors change within different scenarios; whether that be climate, region, business goal.
 % What is the significance?
+The significance is to bridge the gap between correlations and data to causal relationships. To inform growers using factors that are within their control, or how factors within their control are indfuenced by natural phenomenon.
 % How will the findings be utilised?
+These findings will be used to help inform the wider winegrowing community of what factors are most significant to environmental outcomes, and how they interact with one another. In practice this study aids a grower through informing them of how decisions impact environmental outcomes and how changing circumstance contribute to these factors and outcomes.
 % What improvements may be derived from this result?
+A wider more informed understanding of contributing factors to environmental impact and how different factors relate to one another to contribute to these findings.
 % Are the terms well defined?
-% Is it doable? (cost & ethics)
-%       Can you finish it in time?
+The terms are well defined. This was a key outcome of this project.
 % Do experts think your question is important/relevant/doable?
+Experts helped to guide this decision, and changed the trajectory of this project in response to data presented and how well they believed they could inform the study.
 
 % What is the nature of your question?
 %         who, what, where, when, why, how?
-
+What are the key factors that contribute to environmental impact within the Australian winegrowing industry?
+How do these key factors relate to each other and what are the factors that influence them?
+What are the decision that can be made by growers that can change the environmental outcomes of their vineyards?
+How do these factors chagne across well understood scenarios?
 % You can have more than one question.
 
 % What is the most important question your paper will pose?
-%
+What are the key factors to environmental impact within the Australian winegrowing industry, and how are these factors related?
 % NB It is essential that your answer is framed as a direct question.  Your response must end with a question mark.
 
 % Why is the question/issue/problem worth examining?
-%
+By examining the key and relevant factors to vineyards' environmental impacts we can better prepare for future changes in climate pressure, economic restrictions; that is we can better use this model to assess the potential environmental outcomes of the wine industry, as informed by experts, given potential upcoming challenges or changes.
 % Briefly outline the problem you are tackling and explain why the problem is important to knowledge in general.  “Nothing much is known” is not sufficient justification by itself.  You have to show why the gap in knowledge is important.  Expect to draw heavily on your reading of the literature in framing your answer but do not get into detail of  author and year.
-
+The collection of data and subsequent statistical analytics can only go so far as to fill the gap between cause and effects within wiengrowing. This research helps to fully understand the relevant decisions being made, how they are informed and what the known outcomes are. This helps to align these results to data collected to show stronger causal relationships than pure correlative, or hypothetical postulations of statistical analysis.
 %%%%%%%%%%
 % Answer %
 %%%%%%%%%%
@@ -374,6 +386,30 @@
 
 
 \section{Methods}
+
+Methods for measuring sustainability comprise a wide variety of approaches with the use of index systems being a common approach \citep{gehringerMappingSustainabilityMeasurement2024}. Other approaches utilise the identification of key factors use their measurements as a proxy to indicate the impact to or health of the consequent environment #TODO:Ref. The use of sustainability 
+\citep{klemesAssessingMeasuringEnvironmental2015}
+measurement systems and tools can help to manage risk and promote resilience for industries through identifying sustainable goals and the key factors of interest that contribute to the success of these goals.
+\citep{beckerSustainabilityScienceManaging2024}.
+Within this study we focus on measuring key factors and establishing how they interact, and ultimately effect the surrounding environment.
+
+In agriculture, the consideration of environment is critical to the success of the industry. The question of environmental sustainability has continued to grow in importance as further pressures such as climate change impact the industry.
+TODO:reference
+When sustainability is considered with reference to the environment perspectives can vary, not only due to physical differences but also due to priorities driven by a myriad of perspectives such as consumers, government and industry.
+It is important to consider many perspectives or be explicit about the perspectives consulted. It is shown that in Switz that the use of collaborative appraoches in which people can come to agreeance on particular significances and their effects it is helpful to \autocite{dichiaraCollaborativeApproachAchieving2024}
+In Australia, views of both industry and consumer are united in their tendency towards the priority to improve/regulate resource inputs such as chemical use and be mindful of \autocite{dumbrellComparingAustralianPublic2024}
+
+To include perspectives from industry experts and to maintain a causal structure we used Bayesian Networks. This allows the illustration of the model in a graphical sense as well as the ability to incorporate data and abstractions from experts together. 
+
+A Bayesian Network is a graphical model, being comprised of nodes and edges. Uniquely, Bayesian Networks contain the operation within the nodes themselves instead of across the edges. This is done in the form probability tables, which are informed by the edges. There is simplicity within the calculations done within a node, as it is fundamentally achieved through sum and division operations; however great complexity is introduced when a node is informed by many parents, of which may also have many parents. The change in a single parent node effects all children of the network; often resulting in intractable systems, especially when nodes may have numerous classes. The strength of this complexity over simple operations, is the ability to encapsulate incredibly complex systems with simple definitions.
+
+\subsection{Elicitation}
+
+The Bayesian Network was constructed using a mixture of data and expert elliciation.
+
+The structure of the 
+
+
 \citep{mayfieldDesigningExpertledBayesian2023} -> this reference also uses a similar method which we can cite alongside everything else.
 % These are transcribed notes from Korb & Nicholson:
 
@@ -383,7 +419,7 @@
 - dealing with utilities
 
 Korb and Nicholson also describe 16 common problems that occur during the construction of Bayesian. Korb and Nicholson suggest methods for overcoming this similarly to Pitchforth:
-\subsection{The process}
+\subsubsection{The process}
 \subsubsection{Parameterizing before evaluating the structure}
 \begin{enumerate}
         \item Are the nodes in the BN the right ones?
@@ -505,12 +541,14 @@ Korb & Nicholson have a similar view to Pitchforth. utilising a waterfall style 
 -       - Updating procedures
 -       - Regression testing
 
-
-
 Where discretisation and validation are additional steps to assign intervals to continuous factors (discretisation) and to ensure the models appropriateness (validation)
 
 With validation incorporating the expert scrutiny of the models begaviour for scenarios, as well as comparing this to both data and other literature.
 
+
+\subsection{Structure and Conditional Probabilities}
+
+\subsection{Validation}
 
 
 \citep{korbBayesianArtificialIntelligence2011}
@@ -520,13 +558,70 @@ With validation incorporating the expert scrutiny of the models begaviour for sc
 
 % Abstract
 
-Title:
+1. Introduction to Methodology
+
+    Brief overview of the research approach and the rationale behind using a Bayesian Network (BN) model for sustainability assessment in viticulture.
+    Mention of the collaborative expert elicitation process and the sequential workshops that shaped the model development.
+
+2. Identification of Sustainability Indicators
+
+    Description of the process for selecting sustainability indicators, including the use of data from Sustainable Wine Australia.
+    Criteria for indicator selection, focusing on relevance to environmental, economic, and social dimensions of sustainability in winegrowing.
+
+3. Expert Elicitation Process
+
+    Overview of the expert panel composition and the expertise represented.
+    Objectives and structure of the expert elicitation process, highlighting the series of workshops conducted.
+
+Workshop 1: Variable Review and Straw Man Model Introduction
+
+    Objectives: To agree on the sustainability indicators and introduce the initial straw man model.
+    Activities: Discussion on indicator relevance and definitions; presentation of the straw man model.
+    Outcomes: Agreement on initial set of variables and conceptual understanding of the model's direction.
+
+Workshop 2: Model Structure Refinement and Interpolation Method Introduction
+
+    Objectives: To refine the model's structure and address the complexity of CPTs through an interpolation method.
+    Activities: Examination of variable relationships; identification of complex CPTs; proposal of the linear interpolation method.
+    Outcomes: Revised model structure; decision to develop and implement the interpolation method for complex CPTs.
+
+Workshop 3: Finalization of CPTs and Case Study Selection
+
+    Objectives: To finalize CPT values using the interpolation method and select a case study for model application.
+    Activities: Presentation and application of the interpolation method; finalization of CPT values; selection of the Coonawarra wine region for the case study.
+    Outcomes: Completion of model parameterization; selection of case study region emphasizing the model's practical application.
+
+4. Development and Implementation of the Interpolation Method
+
+    Detailed explanation of the linear interpolation method developed to manage the complexity of CPTs for variables with extensive connections.
+    Justification for choosing this method and its anticipated impact on the model's usability and accuracy.
+
+5. Case Study Application: Coonawarra Wine Region
+
+    Rationale for selecting the Coonawarra wine region as a case study to apply and test the BN model.
+    Brief description of how the model was applied to this specific context, including any regional data used and adjustments made for the case study.
+
+6. Model Validation
+
+    Overview of the validation process employed to ensure the accuracy and reliability of the BN model.
+    Description of internal and external validation measures, including expert review and comparison with independent datasets.
+
+7. Conclusion
+
+    Summary of the methodological approach, emphasizing the collaborative expert elicitation process and the innovative solutions developed for model construction and parameterization.
+    Brief mention of the significance of the methodology for sustainability assessment in viticulture and potential implications for future research and practice.
+
+
+
+
+\section{Title}
 A Bayesian Network Model based decision support tool for Environmental Sustainability in the Australian Winegrowing Industry.
 
-Abstract:
+\section{Abstract}
 
 The assessment of environmental sustainability in the Australian winegrowing industry remains a complex issue involving changing and compounding factors. To address this, we developed a Bayesian Network (BN) using data and expert elicitation to summarise the key factors, their relationships, and how they come together to influence vineyards' environmental outcomes. The study leveraged diverse expert perspectives to mitigate biases in probability estimations and promote discourse.
 
 The development of the BN involved an iterative process, including variable selection and definition, the defining of model structure and variable relationships, and finally the determining of relationship significance through probabilities. Expert input was pivotal in structuring the BN model, ensuring relevance to industry, and how a variables influence changed across regions and scenarios.
 
 Due to the possible variation in any given vineyard scenario the BN model was expanded to review a case study of the Coonawarra wine region in South Australia. This highlighted regional differences between growers whilst also maintaining the significance of industry-wide concerns such as the use of agrochemicals. To promote accessibility and scrutiny the BN was further developed into an application, allowing the possibility of further industry and stakeholder feedback; enabling a systematic re-evaluation of significant factors to the wine growing industry and how they change over time.
+

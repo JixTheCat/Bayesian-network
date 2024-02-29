@@ -74,5 +74,6 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/bryce/repositories/Bayesian-network/.venv/lib/python3.10/site-packages/pyarrow/src/arrow/python"
 }
