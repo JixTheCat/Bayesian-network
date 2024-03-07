@@ -399,9 +399,20 @@ The use of a Bayesian Network allowed the ability to include perspectives from i
 
 \subsection{Elicitation}
 
-The Bayesian Network was constructed using a mixture of data and expert elicitation. Elicitation was conducted through a series of workshops. Each workshop had a primary focus such as: scope, structure and parameterisation; however, prior concepts were built upon iteratively. The first important establishment was the scope of the network, and how well it could or couldn't be adapted to the wide variety of circumstances within the Australian winegrowing industry. Following this was the discussion around the structure of the network, entailing the detailing of relationships and stricter definitions of each factor to one another. Finally, variables were paramatised using conditional probabilities.
+The Bayesian Network was constructed using a mixture of data and expert elicitation. The format followed recommendations from \cite{korbBayesianArtificialIntelligence2011,pitchforthProposedValidationFramework2013}. Where, we progressed from problem definition, structure, parametarisation to validation. Experts were initially informed regarding the process to establish an understanding of what each step would be comprise of, as well as highlighting common pitfalls and how we would address them. With common problems being listed by authors such as:
+\begin{enumerate}
+        \item Not understanding the problem context, complexity without value.
+        \item Getting arc directions wrong
+        \item too many parent nodes
+        \item Bias expert estimates
+        \item Inconsistent probabilities
+        \item Being absolutely certain
+\end{enumerate}
+To address these issues, experts were kept well-informed of them as well as variable definitions and problem scope. Open communication was maintained during the entire process to help answer questions regarding the model, process, and to maintain transparency. Communication included in-person and electronic one-on-ones and group sessions; with elicitation of expert knowledge being primarily conducted through a series of workshops with the panel industry experts
 
+Each workshop had a primary focus such as: scope, structure or parameterisation; with, prior concepts being built upon iteratively. The first important establishment was the scope of the network, and how well it could or couldn't be adapted to the wide variety of circumstances within the Australian winegrowing industry. Following this was the discussion around the structure of the network, entailing the detailing of relationships and stricter definitions of each factor to one another. Finally, variables were paramatised using conditional probabilities.
 
+To introduce new concepts and how they interacted, preliminary simplified versions (strawman examples) were provided to experts; with the intention of these examples to be examined, critiqued, and improved upon. The use of these strawman examples enabled a more engaged and effective review process, in which experts were initially able to interact with how these concepts would fit together with other elements of the model they had developed up to that point. The strawman examples were crafted from a foundation of literature and data to offer a basic, layman's understanding of key factors and concepts, serving as a starting point for further development and discussion. 
 
 % \citep{mayfieldDesigningExpertledBayesian2023} -> this reference also uses a similar method which we can cite alongside everything else.
 % % These are transcribed notes from Korb & Nicholson:
@@ -411,8 +422,8 @@ The Bayesian Network was constructed using a mixture of data and expert elicitat
 % - Parametarisation
 % - dealing with utilities
 
-Each element within the elicitation process was iteratively 
-Elicitation was conduct ach  Although workshops focussed on a single issue, it was important to continually address each issue in an iterative fashion. The approach to ensuring a sound and sane network, was to directly address common issues that occur during the construction of Bayesian Networks using ellicitation as outlined by #TODO: Korb and Nicholson. These issues are similarly highlighted by #:TODO: Pitchforth.
+% Each element within the elicitation process was iteratively 
+% Elicitation was conduct ach  Although workshops focussed on a single issue, it was important to continually address each issue in an iterative fashion. The approach to ensuring a sound and sane network, was to directly address common issues that occur during the construction of Bayesian Networks using ellicitation as outlined by #TODO: Korb and Nicholson. These issues are similarly highlighted by #:TODO: Pitchforth.
 
 Transparency with the expert panel was a key ingredient with this approach, highlighting explicitly what these problems were and how we would overcome them. This included agreeing upon definitions of each node before connecting edges between them.
 
@@ -452,7 +463,7 @@ It is crucial to gain a clear understanding of the problem and its context. This
         \item What do you know?
 These questions are well addressed in prior research. The creation of baseline models showed strong linear relationships between many variables. The creation of XGBoosted trees uncovered the ability to well inform any particular variable but with no real causal structure or understandability. here we seek to pursue causality and link these variables together in a way that is more aligned with a decision support structure than purely as a predictive exercise.
 \subsubsection{Complexity without value}
-A very common impulse, when something isk nown about thep roblem, is to want to put it in the model. But including everything known, just because it is known, simply adds complexity to the model without adding any value (and in fact often reduces value). Instead, the knowledge engineer must focus on the problem:
+A very common impulse, when something is known about the problem, is to want to put it in the model. But including everything known, just because it is known, simply adds complexity to the model without adding any value (and in fact often reduces value). Instead, the knowledge engineer must focus on the problem:
 "Which of the known variables are most relevant to the problem?"
 - This issue in its the simplest form has attempted to be overcome through trying to mediate the workshop and inform experts of the potential probelsm that will come with a cumbersome model.
 \end{enumerate}
