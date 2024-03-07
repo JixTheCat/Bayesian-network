@@ -387,53 +387,51 @@ The collection of data and subsequent statistical analytics can only go so far a
 
 \section{Methods}
 
-Methods for measuring sustainability comprise a wide variety of approaches with the use of index systems being a common approach \citep{gehringerMappingSustainabilityMeasurement2024}. Other approaches utilise the identification of key factors use their measurements as a proxy to indicate the impact to or health of the consequent environment #TODO:Ref. The use of sustainability 
-\citep{klemesAssessingMeasuringEnvironmental2015}
-measurement systems and tools can help to manage risk and promote resilience for industries through identifying sustainable goals and the key factors of interest that contribute to the success of these goals.
-\citep{beckerSustainabilityScienceManaging2024}.
-Within this study we focus on measuring key factors and establishing how they interact, and ultimately effect the surrounding environment.
+In agriculture, the consideration of environment is critical to the success of the industry. The question of environmental sustainability has continued to grow in importance as further pressures such as climate change impact the industry TODO:reference. The question of sustainability entails the consideration of a multitude of factors, not only due to physical differences between locations/habitats but also due to priorities driven by a myriad of perspectives such as consumers, ecosystems, government and industry. It is important to consider each factor with respect to its relevant perspectives, and to be explicit about accompanying definitions of factors and perspectives.
 
-In agriculture, the consideration of environment is critical to the success of the industry. The question of environmental sustainability has continued to grow in importance as further pressures such as climate change impact the industry.
-TODO:reference
-When sustainability is considered with reference to the environment perspectives can vary, not only due to physical differences but also due to priorities driven by a myriad of perspectives such as consumers, government and industry.
-It is important to consider many perspectives or be explicit about the perspectives consulted. It is shown that in Switz that the use of collaborative appraoches in which people can come to agreeance on particular significances and their effects it is helpful to \autocite{dichiaraCollaborativeApproachAchieving2024}
-In Australia, views of both industry and consumer are united in their tendency towards the priority to improve/regulate resource inputs such as chemical use and be mindful of \autocite{dumbrellComparingAustralianPublic2024}
+To address the significant consideration of different perspectives, collaborative efforts are a useful tool to come to agreeance upon the significance of different factors and their contribution to sustainable outcomes \citep{dichiaraCollaborativeApproachAchieving2024}. In Australia, views of both industry and consumer are united in their priority to improve and regulate resources inputs such as chemical use and be mindful of \citep{dumbrellComparingAustralianPublic2024}
 
-To include perspectives from industry experts and to maintain a causal structure we used Bayesian Networks. This allows the illustration of the model in a graphical sense as well as the ability to incorporate data and abstractions from experts together. 
-
+Methods for measuring sustainability comprise a wide variety of approaches with the use of index systems being common \citep{gehringerMappingSustainabilityMeasurement2024}. Other approaches utilise the identification of key factors, and utilise their measurements as a proxy to indicate the impact to, or the health of, the environment #TODO:Ref. The measuring of sustainability through the use of these tools can help to manage risk and promote resilience for industries through identifying sustainable goals and the key factors of interest that contribute to the success of these goals \citep{klemesAssessingMeasuringEnvironmental2015} \citep{beckerSustainabilityScienceManaging2024}. Within this study we focus on measuring key factors and establishing how they interact, and ultimately effect the surrounding environment; the chosen method to achieve this in this study is through a Bayesian Network.
+#TODO: The definition of a Bayesian network needs to be way more polished
 A Bayesian Network is a graphical model, being comprised of nodes and edges. Uniquely, Bayesian Networks contain the operation within the nodes themselves instead of across the edges. This is done in the form probability tables, which are informed by the edges. There is simplicity within the calculations done within a node, as it is fundamentally achieved through sum and division operations; however great complexity is introduced when a node is informed by many parents, of which may also have many parents. The change in a single parent node effects all children of the network; often resulting in intractable systems, especially when nodes may have numerous classes. The strength of this complexity over simple operations, is the ability to encapsulate incredibly complex systems with simple definitions.
+
+The use of a Bayesian Network allowed the ability to include perspectives from industry experts and create a causal structure. The graphical nature of the Bayesian Network also helped in the illustration of the model and conveying the complexity and relationship of different factors to one another as well as to vineyards' impact of the environment. Furthermore, data collected across Australia could also be used to help inform both scenarios and the model alongside expert opinion.
 
 \subsection{Elicitation}
 
-The Bayesian Network was constructed using a mixture of data and expert elliciation.
-
-The structure of the 
+The Bayesian Network was constructed using a mixture of data and expert elicitation. Elicitation was conducted through a series of workshops. Each workshop had a primary focus such as: scope, structure and parameterisation; however, prior concepts were built upon iteratively. The first important establishment was the scope of the network, and how well it could or couldn't be adapted to the wide variety of circumstances within the Australian winegrowing industry. Following this was the discussion around the structure of the network, entailing the detailing of relationships and stricter definitions of each factor to one another. Finally, variables were paramatised using conditional probabilities.
 
 
-\citep{mayfieldDesigningExpertledBayesian2023} -> this reference also uses a similar method which we can cite alongside everything else.
-% These are transcribed notes from Korb & Nicholson:
 
-\citep{korbBayesianArtificialIntelligence2011} Korb & Nicholson describe three major issues in the creation of Bayesian Networks though knowledge Engineering:
-- Generating Arc Structure
-- Parametarisation
-- dealing with utilities
+% \citep{mayfieldDesigningExpertledBayesian2023} -> this reference also uses a similar method which we can cite alongside everything else.
+% % These are transcribed notes from Korb & Nicholson:
 
-Korb and Nicholson also describe 16 common problems that occur during the construction of Bayesian. Korb and Nicholson suggest methods for overcoming this similarly to Pitchforth:
-\subsubsection{The process}
-\subsubsection{Parameterizing before evaluating the structure}
+% \citep{korbBayesianArtificialIntelligence2011} Korb & Nicholson describe three major issues in the creation of Bayesian Networks though knowledge Engineering:
+% - Generating Arc Structure
+% - Parametarisation
+% - dealing with utilities
+
+Each element within the elicitation process was iteratively 
+Elicitation was conduct ach  Although workshops focussed on a single issue, it was important to continually address each issue in an iterative fashion. The approach to ensuring a sound and sane network, was to directly address common issues that occur during the construction of Bayesian Networks using ellicitation as outlined by #TODO: Korb and Nicholson. These issues are similarly highlighted by #:TODO: Pitchforth.
+
+Transparency with the expert panel was a key ingredient with this approach, highlighting explicitly what these problems were and how we would overcome them. This included agreeing upon definitions of each node before connecting edges between them.
+
+Although originally multiclass nodes existed, the bayesian network was altered to only include binary class nodes. Each edge between a node had to answer the following questions:
 \begin{enumerate}
         \item Are the nodes in the BN the right ones?
-        \item Are the state spaces (values) for each node correct?
+        % \item Are the state spaces (values) for each node correct?
         \item Are the arcs right?
 \end{enumerate}
-If the answer to any of the above questions is no; then the structure will not be sufficiently defined for the parametarisation of the CPT. In this paper we explicitly defined the structure of the BN prior to CPT parametarisation. This involved:
+If the answer to any of the above questions was no; then the structure was not considered sufficiently defined. Although we explicitly defined the structure of the BN prior to CPT parametarisation. This process continued when adding conditionaly probability values. The entire process of construction iinvolved the steps:
 \begin{enumerate}
-        \item exposing the panel to a strawman model in an intial workshop
-        \item Describing the model and the process invovled in defining the structure of a BN
-        \item The expert panel reviewing possible nodes and arcs, defining their own structures prior to a second workshop (with correspondence between expert panel members prior to the next workshop)
-        \item A second workshop to agree upon the final structure of the model
+        \item exposing the panel to a strawman argument/model/definition
+        \item Outlining the model and the process involved in defining the structure of a BN
+        \item The expert panel reviewing possible nodes and arcs and definitions
+        \item Defining their own structure, node or term.
+        \item Agreeing upon the final definition, structure or model.
 \end{enumerate}
 \subsubsection{Trying to build the full model all at once}
+
 Korb & Nicholson say that it is nearly impossible to build a complex BN all in one go. They recommend:
 \begin{enumerate}
         \item dividing models into subcomponents
@@ -549,7 +547,6 @@ With validation incorporating the expert scrutiny of the models begaviour for sc
 \subsection{Structure and Conditional Probabilities}
 
 \subsection{Validation}
-
 
 \citep{korbBayesianArtificialIntelligence2011}
 
