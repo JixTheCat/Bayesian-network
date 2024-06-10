@@ -1,8 +1,1 @@
-(TITLE-ABS-KEY("Water" OR "Agrochemical" OR "Chemical" OR 
-"Agrochemical" OR "Chemical"  OR "Ground management" OR 
-"Pest" OR "disease" OR "management" OR "Electricity" OR "Energy" OR "GHG" OR "emissions" OR "Greenhouse gas emissions" OR "Environmental" OR "environment" OR "Ecological" OR "Fertiliser" OR "Fertilizer" OR "Fuel" OR "Biofuel" OR "price" OR "Nutrient" OR "runoff" OR "leeching" OR "Market" OR "supply and demand" OR 
-"Soil" OR "organic carbon" OR "SOC" OR "Tractor" OR "Field" OR "operations" OR "Weather" OR "Climate" OR "Yield" OR "production"))
-AND 
-(TITLE-ABS-KEY("sustainability" OR "sustainable" OR "eco-friendly" OR "environmentally friendly" OR "green practices"))
-AND
-(TITLE-ABS-KEY("viticulture" OR "winegrowing" OR "vineyard"))
+( TITLE-ABS-KEY ( "Water" OR "Agrochemical" OR "Chemical" OR "Agrochemical" OR "Chemical" OR "Ground management" OR "Pest" OR "disease" OR "management" OR "Electricity" OR "Energy" OR "GHG" OR "emissions" OR "Greenhouse gas emissions" OR "Environmental" OR "environment" OR "Ecological" OR "Fertiliser" OR "Fertilizer" OR "Fuel" OR "Biofuel" OR "price" OR "Nutrient" OR "runoff" OR "leeching" OR "Market" OR "supply and demand" OR "Soil" OR "organic carbon" OR "SOC" OR "Tractor" OR "Field" OR "operations" OR "Weather" OR "Climate" OR "Yield" OR "production" ) ) AND ( TITLE-ABS-KEY ( "sustainability" OR "sustainable" OR "eco-friendly" OR "environmentally friendly" OR "green practices" ) ) AND ( TITLE-ABS-KEY ( "viticulture" OR "winegrowing" OR "vineyard" ) ) AND PUBYEAR > 2018 AND PUBYEAR < 2025
