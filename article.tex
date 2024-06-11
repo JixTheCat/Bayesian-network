@@ -407,7 +407,7 @@ Collaboration between experts from different perspectives is a useful method to 
 
 Methods for measuring sustainability comprise a wide variety of approaches with the use of index systems being common \citep{gehringerMappingSustainabilityMeasurement2024}. Other approaches utilise the identification of key factors, and their measurements as a proxy to indicate impact to, or the health of, the environment \citep{floresWhatSustainabilityWine2018}. The measuring of sustainability through the use of these tools can help to manage risk and promote resilience for industries through identifying sustainable goals and key factors of interest that contribute to positive outcomes \citep{klemesAssessingMeasuringEnvironmental2015, beckerSustainabilityScienceManaging2024}. Within this study we focus on measuring key factors and establishing how they interact, and ultimately effect the surrounding environment; the chosen method for this study is a Bayesian Network.
 \subsection{Literature Review}
-
+#TODO:
 \subsection{Bayesian Networks}
 
 A Bayesian Network is a graphical model, being comprised of nodes and edges. Uniquely, Bayesian Networks contain the network's operations within the nodes themselves instead of across the edges. This is done in the form of probability tables, with connections being informed by the edges. There is simplicity within the calculations done within a node, as it is fundamentally achieved through sum and division operations. However, great complexity is introduced when a node is informed by many parents, which can also have many parents themselves. The change in a single parent node effects all children of the network; often resulting in intractable systems, especially when nodes may have numerous classes \citep{korbBayesianArtificialIntelligence2011}. The strength of this complexity over simple operations, is the ability to encapsulate incredibly complex systems with simple definitions.
@@ -478,6 +478,44 @@ Similarly, the convergent validity of the model was accomplished through the bro
 The discriminant validation of the model was the most difficult, as the definitions of each node changed over the course of the model's inception. This brought the difficulty that nodes connected by edges would have to be reconsidered each time a definition changed. This issue was simply overcome through explicit definitions accessible to all participants, and by directly addressing issues caused by definitions before further development of the model. Again, the simplicity of binary state nodes helped to isolate definitions more distinctly, as well as employing methods such as node splitting, removal and adding additional nodes \citep{korbBayesianArtificialIntelligence2011}.
 
 The structure of the model itself was similar to other models in the presence of variables but differed in some of their relation due to the terminal node being environmental impact. The paramitisation of the nodes did differ to other studies, as every node was related and thought of with regard, to the terminal node and how they subsequently affected the environmental outcomes of a vineyard and not other more prevalent outcomes such as yield \citep{laurentReviewIssuesMethods2021}. The discriminant validity of the model was highlighted through the acknowledgement of the model's requirement to be tuned to any specific wine region before being able to be properly employed. Furthermore, the predictive validity was able to be well established through two methods, the use of a case study and the consideration of extreme outcomes.
+
+\subsection{Sensitivity analysis}
+
+The sensitivity analysis conducted in this study utilised the Bayesian Network software GeNie, implementing the algorithm developed by \cite{article}; an optimisation of \autocite{Castillo1996ANM} and \cite{Gaag1998PracticableSA}. The method allows for efficient computation of the influence of parameter variations on the output probabilities of a Bayesian network, making it particularly suitable for complex models. Sensitivity was calculated on the terminal node 'Environmental Impact' to reflect its sensitivity to changes in other nodes.
+
+The process utilises two outward and an inward propagation across a junction tree, a data structure representing the Bayesian network. These propagations are essential for establishing the necessary cliques that allow for the calculation of the sensitivity function using the coefficients $\gamma$ and $\delta$.
+
+These coefficients are used in determining evidence through
+
+$$ y = {{p(a, e)(x)}\over{p(e)(x)}}={{\alpha x + \beta}\over{\gamma x + \delta}} $$.
+
+Where $y$ is the posterior marginal of interest, given evidence $e$, with respect to the parameter $x$.
+
+% y - a posterior marginal of interest
+% e - evidence
+% x - all possible probability parameters
+% a - node of interest
+% $$ y = p(a|e)$$
+
+% $$ y = \alpha x + \beta $$
+
+% marginal distribution of any given parent node of a - any given node parent of a
+% b - the ith given parent node of a
+% pi - the parent nodes of the b ith node
+% $$ x = p(b_{i}|\pi) $$
+
+
+
+% $$ p(e)(x) = \gamma x + \delta $$
+
+% For each parameter under investigation, the sensitivity function 
+% $$ y=\alpha x + \beta x $$
+
+% y=αx+βγx+δy=γx+δαx+β​ is determined, where yy represents the posterior marginal probability, and xx is the parameter in question. The coefficients (αα, ββ, γγ, δδ) in this function are computed using the results from the propagations, ensuring computational efficiency.
+
+The methodology is extendable to n-way sensitivity analysis, allowing for the examination of the joint effects of multiple parameters. This involves identifying the relevant parameters and their influence on the posterior marginals using the same propagation strategy multiple times.
+
+By employing this method, the sensitivity analysis avoids the extensive computational demands of traditional brute-force approaches, which require numerous network evaluations. Instead, this approach ensures that all potential parameters are considered with minimal computational overhead; allowing the use of multiple scenarios based off different evidence.
 
 \subsection{Case study: Coonawarra}
 
@@ -695,7 +733,15 @@ How can these key factors be rigorously defined so that they are quantifiable co
 Purpose: Develop the factors into well-defined and measurable impacts on environmental sustainability.
 Results: Use the agreed upon definitions to fully realise factors and their impact.
 
-Table of definitions
+\ref{table:definitions}
+
+The key factors identified were defined as shown in Table 1. By utilising these definitions, each factor's contribution to environmental sustainability was assessed. The definitions provided a clear framework for measurement, ensuring that the factors could be consistently evaluated.
+
+The quantification of each factor allowed for a systematic analysis of their impacts. For example, "Water Use" was quantified as "High" or "Low," enabling a straightforward assessment of its environmental impact. Similarly, other factors were defined and quantified to ensure their contributions to sustainability were measurable; with each being of the two general categories ideal and not ideal (low and high respectively for water use).
+
+By applying these definitions, the study effectively translated the qualitative aspects of environmental sustainability into usable metrics. This approach not only facilitated a comprehensive analysis of the factors but also identified their specific relationships.
+
+The use of these definitions enabled each of the factors' impacts to be linked and reviewed, demonstrating their importance in achieving environmental sustainability; allowing each factor's contribution to be clearly understood and relationships  explicitly defined.
 
 \subsection{Comparative Analysis of Literature and Industry Perspectives}
     What are the factors of environmental sustainability in the Australian winegrowing industry?
@@ -703,18 +749,33 @@ Table of definitions
         Results Literature review. Industry list of factors. Mind Map? Leximancer network.
         - Use the same words as the definitions in the search to show the parralels and differences.
 
-Leximancer figure
+
+        TODO: write a summary description of the leximancer outputs.
 
 \subsection{Key Factors Impacting Environmental Sustainability in Australian Winegrowing}
-    What are the primary factors that significantly impact environmental sustainability in the Australian winegrowing industry?
-        Purpose: Identify the most influential variables directly affecting environmental sustainability and those that are perceived to directly impact environmental sustainability.
-        Results: Review the most influential factors and what they are related too. Compare this to the data in SWA.
+    % What are the primary factors that significantly impact environmental sustainability in the Australian winegrowing industry?
+    %     Purpose: Identify the most influential variables directly affecting environmental sustainability and those that are perceived to directly impact environmental sustainability.
+    %     Results: Review the most influential factors and what they are related too. Compare this to the data in SWA.
 
-    What are the relationships between these factors in the Australian winegrowing industry?
-        Purpose: Explore and understand the causal and correlated relationships among the factors.
-        Results: Use the generic BN to illustrate the overall agreed upon relationships between discussed factors.
+    % What are the relationships between these factors in the Australian winegrowing industry?
+    %     Purpose: Explore and understand the causal and correlated relationships among the factors.
+    %     Results: Use the generic BN to illustrate the overall agreed upon relationships between discussed factors.
 
-Figure of General model
+\label{figure:generalBN}
+
+The relationships between the nodes defined by the industry panel are depicted in~\ref{figure:generalBN}. The figure highlights which factors are influenced by others. For instance the key factors influencing environmental impact centre around the application of agrochemical sprays, soil management, pest/disease and water. It also illustrates the complex nature of variables such as water and their interrelatedness.
+
+The BN provided a comprehensive overview of how these factors interact, showing not only direct relationships but also how changes in one factor can propagate through the network to affect others. This understanding is crucial for developing targeted interventions and policies aimed at improving sustainability in the winegrowing industry.
+
+By using the generic BN, the study was able to illustrate the complexity of interactions that define environmental sustainability in Australian winegrowing.
+
+% Comparing this with the data from Sustainable Winegrowing Australia (SWA), it was evident that the factors identified in the BN align with the critical areas SWA focuses on, such as water use, greenhouse gas emissions, and agrochemical use. This alignment reinforces the importance of these factors and supports the findings of the BN analysis.
+% What are the relationships between these factors in the Australian winegrowing industry?
+
+% Purpose: Explore and understand the causal and correlated relationships among the factors.
+
+TODO: compare these relationships to that of leximancer
+
 
 \subsection{Sustainability specifics: Coonawarra Winegrowing}
         Sustainability in Coonawarra Winegrowing: Key Factors and Influences
