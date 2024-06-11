@@ -48,12 +48,12 @@
 		</cpt>
 		<cpt id="Soil_degredation_management">
 			<state id="Yes" />
-			<state id="NNo" />
+			<state id="No" />
 			<probabilities>0.6 0.4</probabilities>
 		</cpt>
 		<cpt id="Soil_organic_carbon_management">
-			<state id="State0" />
-			<state id="State1" />
+			<state id="Yes" />
+			<state id="No" />
 			<probabilities>0.9 0.1</probabilities>
 		</cpt>
 		<cpt id="Water_scarcity">
@@ -86,13 +86,13 @@
 			<probabilities>0.7 0.3 0.9 0.09999999999999998</probabilities>
 		</cpt>
 		<cpt id="Soil_Depth">
-			<state id="State0" />
-			<state id="State1" />
+			<state id="ideal" />
+			<state id="Not_ideal" />
 			<probabilities>0.5 0.5</probabilities>
 		</cpt>
 		<cpt id="Clay_content">
-			<state id="State0" />
-			<state id="State1" />
+			<state id="Ideal" />
+			<state id="not_ideal" />
 			<probabilities>0.5 0.5</probabilities>
 		</cpt>
 		<cpt id="compost">
@@ -130,20 +130,15 @@
 			<probabilities>0.03 0.97</probabilities>
 		</cpt>
 		<cpt id="Agrochemical_legislation">
-			<state id="State0" />
-			<state id="State1" />
+			<state id="Yes" />
+			<state id="No" />
 			<probabilities>0.9 0.1</probabilities>
 		</cpt>
 		<cpt id="Agrochemical_environmental_score">
-			<state id="State0" />
-			<state id="State1" />
+			<state id="Ideal" />
+			<state id="not_ideal" />
 			<parents>Agrochemical_legislation</parents>
 			<probabilities>0.8 0.2 0.2 0.8</probabilities>
-		</cpt>
-		<cpt id="Renewable_fuel">
-			<state id="State0" />
-			<state id="State1" />
-			<probabilities>0.5 0.5</probabilities>
 		</cpt>
 		<cpt id="Electricity_price">
 			<state id="low" />
@@ -160,12 +155,12 @@
 		<cpt id="GHG_emissions">
 			<state id="low" />
 			<state id="high" />
-			<parents>Renewable_fuel Fuel_use Fertiliser_use Electricity_use Renewable_energy Spray_application_number</parents>
-			<probabilities>0.8 0.2 0.79204545 0.20795455 0.58257576 0.41742424 0.57462121 0.42537879 0.69393939 0.30606061 0.68598485 0.31401515 0.47651515 0.52348485 0.46856061 0.5314393900000001 0.78143939 0.21856061 0.77348485 0.22651515 0.56401515 0.4359848499999999 0.55606061 0.44393939 0.67537879 0.32462121 0.66742424 0.33257576 0.45795455 0.54204545 0.45 0.55 0.68333333 0.31666667 0.67537879 0.32462121 0.46590909 0.53409091 0.45795455 0.54204545 0.57727273 0.42272727 0.56931818 0.43068182 0.35984848 0.64015152 0.35189394 0.6481060599999999 0.66477273 0.33522727 0.65681818 0.34318182 0.44734848 0.55265152 0.43939394 0.56060606 0.55871212 0.44128788 0.55075758 0.44924242 0.34128788 0.65871212 0.33333333 0.66666667 0.56666667 0.43333333 0.55871212 0.44128788 0.34924242 0.6507575800000001 0.34128788 0.65871212 0.46060606 0.5393939400000001 0.45265152 0.54734848 0.24318182 0.75681818 0.23522727 0.76477273 0.54810606 0.45189394 0.54015152 0.45984848 0.33068182 0.66931818 0.32272727 0.67727273 0.44204545 0.55795455 0.43409091 0.56590909 0.22462121 0.7753787900000001 0.21666667 0.78333333 0.45 0.55 0.44204545 0.55795455 0.23257576 0.7674242400000001 0.22462121 0.7753787900000001 0.34393939 0.6560606099999999 0.33598485 0.66401515 0.12651515 0.87348485 0.11856061 0.88143939 0.43143939 0.56856061 0.42348485 0.57651515 0.21401515 0.78598485 0.20606061 0.79393939 0.32537879 0.67462121 0.31742424 0.68257576 0.10795455 0.89204545 0.1 0.9</probabilities>
+			<parents>Fuel_use Fertiliser_use Electricity_use Renewable_energy Spray_application_number</parents>
+			<probabilities>0.8 0.2 0.79204545 0.20795455 0.58257576 0.41742424 0.57462121 0.42537879 0.69393939 0.30606061 0.68598485 0.31401515 0.47651515 0.52348485 0.46856061 0.5314393900000001 0.78143939 0.21856061 0.77348485 0.22651515 0.56401515 0.4359848499999999 0.55606061 0.44393939 0.67537879 0.32462121 0.66742424 0.33257576 0.45795455 0.54204545 0.45 0.55 0.68333333 0.31666667 0.67537879 0.32462121 0.46590909 0.53409091 0.45795455 0.54204545 0.57727273 0.42272727 0.56931818 0.43068182 0.35984848 0.64015152 0.35189394 0.6481060599999999 0.66477273 0.33522727 0.65681818 0.34318182 0.44734848 0.55265152 0.43939394 0.56060606 0.55871212 0.44128788 0.55075758 0.44924242 0.34128788 0.65871212 0.33333333 0.66666667</probabilities>
 		</cpt>
-		<cpt id="Environmental_impact" target="true">
+		<cpt id="Environmental_impact">
 			<state id="ideal" />
-			<state id="State1" />
+			<state id="not_ideal" />
 			<parents>Agrochemical_environmental_score GHG_emissions Water_use_ Water_quality Soil_degredation_management Spray_application_number P_D_management_methods__cultural_and_biological_ Nutrient_leaching_management</parents>
 			<probabilities>0.1 0.9 0.21666667 0.78333333 0.21666667 0.78333333 0.33333333 0.66666667 0.21666667 0.78333333 0.33333333 0.66666667 0.33333333 0.66666667 0.45 0.55 0.16666667 0.83333333 0.28333333 0.71666667 0.28333333 0.71666667 0.4 0.6 0.28333333 0.71666667 0.4 0.6 0.4 0.6 0.51666667 0.48333333 0.15 0.85 0.26666667 0.7333333300000001 0.26666667 0.7333333300000001 0.38333333 0.61666667 0.26666667 0.73333333 0.38333333 0.61666667 0.38333333 0.61666667 0.5 0.5 0.21666667 0.78333333 0.33333333 0.66666667 0.33333333 0.66666667 0.45 0.55 0.33333333 0.66666667 0.45 0.55 0.45 0.55 0.56666667 0.43333333 0.2 0.8000000000000002 0.31666667 0.68333333 0.31666667 0.68333333 0.43333333 0.56666667 0.31666667 0.68333333 0.43333333 0.56666667 0.43333333 0.56666667 0.55 0.45 0.26666667 0.7333333300000001 0.38333333 0.61666667 0.38333333 0.61666667 0.5 0.5 0.38333333 0.61666667 0.5 0.5 0.5 0.5 0.61666667 0.38333333 0.25 0.75 0.36666667 0.63333333 0.36666667 0.63333333 0.48333333 0.51666667 0.36666667 0.63333333 0.48333333 0.51666667 0.48333333 0.51666667 0.6 0.4 0.31666667 0.68333333 0.43333333 0.56666667 0.43333333 0.56666667 0.55 0.45 0.43333333 0.56666667 0.55 0.45 0.55 0.45 0.66666667 0.33333333 0.21666667 0.78333333 0.33333333 0.66666667 0.33333333 0.66666667 0.45 0.55 0.33333333 0.66666667 0.45 0.55 0.45 0.55 0.56666667 0.43333333 0.28333333 0.71666667 0.4 0.6 0.4 0.6 0.51666667 0.4833333299999999 0.4 0.6 0.51666667 0.48333333 0.51666667 0.48333333 0.63333333 0.36666667 0.26666667 0.7333333300000001 0.38333333 0.61666667 0.38333333 0.61666667 0.5 0.5 0.38333333 0.61666667 0.5 0.5 0.5 0.5 0.61666667 0.38333333 0.33333333 0.66666667 0.45 0.55 0.45 0.55 0.56666667 0.43333333 0.45 0.55 0.56666667 0.43333333 0.56666667 0.43333333 0.68333333 0.31666667 0.31666667 0.68333333 0.43333333 0.56666667 0.43333333 0.56666667 0.55 0.45 0.43333333 0.56666667 0.55 0.45 0.55 0.45 0.66666667 0.33333333 0.38333333 0.61666667 0.5 0.5 0.5 0.5 0.61666667 0.38333333 0.5 0.5 0.61666667 0.38333333 0.61666667 0.38333333 0.73333333 0.26666667 0.36666667 0.63333333 0.48333333 0.51666667 0.48333333 0.51666667 0.6 0.4000000000000001 0.48333333 0.51666667 0.6 0.4 0.6 0.4 0.71666667 0.28333333 0.43333333 0.56666667 0.55 0.45 0.55 0.45 0.66666667 0.33333333 0.55 0.45 0.66666667 0.33333333 0.66666667 0.33333333 0.78333333 0.21666667 0.21666667 0.78333333 0.33333333 0.66666667 0.33333333 0.66666667 0.45 0.55 0.33333333 0.66666667 0.45 0.55 0.45 0.55 0.56666667 0.43333333 0.28333333 0.71666667 0.4 0.6 0.4 0.6 0.51666667 0.4833333299999999 0.4 0.6 0.51666667 0.48333333 0.51666667 0.48333333 0.63333333 0.36666667 0.26666667 0.7333333300000001 0.38333333 0.61666667 0.38333333 0.61666667 0.5 0.5 0.38333333 0.61666667 0.5 0.5 0.5 0.5 0.61666667 0.38333333 0.33333333 0.66666667 0.45 0.55 0.45 0.55 0.56666667 0.43333333 0.45 0.55 0.56666667 0.43333333 0.56666667 0.43333333 0.68333333 0.31666667 0.31666667 0.68333333 0.43333333 0.56666667 0.43333333 0.56666667 0.55 0.45 0.43333333 0.56666667 0.55 0.45 0.55 0.45 0.66666667 0.33333333 0.38333333 0.61666667 0.5 0.5 0.5 0.5 0.61666667 0.38333333 0.5 0.5 0.61666667 0.38333333 0.61666667 0.38333333 0.73333333 0.26666667 0.36666667 0.63333333 0.48333333 0.51666667 0.48333333 0.51666667 0.6 0.4000000000000001 0.48333333 0.51666667 0.6 0.4 0.6 0.4 0.71666667 0.28333333 0.43333333 0.56666667 0.55 0.45 0.55 0.45 0.66666667 0.33333333 0.55 0.45 0.66666667 0.33333333 0.66666667 0.33333333 0.78333333 0.21666667 0.33333333 0.66666667 0.45 0.55 0.45 0.55 0.56666667 0.43333333 0.45 0.55 0.56666667 0.43333333 0.56666667 0.43333333 0.68333333 0.31666667 0.4 0.6 0.51666667 0.4833333299999999 0.51666667 0.4833333299999999 0.63333333 0.36666667 0.51666667 0.48333333 0.63333333 0.36666667 0.63333333 0.36666667 0.75 0.25 0.38333333 0.61666667 0.5 0.5 0.5 0.5 0.61666667 0.38333333 0.5 0.5 0.61666667 0.38333333 0.61666667 0.38333333 0.73333333 0.26666667 0.45 0.55 0.56666667 0.43333333 0.56666667 0.43333333 0.68333333 0.31666667 0.56666667 0.43333333 0.68333333 0.31666667 0.68333333 0.31666667 0.8 0.1999999999999999 0.43333333 0.56666667 0.55 0.45 0.55 0.45 0.66666667 0.33333333 0.55 0.45 0.66666667 0.33333333 0.66666667 0.33333333 0.78333333 0.21666667 0.5 0.5 0.61666667 0.38333333 0.61666667 0.38333333 0.73333333 0.26666667 0.61666667 0.38333333 0.73333333 0.26666667 0.73333333 0.26666667 0.85 0.15 0.48333333 0.51666667 0.6 0.4000000000000001 0.6 0.4000000000000001 0.71666667 0.28333333 0.6 0.4 0.71666667 0.28333333 0.71666667 0.28333333 0.83333333 0.16666667 0.55 0.45 0.66666667 0.33333333 0.66666667 0.33333333 0.78333333 0.21666667 0.66666667 0.33333333 0.78333333 0.21666667 0.78333333 0.21666667 0.9 0.09999999999999998</probabilities>
 		</cpt>
@@ -177,210 +172,232 @@
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>129 157 214 210</position>
+				<position>149 157 234 210</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Fuel_use">
 				<name>Fuel use</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>279 91 334 125</position>
+				<position>299 91 354 125</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Spray_application_number">
 				<name>Spray application number</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>37 291 124 345</position>
+				<position>57 291 144 345</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Nutrient_leaching_management">
 				<name>Nutrient leaching management</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>441 163 536 222</position>
+				<position>461 163 556 222</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Vineyard_floor_management">
 				<name>Vineyard floor management</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>373 411 459 464</position>
+				<position>393 411 479 464</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Soil_degredation_management">
 				<name>Soil degredation management</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>78 561 173 620</position>
+				<position>98 561 193 620</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Soil_organic_carbon_management">
 				<name>Soil organic carbon management</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>235 616 330 675</position>
+				<position>255 616 350 675</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Renewable_energy">
 				<name>Renewable energy</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>349 43 449 105</position>
+				<position>369 43 469 105</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Agrochemical_environmental_score">
 				<name>Agrochemical environmental score</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>385 697 484 758</position>
+				<position>405 697 504 758</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Environmental_impact">
 				<name>Environmental impact</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>496 555 584 610</position>
+				<position>516 555 604 610</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Water_use_">
 				<name>Water use </name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>570 436 634 476</position>
+				<position>590 436 654 476</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Electricity_price">
 				<name>Electricity price</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>265 195 350 248</position>
+				<position>285 195 370 248</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Electricity_use">
 				<name>Electricity use</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>555 252 634 301</position>
+				<position>575 252 654 301</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="GHG_emissions">
 				<name>GHG emissions</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>1084 147 1172 202</position>
+				<position>1104 147 1192 202</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Water_price">
 				<name>Water price</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>799 260 867 302</position>
+				<position>819 260 887 302</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Water_licences">
 				<name>Water licences</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>669 504 752 555</position>
+				<position>689 504 772 555</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Water_scarcity">
 				<name>Water scarcity</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>717 361 798 411</position>
+				<position>737 361 818 411</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Water_use_efficiency">
 				<name>Water use efficiency</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>932 444 1039 510</position>
+				<position>952 444 1059 510</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="P_D_management_methods__cultural_and_biological_">
 				<name>Pest &amp; Disease management methods (cultural and biological)</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>532 656 656 733</position>
+				<position>552 656 676 733</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Water_quality">
 				<name>Water quality</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>820 517 893 562</position>
+				<position>840 517 913 562</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Weather_conditions">
 				<name>Weather conditions</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>915 323 1011 383</position>
+				<position>935 323 1031 383</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Fertiliser_use">
 				<name>Fertiliser use</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>243 366 316 411</position>
+				<position>263 366 336 411</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Agrochemical_legislation">
 				<name>Agrochemical legislation</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>220 682 319 743</position>
+				<position>240 682 339 743</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Grape_price">
 				<name>Grape price</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>9 474 79 517</position>
+				<position>29 474 99 517</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Nitrogen_use_efficiency">
 				<name>Nitrogen use efficiency</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>12 376 96 428</position>
+				<position>32 376 116 428</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Clay_content">
 				<name>Clay content</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>812 161 884 206</position>
+				<position>832 161 904 206</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Soil_Depth">
 				<name>Soil Depth</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>739 159 800 197</position>
+				<position>759 159 820 197</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="compost">
 				<name>Compost/mulch</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>627 158 731 223</position>
+				<position>647 158 751 223</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 			<node id="Market_supply_and_demmand">
 				<name>Market supply and demmand</name>
 				<interior color="00ff00" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>32 653 120 708</position>
-			</node>
-			<node id="Renewable_fuel">
-				<name>Renewable fuel</name>
-				<interior color="00ff00" />
-				<outline color="000080" />
-				<font color="000000" name="Arial" size="8" />
-				<position>920 69 1005 122</position>
+				<position>52 653 140 708</position>
+				<barchart active="true" width="128" height="64" />
 			</node>
 		</genie>
 	</extensions>
