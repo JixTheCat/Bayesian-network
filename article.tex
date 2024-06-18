@@ -1,3 +1,7 @@
+% Packages:
+
+\usepackage{graphicx}
+
 %%%%%%%%%%%%%%%
 % Paper setup %
 %%%%%%%%%%%%%%%
@@ -741,8 +745,8 @@ Purpose: Develop the factors into well-defined and measurable impacts on environ
 Results: Use the agreed upon definitions to fully realise factors and their impact.
 
 % Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{table}[h]\ref{table:definitions}
+% \usepackage{booktabs} TODO: check the BN definitions align properly.
+\begin{table}[h]\label{tab:definitions} 
     \begin{tabular}{@{}llll@{}}
     \toprule
     \textbf{Variable name} & Definition & \textbf{Ideal Class} & Not Ideal Class \\ \midrule
@@ -778,7 +782,7 @@ Results: Use the agreed upon definitions to fully realise factors and their impa
     \end{tabular}
 \end{table}
 
-The key factors identified were defined as shown in Table 1. By utilising these definitions, each factor's contribution to environmental sustainability was assessed. The definitions provided a clear framework for measurement, ensuring that the factors could be consistently evaluated.
+The key factors identified were defined as shown in Table \ref{tab:definitions}. By utilising these definitions, each factor's contribution to environmental sustainability was assessed. The definitions provided a clear framework for measurement, ensuring that the factors could be consistently evaluated.
 
 The quantification of each factor allowed for a systematic analysis of their impacts. For example, "Water Use" was quantified as "High" or "Low," enabling a straightforward assessment of its environmental impact. Similarly, other factors were defined and quantified to ensure their contributions to sustainability were measurable; with each being of the two general categories ideal and not ideal (low and high respectively for water use).
 
@@ -792,6 +796,32 @@ The use of these definitions enabled each of the factors' impacts to be linked a
         Results Literature review. Industry list of factors. Mind Map? Leximancer network.
         - Use the same words as the definitions in the search to show the parralels and differences.
 
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[h]\label{tab:lexi}
+    \begin{tabular}{@{}llrr@{}}
+    \toprule
+    \textbf{Concept} & \textbf{Kind} & \multicolumn{1}{l}{\textbf{Count}} & \multicolumn{1}{l}{\textbf{Relevance_percentage}} \\ \midrule
+    water & WORD & 1321 & 100 \\
+    change & WORD & 817 & 62 \\
+    climate & WORD & 789 & 60 \\
+    disease & WORD & 646 & 49 \\
+    change & WORD & 569 & 43 \\
+    grapevine & WORD & 565 & 43 \\
+    viticulture & WORD & 565 & 43 \\
+    soil & WORD & 450 & 34 \\
+    plant & WORD & 425 & 32 \\
+    different & WORD & 300 & 23 \\ \bottomrule
+    \end{tabular}
+    \end{table}
+
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\linewidth]{Winegrowing-concept-map}
+        \caption{Your caption here}
+        \label{fig:lexi}
+    \end{figure}
 
         TODO: write a summary description of the leximancer outputs.
 
