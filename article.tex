@@ -406,8 +406,10 @@ In agriculture, the consideration of environment is critical to the success of t
 Collaboration between experts from different perspectives is a useful method to reconcile opinions of the significance of different factors and their contribution to sustainable outcomes \citep{dichiaraCollaborativeApproachAchieving2024}. In Australia, the views of both industry and consumer are united in their priority to improve greenhouse gas emissions and resource inputs through approaches such as regulating chemicals, water use and fertilisers \citep{dumbrellComparingAustralianPublic2024}. While there is a general agreement on broader regulatory needs, the industry requirements vary greatly between different wine regions; due to climate, soil types and water resources \citep{abbalDecisionSupportSystem2016,agostaRegionalClimateVariability2012}.
 
 Methods for measuring sustainability comprise a wide variety of approaches with the use of index systems being common \citep{gehringerMappingSustainabilityMeasurement2024}. Other approaches utilise the identification of key factors, and their measurements as a proxy to indicate impact to, or the health of, the environment \citep{floresWhatSustainabilityWine2018}. The measuring of sustainability through the use of these tools can help to manage risk and promote resilience for industries through identifying sustainable goals and key factors of interest that contribute to positive outcomes \citep{klemesAssessingMeasuringEnvironmental2015, beckerSustainabilityScienceManaging2024}. Within this study we focus on measuring key factors and establishing how they interact, and ultimately effect the surrounding environment; the chosen method for this study is a Bayesian Network.
+
 \subsection{Literature Review}
 #TODO:
+
 \subsection{Bayesian Networks}
 
 A Bayesian Network is a graphical model, being comprised of nodes and edges. Uniquely, Bayesian Networks contain the network's operations within the nodes themselves instead of across the edges. This is done in the form of probability tables, with connections being informed by the edges. There is simplicity within the calculations done within a node, as it is fundamentally achieved through sum and division operations. However, great complexity is introduced when a node is informed by many parents, which can also have many parents themselves. The change in a single parent node effects all children of the network; often resulting in intractable systems, especially when nodes may have numerous classes \citep{korbBayesianArtificialIntelligence2011}. The strength of this complexity over simple operations, is the ability to encapsulate incredibly complex systems with simple definitions.
@@ -449,7 +451,7 @@ Each workshop had a primary focus such as: scope, structure or parameterisation;
 
 To introduce new concepts and how they interacted, preliminary simplified versions (strawman examples) were provided to experts; with the intention of these examples to be examined, critiqued, and improved upon. The use of these strawman examples enabled a more engaged and effective review process. Experts were initially able to interact with elements of the model and see how they worked together. The strawman examples were crafted from a foundation of literature and data to offer a basic, layman's understanding of key factors and concepts, serving as a starting point for further development and discussion. 
 
-\subsection{CPT Interpolating}
+\subsection{CPT interpolating}
 
 As is often the case, the most arduous endeavour is to attribute probabilities to events defined within the Bayesian Network \citep{korbBayesianArtificialIntelligence2011}. Due to the growing complexity of the network throughout the study each event was described by binary classes. With the classes depicting a positive or negative contribution to a vineyard's environmental outcome. Furthermore, the complexity of the variables, particularly water use, were overwhelmingly interrelated to operations across the vineyard. To attempt to capture this complexity but not dilute the ability to work with various scenarios the conditional probabilities were interpolated.
 
@@ -489,7 +491,9 @@ These coefficients are used in determining evidence through
 
 $$ y = {{p(a, e)(x)}\over{p(e)(x)}}={{\alpha x + \beta}\over{\gamma x + \delta}} $$.
 
-Where $y$ is the posterior marginal of interest, given evidence $e$, with respect to the parameter $x$.
+Where $y$ is the posterior marginal of interest, given evidence $e$, with respect to the parameter $x$. 
+
+% FIXME: should I extrapolate on this method?
 
 % y - a posterior marginal of interest
 % e - evidence
@@ -574,6 +578,7 @@ A very common impulse, when something is known about the problem, is to want to 
 "Which of the known variables are most relevant to the problem?"
 - This issue in its the simplest form has attempted to be overcome through trying to mediate the workshop and inform experts of the potential probelsm that will come with a cumbersome model.
 \end{enumerate}
+
 \subsection{Structure - Nodes}
 The list below is each of the problems, which can be addressed together in some fashion as the approaches of solving them overlap.
 \begin{enumerate}
@@ -586,6 +591,7 @@ The list below is each of the problems, which can be addressed together in some 
         \item Confusion about what the node represents
 \end{enumerate}
 Two major strategies were employed to overcome these problems. Tying nodes explicitly to a data source that corroborated the definition and state in some manner as the node. For node s that did not have data set they were sought to be defined with an explicit explanation that experts agreed upon or had some external explanation such as legislation.
+
 \subsection{Structure Arcs}
 \subsubsection{Getting the arc directions wrong}
 Arc directions are commonly wrong for the following reasons:
@@ -597,6 +603,7 @@ Arc directions are commonly wrong for the following reasons:
 To note: Korb and Nicholson do not actually suggest a method for overcoming these problems. There is an inherint risk in creating a model and not having knowledge of a missing variable or of a causation. It is important to acknowledge that there is always a possibility that causation is mixed up with reasoning, and that not all variables are always known.
 \subsubsection{Too many parents}
 Sometimes it is unavoidable that a node is affected by many factors, or other nodes. There are some methods to help overcome this such as divorcing, in which a node is created to capture the cumulative affects of several parents on a child. This technique was employed in the creation of the structure of the BN with the expert panel.
+
 \subsection{Parameters}
 \subsubsection{Experts estimates of probabilities are biased}
 \begin{enumerate}
@@ -660,7 +667,6 @@ Korb & Nicholson have a similar view to Pitchforth. utilising a waterfall style 
 Where discretisation and validation are additional steps to assign intervals to continuous factors (discretisation) and to ensure the models appropriateness (validation)
 
 With validation incorporating the expert scrutiny of the models begaviour for scenarios, as well as comparing this to both data and other literature.
-
 
 \subsection{Structure and Conditional Probabilities}
 
@@ -729,11 +735,48 @@ Workshop 3: Finalization of CPTs and Case Study Selection
 \section{Results}
 
 \subsection{Industry definitions}
+
 How can these key factors be rigorously defined so that they are quantifiable contributions to environmental sustainability?
 Purpose: Develop the factors into well-defined and measurable impacts on environmental sustainability.
 Results: Use the agreed upon definitions to fully realise factors and their impact.
 
-\ref{table:definitions}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[h]\ref{table:definitions}
+    \begin{tabular}{@{}llll@{}}
+    \toprule
+    \textbf{Variable name} & Definition & \textbf{Ideal Class} & Not Ideal Class \\ \midrule
+    \textbf{Water use} & Total amount of water used by a vineyard in a financial year (ML/Ha) & \textbf{Low} & High \\
+    \textbf{Agrochemical type} & When selecting agrochemicals, those which are less hazardous to beneficial organisms and/or have a lower environmental impact are considered & \textbf{Yes} & No \\
+    \textbf{Spray application number} & Number of foliar spray applications used to control pests and diseases (spray applications/Ha/FY) & \textbf{Low} & High \\
+    \textbf{Agrochemical legislation} & The legislated regulations regarding agrochemical use as specified by the APVMA. Dog book recommendations are further restrictions for export wine production and to protect the reputation of Australian wine. & \textbf{Yes} & No \\
+    \textbf{Vineyard floor management} & Proportion of vineyard floor covered with a cover crop. & High & \textbf{Low} \\
+    \textbf{Pest and disease management methods} & All available methods of management are considered before a management program is chosen (i.e. biological, chemical, cultural, mechanical, and technological) & \textbf{Yes} & No \\
+    \textbf{Electricity use} & Total amount of electricity used by a vineyard in a financial year (kWh/Ha) & \textbf{Low} & High \\
+    \textbf{Electricity Price} & The unit cost of electricity purchased by a vineyard & \textbf{Low} & High \\
+    \textbf{Renewable energy} & Percentage of energy that is renewable & High & \textbf{Low} \\
+    \textbf{GHG emissions} & Total amount of GHG emission produced by a vineyard in a financial year (Kg CO2e/Ha) as calculated  by NGA legislation & \textbf{Low} & High \\
+    \textbf{Environmental Impact} & The positive/negative impact a vineyard has on its immediate environment (to gate). & \textbf{Ideal} & Not Ideal \\
+    \textbf{Fertiliser use} & Total amount of nitrogen (synthetic and organic) used by a vineyard in a financial year (Kg/Ha) & \textbf{Low} & High \\
+    \textbf{Fuel use} & Total amount of fuel (diesel, petrol, lpg and biodiesel) used by a vineyard in a financial year (L/Ha) & \textbf{Low} & High \\
+    \textbf{Renewable Fuel} & Percentage of fuel used that is renewable. & High & \textbf{Low} \\
+    \textbf{Grape Price} & Grape price per tonne & High & \textbf{Low} \\
+    \textbf{Nutrient leaching management} & The depletion of nutrients in the grapevine root zone is minimised through best practice irrigation scheduling and soil moisture monitoring. & \textbf{Yes} & No \\
+    \textbf{Market supply and demand} & The relationship between the quantity of winegrapes produced and the quantity that consumers wish to buy & High & \textbf{Low} \\
+    \textbf{Pest and Disease Management} & The management of pests and diseases such as through the employ of fungicide and pesticides & \textbf{Yes} & No \\
+    \textbf{Soil degradation management} & Areas at risk of degradation via compaction or erosion are identified and actions to remediate and minimise degradation are taken (i.e. don’t traffic waterlogged soils, minimise cultivation, maintain vineyard floor cover with cover crops, etc.) & No & \textbf{Yes} \\
+    \textbf{Soil organic carbon management} & Areas with low or declining soil organic carbon levels are identified and actions to improve soil carbon levels are taken (i.e. minimise cultivation, maintain vineyard floor cover with cover crops, apply mulch or compost, etc.) & \textbf{Yes} & No \\
+    \textbf{Tractor passes} & The number of times a tractor passes over the whole vine row area & \textbf{Low} & High \\
+    \textbf{Water use efficiency} & The amount of water used per tonne of grapes produced & High & \textbf{Low} \\
+    \textbf{Water licences} & Current water licences and permits are adhered to & \textbf{Yes} & No \\
+    \textbf{Water Price} & The cost per unit of water paid for by a vineyard & \textbf{Low} & High \\
+    \textbf{Water quality} & Water used for irrigation is assessed annually for quality (pH, chloride, sodium absorption ratio, electrical conductivity, soluble solids, hardness, microbial contamination). Water that may case soil degradation or irrigation inefficiency is treated before use. & \textbf{Yes} & No \\
+    \textbf{Water Scarcity} & Whether the country is suffering drought or not (s defined by BOM) & No & \textbf{Yes} \\
+    \textbf{Weather Conditions} & A vineyard’s regional climatic conditions. & \textbf{Ideal} & Not Ideal \\
+    \textbf{Grape quality and yield targets} & The yield and quality targets of a vineyard block as outlines in the grape supply contract. & \textbf{Ideal} & Not Ideal \\
+    \textbf{Agrochemical score} & Agrochemicals with high human and environmental hazard scores are avoided. & \textbf{Yes} & No \\ \bottomrule
+    \end{tabular}
+\end{table}
 
 The key factors identified were defined as shown in Table 1. By utilising these definitions, each factor's contribution to environmental sustainability was assessed. The definitions provided a clear framework for measurement, ensuring that the factors could be consistently evaluated.
 
