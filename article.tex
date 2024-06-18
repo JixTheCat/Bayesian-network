@@ -815,13 +815,12 @@ The use of these definitions enabled each of the factors' impacts to be linked a
     \end{tabular}
     \end{table}
 
-
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=\linewidth]{Winegrowing-concept-map}
-        \caption{Your caption here}
-        \label{fig:lexi}
-    \end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{Winegrowing-concept-map}
+    \caption{Your caption here}
+    \label{fig:lexi}
+\end{figure}
 
         TODO: write a summary description of the leximancer outputs.
 
@@ -853,9 +852,22 @@ By using the generic BN, the study was able to illustrate the complexity of inte
 
 % Purpose: Explore and understand the causal and correlated relationships among the factors.
 
-% TODO: compare these relationships to that of leximancer
+The bibliometric analysis using Leximancer, revealed key concepts and their relevance to environmental sustainability in the Australian winegrowing industry. The most prominent concept was water. The critical importance of other variables being measured by their comparative appearance in articles relative to water (making water 100\%).
+
+Other significant concepts included "change", "climate", and "disease". These terms highlight the focus on adapting to climate change and managing plant diseases, both of which are crucial for maintaining sustainable practices (see \ref{tab:lexi}). Furthermore, change and climate were kept separate to illustrate the variety of different chagings such as in practice, legislation and resource abundance. Additionally, although not in the top 10; "soil", "region", "practices", and "legislation" also appear to be dominant features within the literature. These factors are critical as they shape the environmental strategies employed by vineyards.
+
+The major concepts of these features was change, grapevine, water and land (see Figure \ref{fig:lexi}). these concepts illustrate the overarching theme between how the different concepts are connected, which showed very similar themes to that of the industry panel. A key difference was the rarity in how secondary and tertairy drivers of industry such as fuel or electricity use, were connected to primary sustainable concerns such as disease. With these conceps being related to the operations in fields as a result of changing practices or implementing different pest controls.
+
+Together these outputs provide a comprehensive overview of the key factors affecting environmental sustainability in the Australian winegrowing industry, offering valuable insights into areas of focus and potential improvement. This analysis underscores the multifaceted nature of sustainability, highlighting both the primary concerns and the interconnected secondary factors that must be managed on the ground.
 
 \subsection{Sustainability specifics: Coonawarra Winegrowing}
+
+Located in South Australia's Limestone Coast zone, Coonawarra is characterised by its cooler Australian climate and the unique geology of the limestone coast, which provides an excellent foundation for viticulture. The Coonawarra winegrowing region is renowned for its exceptional wine quality, particularly its Cabernet Sauvignon \cite{hallidayAustralianWineEncyclopedia2009}. Due to the region's distinct characteristics and the expert panels' expertise, this region was the ideal case study for applying Bayesian Networks using the expert panels overarching ideas around environmental sustainability practices to specific regional factors.
+
+In this case study, we apply BN to model and analyze the complex interactions between various environmental factors affecting wine production in Coonawarra. By incorporating industry-specific data and expert knowledge, the BN framework allows us to quantify the impacts of key variables such as water use, agrochemical application, soil health, and climate conditions to each other. This approach not only aids in understanding the current sustainability status of the region but also helps in identifying potential areas for improvement and implementing effective management strategies.
+
+The insights gained from this case study can serve as a valuable reference for other winegrowing regions aiming to enhance their environmental sustainability practices through the use of advanced probabilistic models like Bayesian Networks.
+
     %     Sustainability in Coonawarra Winegrowing: Key Factors and Influences
     % #TODO: what are the regional specifics of coonawarra
     % How do the identified key factors vary across different wine regions in Australia, and what regional characteristics influence these variations?
@@ -890,7 +902,19 @@ By using Conditional Probability Tables (CPTs) within the BN, the significant co
   } and \ref{fig
   } illustrate these networks with nodes coloured according to their sensitivity values relative to environmental impact.
 
-By assessing the BN, it becomes evident which factors are the most influential in driving environmental sustainability in Coonawarra. This detailed evaluation helps prioritize actions and policies that could lead to significant improvements in the region's sustainability practices.
+In the Coonawarra-specific BN, the most significant factors impacting environmental sustainability are water quality, pest and disease management, market pressures, agrochemical use, and climate/weather conditions. These factors were identified as having the highest sensitivity to environmental impact, indicating their crucial roles in the sustainability of the region.
+
+The primary difference in interactions between the two BNs (see Figure~\ref{fig:robyn} and~\ref{fig:marcel}) lies in vineyard floor management and tractor passes. In one, more tractor passes were used purposefully to manage the vineyard floor; the other managed vineyard floor as a consequence of tractor passes, leveraging opportunities when the tractor was used. This distinction highlights how operational decisions can vary based on regional practices and priorities. A point was also raised that scale can cause a further driving factor, where tractor passes may be greatly increased as an expense on larger plots of land. However, this issue as well as directly attributing measurable cause to granular specifics such as composting, soil depth and clay content cannot be fully addressed without site or paddock specific knowledge.
+
+As a factor, water emerged as the most interconnected variable for both BNs, with edges connecting it to almost everything either directly or indirectly, illustrating its fundamental role in agriculture. The edges between different factors reveals that water is the most connected. Weather conditions also play a significant role, influencing water availability, quality and disease/pest pressures.
+
+The Coonawarra-specific BN supports the findings from the literature, with a more structured map of how factors interact compared to the automatically generated figures from tools like Leximancer. The BN provides a detailed view of the relationships between factors, highlighting the central role of water and the interconnectedness of pest management, market pressures, and climate conditions. Additionally, the BNs emphasise economic factors, such as market pressures and grape prices, and includes how they interact within a scope of secondary factors like fuel and electricity use.
+
+% The other case study BN aligns with the literature by visually representing connections and highlighting significant factors through bibliometric analysis. However, the BN derived from the industry panel offers explicit connections and sensitivity analyses based on expert knowledge, providing a more nuanced understanding of the factors and their impacts compared to the broader mind maps generated from literature reviews.
+
+The two case study BNs are almost identical in their significant factors and interactions. Both emphasize the importance of water quality, pest and disease management, and climate conditions. The primary difference is the sensitivity to tractor passes, water quality, water scarcity, and soil degradation management, with one model showing higher sensitivity to these factors. Aside from the role of tractor passes, there are no major differences between the two BNs. The similarity in significant factors and their interactions underscores the robustness of the BN approach in capturing the critical elements of environmental sustainability in winegrowing.
+
+The findings from the case study align closely with the literature, illustrating more directly how factors that contribute to environmental sustaianbility are connected. The BNs provide a detailed and structured view of primary factors and their relationships to secondary and tertiary concerns within the industry. This detailed evaluation helps prioritise actions and policies that could lead to significant improvements in the sustainability practices of winegrowing regions.
 
 % =================================
 Structuring the Results Section Based on These Questions:
