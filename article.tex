@@ -6,6 +6,14 @@
 % Paper setup %
 %%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%
+% Working title
+%
+\title{Bayesian Networks for Assessing Environmental Sustainability in Australian Vineyards}
+
+
+\section{Abstract}
+
 % What is your topic?
 The topic of this paper is the environmental sustainability of vineyards within Australia.
 % What is the context for your reserach?
@@ -15,10 +23,7 @@ The identification of key factors; and their relation and contribution, direct o
 % Are there any relationships you want to explore?
 This is key to this study. The relationships are in many ways more important to the research than the effects.
 
-%%%%%%%%%%%%%%%%
-% Working title
-%
-\title{Bayesian Networks for Assessing Environmental Sustainability in Australian Vineyards}
+\section{Introduction}
 
 % Description
 % NB Avoid titles along the lines of: “Effects of ...”, “The role of ...”, etc.  Be specific about the effect and its significance so that your reader knows what is on offer.
@@ -402,7 +407,6 @@ The collection of data and subsequent statistical analytics can only go so far a
 % What is interesting - what will be discussed in the article with regard to these results? What makes me want to read the article?
 % And what is the take away point of the article? If I cant be bothered to read this article, what piece of knowledge can you leave mewiwth that I could recommend the article to someone else with?
 
-
 \section{Methods}
 
 In agriculture, the consideration of environment is critical to the success of the industry. The question of environmental sustainability has continued to grow in importance as the industry is affected by international market demands, disease pressures, natural disasters and social change \citep{wineaustraliaNationalVintageReport2022,wineaustraliaNationalVintageReport2020,wineaustraliaNationalVintageReport2021,cassonMultidisciplinaryApproachAssess2022}. The question of sustainability requires the consideration of a multitude of factors, not only due to physical differences between locations/habitats but also due to priorities driven by a myriad of perspectives from as consumers, ecosystems, government and industry \citep{baianoOverviewSustainabilityWine2021,wayeCarbonFootprintsFood2008}. It is important to consider each factor with respect to its relevant perspectives, and to be explicit in how each of these factors and perspectives are defined \citep{santiago-brownSustainabilityAssessmentWineGrape2015}.
@@ -740,12 +744,15 @@ Workshop 3: Finalization of CPTs and Case Study Selection
 
 \subsection{Industry definitions}
 
+The key factors identified were defined as shown in Table \ref{tab:definitions}. By utilising these definitions, each factor's contribution to environmental sustainability were quantified and assessed by the industry panel. The quantification of each factor allowed for a systematic assessment of their impacts. For example, "Water Use" was quantified as "High" or "Low," enabling a straightforward assessment of its environmental impact. Similarly, other factors were defined and quantified to ensure their contributions to sustainability were measurable; with each being of the two general categories ideal and not ideal (low and high respectively for water use).
+
 % How can these key factors be rigorously defined so that they are quantifiable contributions to environmental sustainability?
 % Purpose: Develop the factors into well-defined and measurable impacts on environmental sustainability.
 % Results: Use the agreed upon definitions to fully realise factors and their impact.
-
+% 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs} TODO: check the BN definitions align properly.
+% 
 \begin{table}[h]\label{tab:definitions} 
     \begin{tabular}{@{}llll@{}}
     \toprule
@@ -782,11 +789,11 @@ Workshop 3: Finalization of CPTs and Case Study Selection
     \end{tabular}
 \end{table}
 
-The key factors identified were defined as shown in Table \ref{tab:definitions}. By utilising these definitions, each factor's contribution to environmental sustainability were quantified and assessed. The quantification of each factor allowed for a systematic assessment of their impacts. For example, "Water Use" was quantified as "High" or "Low," enabling a straightforward assessment of its environmental impact. Similarly, other factors were defined and quantified to ensure their contributions to sustainability were measurable; with each being of the two general categories ideal and not ideal (low and high respectively for water use).
-
 By applying these definitions, the study effectively translated the qualitative aspects of environmental sustainability into usable metrics. This approach not only facilitated a comprehensive analysis of the factors but also identified their specific relationships. The use of these definitions enabled each of the factors' impacts to be linked and reviewed, demonstrating their importance in achieving environmental sustainability; allowing each factor's contribution to be clearly understood and relationships explicitly defined. This was key within the construction of the BN, were the industry panel could easily refer to the specifics of each definition and thus how it might relate to other factors.
 
 \subsection{Key Factors Impacting Environmental Sustainability in Australian Winegrowing}
+
+The relationships between the concepts defined by the industry panel are depicted in~\ref{figure:generalBN} as nodes in the Bayesian Network. The network highlights which factors are influenced by others in the form of an acyclic directed graph. Notably, the key factors influencing environmental impact centre around the application of agrochemical sprays, soil management, pest/disease and water. It also illustrates the complex nature of variables such as water and their interrelatedness.
 
     % What are the primary factors that significantly impact environmental sustainability in the Australian winegrowing industry?
     %     Purpose: Identify the most influential variables directly affecting environmental sustainability and those that are perceived to directly impact environmental sustainability.
@@ -795,21 +802,21 @@ By applying these definitions, the study effectively translated the qualitative 
     % What are the relationships between these factors in the Australian winegrowing industry?
     %     Purpose: Explore and understand the causal and correlated relationships among the factors.
     %     Results: Use the generic BN to illustrate the overall agreed upon relationships between discussed factors.
-
+% 
 \begin{figure}[h!]
     \centering
     % \includegraphics[width=\textwidth]{path_to_coonawarra_bn_figure} % Adjust the width as needed
-    \caption{The resultant Bayesian network after initial discussions of how factors that contribute to environmental impact are related. Illustrating the general relationships that exist between vineyard factors and environmental impact in Australian winegrowing.}
-    \label{fig:generalBN}
+    \caption{The resultant Bayesian network after initial discussions of how factors that contribute to environmental impact are related. Illustrating the general relationships that exist between vineyard factors and environmental impact in Australian winegrowing.}\label{fig:generalBN}
 \end{figure}
 
-The relationships between the nodes defined by the industry panel are depicted in~\ref{figure:generalBN}. The figure highlights which factors are influenced by others. For instance the key factors influencing environmental impact centre around the application of agrochemical sprays, soil management, pest/disease and water. It also illustrates the complex nature of variables such as water and their interrelatedness.
+The BN provided a comprehensive overview of how factors defined by the industry panel, would interact. Showing not only direct relationships but also how changes in one factor can propagate through the network to affect others. This understanding is crucial for developing targeted interventions and policies aimed at improving sustainability in the winegrowing industry. This network illustrates the complexity of interactions that define environmental sustainability in Australian winegrowing. Furthermore, the extent of relationships helps to intrinsically show the importance of variables such as water; which is prolific in how it is interconnected with other vineyard aspects.
 
-The BN provided a comprehensive overview of how these factors interact, showing not only direct relationships but also how changes in one factor can propagate through the network to affect others. This understanding is crucial for developing targeted interventions and policies aimed at improving sustainability in the winegrowing industry.
-
-By using the generic BN, the study was able to illustrate the complexity of interactions that define environmental sustainability in Australian winegrowing.
+Figure~\ref{fig:generalBN}, illustrates the importance of water, disease/pests and climate through their prominent connections and numerous child nodes. Variables such as fuel use and soil management are resultant children nodes that connect these external pressures to decisions that offer potential solutions or interventions to aid in pursuing more sustainable outcomes.
 
 \subsection{Comparative Analysis of Literature and Industry Perspectives}
+
+The bibliometric analysis using Leximancer, revealed key concepts and their relevance to environmental sustainability in the Australian winegrowing industry. The most prominent concept was water (see Table \ref{tab:lexi}). The critical importance of other variables being measured by their comparative appearance in articles relative to water (making water 100\%).
+
     % What are the factors of environmental sustainability in the Australian winegrowing industry?
     %     Purpose: Explore and understand the both the literature and industry perspectives on this.
     %     Results Literature review. Industry list of factors. Mind Map? Leximancer network.
@@ -833,26 +840,24 @@ By using the generic BN, the study was able to illustrate the complexity of inte
     different & 300 & 23 \\ \bottomrule
     \end{tabular}
     \end{table}
-    
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=\linewidth]{Winegrowing-concept-map}
-        \caption{Your caption here}
-        \label{fig:lexi}
-    \end{figure}
 
 % Comparing this with the data from Sustainable Winegrowing Australia (SWA), it was evident that the factors identified in the BN align with the critical areas SWA focuses on, such as water use, greenhouse gas emissions, and agrochemical use. This alignment reinforces the importance of these factors and supports the findings of the BN analysis.
 % What are the relationships between these factors in the Australian winegrowing industry?
 
 % Purpose: Explore and understand the causal and correlated relationships among the factors.
 
-The bibliometric analysis using Leximancer, revealed key concepts and their relevance to environmental sustainability in the Australian winegrowing industry. The most prominent concept was water. The critical importance of other variables being measured by their comparative appearance in articles relative to water (making water 100\%).
+The most significant concepts along with "water", included "change", "climate", and "disease". These terms highlight the focus on adapting to climate change and managing plant diseases, both of which are crucial for maintaining sustainable practices (see \ref{tab:lexi}). Furthermore, change and climate were kept separate to illustrate the variety of different changes, such as in practice, legislation and resource abundance. Additionally, although not in the top 10; "soil", "region", "practices", and "legislation" also appear to be dominant features within the literature. These factors are critical as they shape the environmental strategies employed by vineyards.
 
-Other significant concepts included "change", "climate", and "disease". These terms highlight the focus on adapting to climate change and managing plant diseases, both of which are crucial for maintaining sustainable practices (see \ref{tab:lexi}). Furthermore, change and climate were kept separate to illustrate the variety of different chagings such as in practice, legislation and resource abundance. Additionally, although not in the top 10; "soil", "region", "practices", and "legislation" also appear to be dominant features within the literature. These factors are critical as they shape the environmental strategies employed by vineyards.
+The prominence of different factors is visually described in Figure \ref{fig:lexi}, with the network depicting the frequency of these concepts appearing together. With the major concepts of these features being change, grapevine, water and land. These concepts illustrated the overarching theme between how the different concepts are connected, which showed very similar themes to that of the industry panel.
 
-The major concepts of these features was change, grapevine, water and land (see Figure \ref{fig:lexi}). these concepts illustrate the overarching theme between how the different concepts are connected, which showed very similar themes to that of the industry panel. A key difference was the rarity in how secondary and tertairy drivers of industry such as fuel or electricity use, were connected to primary sustainable concerns such as disease. With these conceps being related to the operations in fields as a result of changing practices or implementing different pest controls.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{Winegrowing-concept-map}
+    \caption{Your caption here}
+    \label{fig:lexi}
+\end{figure}
 
-Together these outputs provide a comprehensive overview of the key factors affecting environmental sustainability in the Australian winegrowing industry, offering valuable insights into areas of focus and potential improvement. This analysis underscores the multifaceted nature of sustainability, highlighting both the primary concerns and the interconnected secondary factors that must be managed on the ground.
+A key difference between the concepts from Leximancer and the Bayesian Network was the rarity in how secondary and tertiary drivers of industry such as fuel or electricity use, were connected to primary sustainable concerns such as disease. With these concepts being related to the operations in fields as a result of changing practices or implementing different pest controls. Together these outputs provide a comprehensive overview of the key factors affecting environmental sustainability in the Australian winegrowing industry, offering valuable insights into areas of focus and potential improvement. This analysis underscores the multifaceted nature of sustainability, highlighting both the primary concerns and the interconnected secondary factors that must be managed on the ground.
 
 \subsection{Sustainability specifics: Coonawarra Winegrowing}
 
@@ -903,7 +908,7 @@ The two case study BNs are almost identical in their significant factors and int
 
 The findings from the case study align closely with the literature, illustrating more directly how factors that contribute to environmental sustaianbility are connected. The BNs provide a detailed and structured view of primary factors and their relationships to secondary and tertiary concerns within the industry. This detailed evaluation helps prioritise actions and policies that could lead to significant improvements in the sustainability practices of winegrowing regions.
 
-\section{}
+\section{Discussion}
 
 % =================================
 Structuring the Results Section Based on These Questions:
