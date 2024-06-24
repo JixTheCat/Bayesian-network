@@ -1,6 +1,18 @@
 % Packages:
 
 \usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+  basicstyle=\ttfamily,
+  frame=single,
+  backgroundcolor=\color{lightgray!20},
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{green},
+  showstringspaces=false
+}
 
 %%%%%%%%%%%%%%%
 % Paper setup %
@@ -9,10 +21,8 @@
 %%%%%%%%%%%%%%%%
 % Working title
 %
-\title{Bayesian Networks for Assessing Environmental Sustainability in Australian Vineyards}
 
-
-\section{Abstract}
+% \section{Preamble notes}
 
 % What is your topic?
 The topic of this paper is the environmental sustainability of vineyards within Australia.
@@ -23,7 +33,6 @@ The identification of key factors; and their relation and contribution, direct o
 % Are there any relationships you want to explore?
 This is key to this study. The relationships are in many ways more important to the research than the effects.
 
-\section{Introduction}
 
 % Description
 % NB Avoid titles along the lines of: “Effects of ...”, “The role of ...”, etc.  Be specific about the effect and its significance so that your reader knows what is on offer.
@@ -67,43 +76,37 @@ This is key to this study. The relationships are in many ways more important to 
 % Question %
 %%%%%%%%%%%%
 
-% TODO: review the following questions:
-What are the key factors/indicators of environmental sustainability in the australian winegrowing industry?
-How can we measure and relate the factors that contribute to sustainability in the australian winegrowing industry?
-What are the key factors that relate directly to environmental sustainability?
-- and what in turn are the factors that contribute to these (and thus indirectly to environmental sustainability)?
-
 % Things to consider
 %
 % Why is the knowledge important?
-This was identified as a gap within our own prior research and is helpful in creating a basis for scenario assessment and comparison. This will allow a greater understanding of how these factors change within different scenarios; whether that be climate, region, business goal.
-% What is the significance?
-The significance is to bridge the gap between correlations and data to causal relationships. To inform growers using factors that are within their control, or how factors within their control are indfuenced by natural phenomenon.
-% How will the findings be utilised?
-These findings will be used to help inform the wider winegrowing community of what factors are most significant to environmental outcomes, and how they interact with one another. In practice this study aids a grower through informing them of how decisions impact environmental outcomes and how changing circumstance contribute to these factors and outcomes.
-% What improvements may be derived from this result?
-A wider more informed understanding of contributing factors to environmental impact and how different factors relate to one another to contribute to these findings.
-% Are the terms well defined?
-The terms are well defined. This was a key outcome of this project.
-% Do experts think your question is important/relevant/doable?
-Experts helped to guide this decision, and changed the trajectory of this project in response to data presented and how well they believed they could inform the study.
+% This was identified as a gap within our own prior research and is helpful in creating a basis for scenario assessment and comparison. This will allow a greater understanding of how these factors change within different scenarios; whether that be climate, region, business goal.
+% % What is the significance?
+% The significance is to bridge the gap between correlations and data to causal relationships. To inform growers using factors that are within their control, or how factors within their control are indfuenced by natural phenomenon.
+% % How will the findings be utilised?
+% These findings will be used to help inform the wider winegrowing community of what factors are most significant to environmental outcomes, and how they interact with one another. In practice this study aids a grower through informing them of how decisions impact environmental outcomes and how changing circumstance contribute to these factors and outcomes.
+% % What improvements may be derived from this result?
+% A wider more informed understanding of contributing factors to environmental impact and how different factors relate to one another to contribute to these findings.
+% % Are the terms well defined?
+% The terms are well defined. This was a key outcome of this project.
+% % Do experts think your question is important/relevant/doable?
+% Experts helped to guide this decision, and changed the trajectory of this project in response to data presented and how well they believed they could inform the study.
 
-% What is the nature of your question?
-%         who, what, where, when, why, how?
-What are the key factors that contribute to environmental impact within the Australian winegrowing industry?
-How do these key factors relate to each other and what are the factors that influence them?
-What are the decision that can be made by growers that can change the environmental outcomes of their vineyards?
-How do these factors chagne across well understood scenarios?
-% You can have more than one question.
+% % What is the nature of your question?
+% %         who, what, where, when, why, how?
+% What are the key factors that contribute to environmental impact within the Australian winegrowing industry?
+% How do these key factors relate to each other and what are the factors that influence them?
+% What are the decision that can be made by growers that can change the environmental outcomes of their vineyards?
+% How do these factors chagne across well understood scenarios?
+% % You can have more than one question.
 
-% What is the most important question your paper will pose?
-What are the key factors to environmental impact within the Australian winegrowing industry, and how are these factors related?
-% NB It is essential that your answer is framed as a direct question.  Your response must end with a question mark.
+% % What is the most important question your paper will pose?
+% What are the key factors to environmental impact within the Australian winegrowing industry, and how are these factors related?
+% % NB It is essential that your answer is framed as a direct question.  Your response must end with a question mark.
 
-% Why is the question/issue/problem worth examining?
-By examining the key and relevant factors to vineyards' environmental impacts we can better prepare for future changes in climate pressure, economic restrictions; that is we can better use this model to assess the potential environmental outcomes of the wine industry, as informed by experts, given potential upcoming challenges or changes.
-% Briefly outline the problem you are tackling and explain why the problem is important to knowledge in general.  “Nothing much is known” is not sufficient justification by itself.  You have to show why the gap in knowledge is important.  Expect to draw heavily on your reading of the literature in framing your answer but do not get into detail of  author and year.
-The collection of data and subsequent statistical analytics can only go so far as to fill the gap between cause and effects within wiengrowing. This research helps to fully understand the relevant decisions being made, how they are informed and what the known outcomes are. This helps to align these results to data collected to show stronger causal relationships than pure correlative, or hypothetical postulations of statistical analysis.
+% % Why is the question/issue/problem worth examining?
+% By examining the key and relevant factors to vineyards' environmental impacts we can better prepare for future changes in climate pressure, economic restrictions; that is we can better use this model to assess the potential environmental outcomes of the wine industry, as informed by experts, given potential upcoming challenges or changes.
+% % Briefly outline the problem you are tackling and explain why the problem is important to knowledge in general.  “Nothing much is known” is not sufficient justification by itself.  You have to show why the gap in knowledge is important.  Expect to draw heavily on your reading of the literature in framing your answer but do not get into detail of  author and year.
+% The collection of data and subsequent statistical analytics can only go so far as to fill the gap between cause and effects within wiengrowing. This research helps to fully understand the relevant decisions being made, how they are informed and what the known outcomes are. This helps to align these results to data collected to show stronger causal relationships than pure correlative, or hypothetical postulations of statistical analysis.
 %%%%%%%%%%
 % Answer %
 %%%%%%%%%%
@@ -407,6 +410,31 @@ The collection of data and subsequent statistical analytics can only go so far a
 % What is interesting - what will be discussed in the article with regard to these results? What makes me want to read the article?
 % And what is the take away point of the article? If I cant be bothered to read this article, what piece of knowledge can you leave mewiwth that I could recommend the article to someone else with?
 
+\section{Title}
+A Bayesian Network Model based decision support tool for Environmental Sustainability in the Australian Winegrowing Industry.
+
+\section{Abstract}
+
+The assessment of environmental sustainability in the Australian winegrowing industry remains a complex issue involving changing and compounding factors. To address this, we developed a Bayesian Network (BN) using data and expert elicitation to summarise the key factors, their relationships, and how they come together to influence vineyards' environmental outcomes. The study leveraged diverse expert perspectives to mitigate biases in probability estimations and promote discourse.
+
+The development of the BN involved an iterative process, including variable selection and definition, the defining of model structure and variable relationships, and finally the determining of relationship significance through probabilities. Expert input was pivotal in structuring the BN model, ensuring relevance to industry, and how a variables influence changed across regions and scenarios.
+
+Due to the possible variation in any given vineyard scenario the BN model was expanded to review a case study of the Coonawarra wine region in South Australia. This highlighted regional differences between growers whilst also maintaining the significance of industry-wide concerns such as the use of agrochemicals. To promote accessibility and scrutiny the BN was further developed into an application, allowing the possibility of further industry and stakeholder feedback; enabling a systematic re-evaluation of significant factors to the wine growing industry and how they change over time.
+
+\section{Introduction}
+TODO: refs
+The imperative for environmental sustainability in agriculture has intensified as the sector strives to balance productivity with ecological preservation. This is especially true for Viticulture, the cultivation of grapevines for wine production, as it presents unique challenges and opportunities for sustainability, particularly due to its position as a luxury good amongst other agricultural industries. This study investigates environmental sustainability practices in Australian winegrowing, using the application of Bayesian Networks (BNs). A broader model of Australian winegrowing was created, with a more specific case study looking at the Coonawarra winegrowing region being conducted to create a rigorous and quantitative approach to understanding sustainable practices and the relationships between these factors.
+
+Bayesian Networks are probabilistic models that effectively capture and analyse the interactions between multiple factors in complex systems. By integrating expert knowledge and region-specific data, BNs were able to provide a structured framework to quantify the impacts of various factors on sustainability within Australian winegrowing. This methodology not only shed light on current sustainability practices but also identified critical areas for intervention through illustrating the interconnectedness of each of the factors and how they directly or indirectly influence one another.
+
+This research is guided by several fundamental inquiries aimed at enhancing our understanding of environmental sustainability in viticulture. a primary question is how key factors impacting environmental sustainability can be rigorously defined and quantified. Another focus delves into identifying the unique regional characteristics of different regions, using the Coonawarra winegrowing region to illustrate how factors influence might change regionally. Additionally, the study investigates how these factors interact within a Bayesian Network model, providing a framework for understanding their complex interdependencies. The final question, looks at how the findings from these Bayesian Network models compare with existing literature on sustainability in viticulture, aiming to connect industry perceptions to academic knowledge.
+
+The industry panel was used as a catalyst in the early stages of this research to help explore these multifaceted questions. A comprehensive literature review was compiled through both structured searches. This extensive review established a foundational understanding of the current knowledge landscape and identified major concepts within sustainable winegrowing. To ensure a robust and comprehensive approach, a combination of qualitative and quantitative methods were employed within the creation of the BN; this included expert consultations and data analysis, which were instrumental in the BNs construction and validation. The consultations were done through the use of An industry panel comprising experts in viticulture and environmental sustainability, which provided insights and guidance throughout the research process. Their expertise was crucial in defining and quantifying the key factors, and further understanding the specific regional characteristics to Coonawarra. Through the integration of industry knowledge and academic research this study aimed to produce findings that are not only theoretically sound but also practically relevant and applicable to the viticulture industry.
+
+% The results section presents an in-depth analysis of The Coonawarra case study, highlighted significant factors identified by the BN and their interactions. Key factors such as water quality, pest and disease management, market pressures, agrochemical use, and climate/weather conditions were found to be the most influential on environmental sustainability in the region. Comparative analysis with another case study BN and existing literature underscores the robustness and relevance of our findings.
+
+This study provides critical insight into enhancing environmental sustainability through informed decision-making and targeted interventions by highlighting the sensitivity of different factors to the environmental sustainability of vineyards. The findings have significant implications for the local viticulture industry and offer a replicable framework for other agricultural sectors aiming to achieve sustainability.
+
 \section{Methods}
 
 In agriculture, the consideration of environment is critical to the success of the industry. The question of environmental sustainability has continued to grow in importance as the industry is affected by international market demands, disease pressures, natural disasters and social change \citep{wineaustraliaNationalVintageReport2022,wineaustraliaNationalVintageReport2020,wineaustraliaNationalVintageReport2021,cassonMultidisciplinaryApproachAssess2022}. The question of sustainability requires the consideration of a multitude of factors, not only due to physical differences between locations/habitats but also due to priorities driven by a myriad of perspectives from as consumers, ecosystems, government and industry \citep{baianoOverviewSustainabilityWine2021,wayeCarbonFootprintsFood2008}. It is important to consider each factor with respect to its relevant perspectives, and to be explicit in how each of these factors and perspectives are defined \citep{santiago-brownSustainabilityAssessmentWineGrape2015}.
@@ -416,7 +444,26 @@ Collaboration between experts from different perspectives is a useful method to 
 Methods for measuring sustainability comprise a wide variety of approaches with the use of index systems being common \citep{gehringerMappingSustainabilityMeasurement2024}. Other approaches utilise the identification of key factors, and their measurements as a proxy to indicate impact to, or the health of, the environment \citep{floresWhatSustainabilityWine2018}. The measuring of sustainability through the use of these tools can help to manage risk and promote resilience for industries through identifying sustainable goals and key factors of interest that contribute to positive outcomes \citep{klemesAssessingMeasuringEnvironmental2015, beckerSustainabilityScienceManaging2024}. Within this study we focus on measuring key factors and establishing how they interact, and ultimately effect the surrounding environment; the chosen method for this study is a Bayesian Network.
 
 \subsection{Literature Review}
-#TODO:
+
+The literature review was a crucial component of this study, designed to establish a comprehensive understanding of existing knowledge on environmental sustainability in viticulture. The review aimed to identify key factors influencing sustainability, understanding their interactions, and to compare findings with the results obtained from the Bayesian Network and expert definitions.
+
+A systematic search strategy was employed to ensure a thorough review of the literature. The search included multiple academic journals; with search terms being broadly based on key factors given from the industry panel. This approach was used capture a wide range of relevant literature, incorporating keywords associated with viticulture, sustainability, and other agricultural operations related to the definitions provided by the expert panel. The general query (adapted to different formats for various journals and bibliographic databases) used for the literature search was: 
+
+% This is the query in a code-like format.
+\begin{lstlisting}[language=]
+    (Water OR Agrochemical OR Chemical OR Ground management OR Pest OR Disease OR Management OR Electricity OR Energy OR GHG OR Emissions OR Greenhouse gas emissions OR Environmental OR Environment OR Ecological OR Fertiliser OR Fertilizer OR Fuel OR Biofuel OR Price OR Nutrient OR Runoff OR Leeching OR Market OR Supply and demand OR Soil OR Organic carbon OR SOC OR Tractor OR Field OR Operations OR Weather OR Climate OR Yield OR Production)
+    AND
+    (Sustainability OR Sustainable OR Eco-friendly OR Environmentally friendly OR Green practices)
+    AND
+    (Viticulture OR Winegrowing OR Vineyard)
+    \end{lstlisting}
+Inclusion and Exclusion Criteria
+
+To ensure the relevance and quality of the literature reviewed, specific inclusion and exclusion criteria were applied. Articles were only excluded if they were not available in full text or were not written in English. Journals beyond those included were also examined especially where they offered in-depth reviews of sustainability within agriculture or winegrowing; methodological reviews within this context were also included.
+
+Once relevant articles were identified, data extraction was conducted to gather information on the key factors influencing environmental sustainability in viticulture, their interactions, and the methodologies used in previous studies. The extracted data was then processed using Leximancer to identify common themes and concepts in the existing literature.
+
+An expert panel comprising specialists in viticulture and environmental sustainability was engaged throughout the literature review process. The panel provided guidance on the selection of relevant articles, helped refine the inclusion criteria through their list of key factors. By conducting a thorough literature review, this study aimed to build a solid foundation of existing knowledge, identify gaps, and position the findings from the Bayesian Network models within the broader context of sustainability research in viticulture. This approach ensured that the study's results were not only robust and scientifically sound but also practically relevant and actionable for industry stakeholders.
 
 \subsection{Bayesian Networks}
 
@@ -428,6 +475,7 @@ The calculations of a Bayesian Network are based on Bayes' theorem, shown as fol
 \begin{equation}\label{bayesformula}
 P(A|B)= {P(B|A)P(A)}\over{P(B)}
 \end{equation}.
+
 Where we calculate the probability of an event A given an event B, as demonstrated by \cite{bayesLIIEssaySolving1763}. Within a Bayesian Network, an event can be considered any given node and its outcome one of the node's classes. Events are connected by edges within the network, with each node containing the probability of an outcome given parent nodes' outcomes. This is an iterative application of \ref{bayesformula}, which can be achieved through
 
 \begin{equation}
@@ -497,11 +545,13 @@ The process utilises two outward and an inward propagation across a junction tre
 
 These coefficients are used in determining evidence through
 
-$$ y = {{p(a, e)(x)}\over{p(e)(x)}}={{\alpha x + \beta}\over{\gamma x + \delta}} $$.
+\begin{equation}
+y = {{p(a, e)(x)}\over{p(e)(x)}}={{\alpha x + \beta}\over{\gamma x + \delta}}
+\end{equation}.
 
 Where $y$ is the posterior marginal of interest, given evidence $e$, with respect to the parameter $x$. 
 
-% FIXME: should I extrapolate on this method?
+% should I extrapolate on this method?
 
 % y - a posterior marginal of interest
 % e - evidence
@@ -516,8 +566,6 @@ Where $y$ is the posterior marginal of interest, given evidence $e$, with respec
 % pi - the parent nodes of the b ith node
 % $$ x = p(b_{i}|\pi) $$
 
-
-
 % $$ p(e)(x) = \gamma x + \delta $$
 
 % For each parameter under investigation, the sensitivity function 
@@ -531,7 +579,9 @@ By employing this method, the sensitivity analysis avoids the extensive computat
 
 \subsection{Case study: Coonawarra}
 
-Due to the regional limitations of the model experts proposed a case study of a specific and well understood region: Coonawarra in South Australia. The choice of the region was due to the prevalence of data within and around the region, as well as experts' understanding of the region's unique challenges and benefits to winegrowing. The Coonawarra model was built off of the original Bayesian Network's structure with site specific conditional probabilities being entered and scrutinised by the expert panel.
+Due to the regional limitations of the model, experts proposed a case study of a specific and well understood region: Coonawarra in South Australia. The choice of the region was due to the prevalence of data within and around the region, as well as experts' understanding of the region's unique challenges and benefits to winegrowing. The Coonawarra BN was built off of the original Bayesian Network's structure with site specific conditional probabilities being entered and scrutinised by the expert panel. Difference in factor interactions were further discussed by the panel, resulting in two distinct BN models that influenced two types of approaches; primarily differing between opportunity based tractor use for undervine operations and more purposeful undervine management, as well as the inclusion of further soil based factors that could be significant for particular sites.
+
+% \subsection{Methods notes}
 
 % \citep{mayfieldDesigningExpertledBayesian2023} -> this reference also uses a similar method which we can cite alongside everything else.
 % % These are transcribed notes from Korb & Nicholson:
@@ -544,201 +594,201 @@ Due to the regional limitations of the model experts proposed a case study of a 
 % Each element within the elicitation process was iteratively 
 % Elicitation was conduct ach  Although workshops focussed on a single issue, it was important to continually address each issue in an iterative fashion. The approach to ensuring a sound and sane network, was to directly address common issues that occur during the construction of Bayesian Networks using ellicitation as outlined by #TODO: Korb and Nicholson. These issues are similarly highlighted by #:TODO: Pitchforth.
 
-Transparency with the expert panel was a key ingredient with this approach, highlighting explicitly what these problems were and how we would overcome them. This included agreeing upon definitions of each node before connecting edges between them.
+% Transparency with the expert panel was a key ingredient with this approach, highlighting explicitly what these problems were and how we would overcome them. This included agreeing upon definitions of each node before connecting edges between them.
 
-Although originally multiclass nodes existed, the bayesian network was altered to only include binary class nodes. Each edge between a node had to answer the following questions:
-\begin{enumerate}
-        \item Are the nodes in the BN the right ones?
-        % \item Are the state spaces (values) for each node correct?
-        \item Are the arcs right?
-\end{enumerate}
-If the answer to any of the above questions was no; then the structure was not considered sufficiently defined. Although we explicitly defined the structure of the BN prior to CPT parametarisation. This process continued when adding conditionaly probability values. The entire process of construction iinvolved the steps:
-\begin{enumerate}
-        \item exposing the panel to a strawman argument/model/definition
-        \item Outlining the model and the process involved in defining the structure of a BN
-        \item The expert panel reviewing possible nodes and arcs and definitions
-        \item Defining their own structure, node or term.
-        \item Agreeing upon the final definition, structure or model.
-\end{enumerate}
-\subsubsection{Trying to build the full model all at once}
+% Although originally multiclass nodes existed, the bayesian network was altered to only include binary class nodes. Each edge between a node had to answer the following questions:
+% \begin{enumerate}
+%         \item Are the nodes in the BN the right ones?
+%         % \item Are the state spaces (values) for each node correct?
+%         \item Are the arcs right?
+% \end{enumerate}
+% If the answer to any of the above questions was no; then the structure was not considered sufficiently defined. Although we explicitly defined the structure of the BN prior to CPT parametarisation. This process continued when adding conditionaly probability values. The entire process of construction iinvolved the steps:
+% \begin{enumerate}
+%         \item exposing the panel to a strawman argument/model/definition
+%         \item Outlining the model and the process involved in defining the structure of a BN
+%         \item The expert panel reviewing possible nodes and arcs and definitions
+%         \item Defining their own structure, node or term.
+%         \item Agreeing upon the final definition, structure or model.
+% \end{enumerate}
+% \subsubsection{Trying to build the full model all at once}
 
-Korb & Nicholson say that it is nearly impossible to build a complex BN all in one go. They recommend:
-\begin{enumerate}
-        \item dividing models into subcomponents
-        \item breaking down the problem into a single target variable
-        \item reducing the scope of the problem
-        \item Setting a single time frame for the problem
-\end{enumerate}
-The strawman was presented as three subcomponents that pertained to the triple bottom line's environment, economy and social aspects.
-Within the first workshop it was agreed on by the expert panel to reduce the scope from a triple bottom line to only reviewing the environmental impacts of vineyards. This also reduced the BN to a single terminal node. It was further decided to create the BN as a single season to limit its complexity.
+% Korb & Nicholson say that it is nearly impossible to build a complex BN all in one go. They recommend:
+% \begin{enumerate}
+%         \item dividing models into subcomponents
+%         \item breaking down the problem into a single target variable
+%         \item reducing the scope of the problem
+%         \item Setting a single time frame for the problem
+% \end{enumerate}
+% The strawman was presented as three subcomponents that pertained to the triple bottom line's environment, economy and social aspects.
+% Within the first workshop it was agreed on by the expert panel to reduce the scope from a triple bottom line to only reviewing the environmental impacts of vineyards. This also reduced the BN to a single terminal node. It was further decided to create the BN as a single season to limit its complexity.
 
-\subsection{The problem}
-\subsubsection{Not understanding the problem context, complexity without value.}
-It is crucial to gain a clear understanding of the problem and its context. This can be seen as answering the following questions:
-\begin{enumerate}
-        \item what do you want to reason about?
-        \item What dont you know?
-        \item What information do you have?
-        \item What do you know?
-These questions are well addressed in prior research. The creation of baseline models showed strong linear relationships between many variables. The creation of XGBoosted trees uncovered the ability to well inform any particular variable but with no real causal structure or understandability. here we seek to pursue causality and link these variables together in a way that is more aligned with a decision support structure than purely as a predictive exercise.
-\subsubsection{Complexity without value}
-A very common impulse, when something is known about the problem, is to want to put it in the model. But including everything known, just because it is known, simply adds complexity to the model without adding any value (and in fact often reduces value). Instead, the knowledge engineer must focus on the problem:
-"Which of the known variables are most relevant to the problem?"
-- This issue in its the simplest form has attempted to be overcome through trying to mediate the workshop and inform experts of the potential probelsm that will come with a cumbersome model.
-\end{enumerate}
+% \subsubsection{The problem}
+% \subsubsection{Not understanding the problem context, complexity without value.}
+% It is crucial to gain a clear understanding of the problem and its context. This can be seen as answering the following questions:
+% \begin{enumerate}
+%         \item what do you want to reason about?
+%         \item What dont you know?
+%         \item What information do you have?
+%         \item What do you know?
+% These questions are well addressed in prior research. The creation of baseline models showed strong linear relationships between many variables. The creation of XGBoosted trees uncovered the ability to well inform any particular variable but with no real causal structure or understandability. here we seek to pursue causality and link these variables together in a way that is more aligned with a decision support structure than purely as a predictive exercise.
+% \subsubsection{Complexity without value}
+% A very common impulse, when something is known about the problem, is to want to put it in the model. But including everything known, just because it is known, simply adds complexity to the model without adding any value (and in fact often reduces value). Instead, the knowledge engineer must focus on the problem:
+% "Which of the known variables are most relevant to the problem?"
+% - This issue in its the simplest form has attempted to be overcome through trying to mediate the workshop and inform experts of the potential problem that will come with a cumbersome model.
+% \end{enumerate}
 
-\subsection{Structure - Nodes}
-The list below is each of the problems, which can be addressed together in some fashion as the approaches of solving them overlap.
-\begin{enumerate}
-        \item Getting the node values wrong
-        \item Node values aren't exhaustive
-        \item Node values aren't mutually exclusive
-        \item Incorrect modelling of mutually exclusive outcomes
-        \item Trying to model fuzzy categories
-        \item Confusing state and Probability
-        \item Confusion about what the node represents
-\end{enumerate}
-Two major strategies were employed to overcome these problems. Tying nodes explicitly to a data source that corroborated the definition and state in some manner as the node. For node s that did not have data set they were sought to be defined with an explicit explanation that experts agreed upon or had some external explanation such as legislation.
+% \subsubsection{Structure - Nodes}
+% The list below is each of the problems, which can be addressed together in some fashion as the approaches of solving them overlap.
+% \begin{enumerate}
+%         \item Getting the node values wrong
+%         \item Node values aren't exhaustive
+%         \item Node values aren't mutually exclusive
+%         \item Incorrect modelling of mutually exclusive outcomes
+%         \item Trying to model fuzzy categories
+%         \item Confusing state and Probability
+%         \item Confusion about what the node represents
+% \end{enumerate}
+% Two major strategies were employed to overcome these problems. Tying nodes explicitly to a data source that corroborated the definition and state in some manner as the node. For node s that did not have data set they were sought to be defined with an explicit explanation that experts agreed upon or had some external explanation such as legislation.
 
-\subsection{Structure Arcs}
-\subsubsection{Getting the arc directions wrong}
-Arc directions are commonly wrong for the following reasons:
-\begin{enumerate}
-        \item Modelling reasoning rather than causation
-        \item Inverting cause and effect
-        \item Missing variables
-\end{enumerate}
-To note: Korb and Nicholson do not actually suggest a method for overcoming these problems. There is an inherint risk in creating a model and not having knowledge of a missing variable or of a causation. It is important to acknowledge that there is always a possibility that causation is mixed up with reasoning, and that not all variables are always known.
-\subsubsection{Too many parents}
-Sometimes it is unavoidable that a node is affected by many factors, or other nodes. There are some methods to help overcome this such as divorcing, in which a node is created to capture the cumulative affects of several parents on a child. This technique was employed in the creation of the structure of the BN with the expert panel.
+% \subsubsection{Structure Arcs}
+% \subsubsection{Getting the arc directions wrong}
+% Arc directions are commonly wrong for the following reasons:
+% \begin{enumerate}
+%         \item Modelling reasoning rather than causation
+%         \item Inverting cause and effect
+%         \item Missing variables
+% \end{enumerate}
+% To note: Korb and Nicholson do not actually suggest a method for overcoming these problems. There is an inherint risk in creating a model and not having knowledge of a missing variable or of a causation. It is important to acknowledge that there is always a possibility that causation is mixed up with reasoning, and that not all variables are always known.
+% \subsubsection{Too many parents}
+% Sometimes it is unavoidable that a node is affected by many factors, or other nodes. There are some methods to help overcome this such as divorcing, in which a node is created to capture the cumulative affects of several parents on a child. This technique was employed in the creation of the structure of the BN with the expert panel.
 
-\subsection{Parameters}
-\subsubsection{Experts estimates of probabilities are biased}
-\begin{enumerate}
-        \item Overconfidence: The attribution of higher than justifiable probabilities to nodes/events.
-        \indent The tendency to attribute higher than justifiable probabilities (\citep{lichtensteinCalibrationProbabilitiesState1982} 
-        \item Anchoring: The tendency towards higher/lower based off of an arbitrary point of comparison. "Anchoring" people at a higher or lower than normal prediction because of some assumption or example  \citep{kahnemanPsychologyPrediction1973}.
-        \item Availability: The assessing of an event as more probable than is justifiable becaues it is more memorable or noticeable \citep{tverskyJudgmentUncertaintyHeuristics1974}.
+% \subsubsection{Parameters}
+% \subsubsection{Experts estimates of probabilities are biased}
+% \begin{enumerate}
+%         \item Overconfidence: The attribution of higher than justifiable probabilities to nodes/events.
+%         \indent The tendency to attribute higher than justifiable probabilities (\citep{lichtensteinCalibrationProbabilitiesState1982} 
+%         \item Anchoring: The tendency towards higher/lower based off of an arbitrary point of comparison. "Anchoring" people at a higher or lower than normal prediction because of some assumption or example  \citep{kahnemanPsychologyPrediction1973}.
+%         \item Availability: The assessing of an event as more probable than is justifiable becaues it is more memorable or noticeable \citep{tverskyJudgmentUncertaintyHeuristics1974}.
 
-\end{enumerate}
-We have attempted to overcome this with two methods. A diverse and varried expert panel. Those participanting have experience in multiple vineyards as managers and other duties as well as the panel itself having varied manager/owners from different regions and scale. With some experts being more specialised in specific areas such as agro-chemicals.
-\subsubsection{Inconsistent probabilities}
-The collection of probabilities for when the CPT is large can result in inconsistent probabilities. The collection of probabilities at different times or if probabilities are supplied by different experts can result in inconsistent probabilities as well.
-The use of desciptors such as very high or low can be of assistance \cite{vandergaag2013elicit}. In this study we overcame this through the use of worded response such as high and low. We then assigned probabilities to those broader cases. We had every expert agree upon each of the probabilities so that they could argue for or against any particular bias and so that the probabilities would even out to a more broader applicability, across all of the experts experiences.
-% \item Inconsistent "filling in" of large CPTs:
--       -       - Being dead certain.
-\subsubsection{Incoherent probabilities (not summing to 1)}
-We used software that automatically detected incoherent probabilities when filling in the CPT values to overocme this problem.
-\subsubsection{Being dead certain}
-It is important that we limit over confidence (A quote form mark twain was used in the korb and Nicholson). 
-Our best defence against this was to use multiple experts with different experiences and to challenge them when something was certain. To ask why and to check in about their thoughts.
+% \end{enumerate}
+% We have attempted to overcome this with two methods. A diverse and varried expert panel. Those participanting have experience in multiple vineyards as managers and other duties as well as the panel itself having varied manager/owners from different regions and scale. With some experts being more specialised in specific areas such as agro-chemicals.
+% \subsubsection{Inconsistent probabilities}
+% The collection of probabilities for when the CPT is large can result in inconsistent probabilities. The collection of probabilities at different times or if probabilities are supplied by different experts can result in inconsistent probabilities as well.
+% The use of desciptors such as very high or low can be of assistance \cite{vandergaag2013elicit}. In this study we overcame this through the use of worded response such as high and low. We then assigned probabilities to those broader cases. We had every expert agree upon each of the probabilities so that they could argue for or against any particular bias and so that the probabilities would even out to a more broader applicability, across all of the experts experiences.
+% % \item Inconsistent "filling in" of large CPTs:
+% -       -       - Being dead certain.
+% \subsubsection{Incoherent probabilities (not summing to 1)}
+% We used software that automatically detected incoherent probabilities when filling in the CPT values to overocme this problem.
+% \subsubsection{Being dead certain}
+% It is important that we limit over confidence (A quote form mark twain was used in the korb and Nicholson). 
+% Our best defence against this was to use multiple experts with different experiences and to challenge them when something was certain. To ask why and to check in about their thoughts.
 
-\citep{morganUncertaintyGuideDealing1990}
-Two attributes of good elicitation process are:
-\begin{enumerate}
-        \item The expert should be apprised of what is known about the process, especially the nearly universal tendency to overcomefidence and other forms of bias. In order to avoid some problems, values should be elicited in random order and the expert not given feedback on how the different values fit together until a complet set has been elicited.
-        \item The elicitation process is not simply one of requesting and recording numbers but also one of the refining the definitions of variables and terms to be used in the model. What values are elicited depends directly upon the interpretation of terms and these should be made as explicit as possible and recorded during the elicitation. This is part of the process management described earlier.
-\end{enumerate}
-- 
+% \citep{morganUncertaintyGuideDealing1990}
+% Two attributes of good elicitation process are:
+% \begin{enumerate}
+%         \item The expert should be apprised of what is known about the process, especially the nearly universal tendency to overcomefidence and other forms of bias. In order to avoid some problems, values should be elicited in random order and the expert not given feedback on how the different values fit together until a complet set has been elicited.
+%         \item The elicitation process is not simply one of requesting and recording numbers but also one of the refining the definitions of variables and terms to be used in the model. What values are elicited depends directly upon the interpretation of terms and these should be made as explicit as possible and recorded during the elicitation. This is part of the process management described earlier.
+% \end{enumerate}
+% - 
 
-\citep{Boneh2021} Boneh, T. (2010). Ontology and Bayesian decision networks for supporting the meterological forecasting process. Ph. D thesis, Clayton School of infomration technology, Monash university
-Boneh 2010 describe Knowledge Engineering with Bayesian Networks (KEBN) as occurring in a 4 stage life cycle:
-- Bayesian Network Structure
-- Probability Parameters
-- Decision Structure
-- Utilities Preference
+% \citep{Boneh2021} Boneh, T. (2010). Ontology and Bayesian decision networks for supporting the meterological forecasting process. Ph. D thesis, Clayton School of infomration technology, Monash university
+% Boneh 2010 describe Knowledge Engineering with Bayesian Networks (KEBN) as occurring in a 4 stage life cycle:
+% - Bayesian Network Structure
+% - Probability Parameters
+% - Decision Structure
+% - Utilities Preference
 
-Pitchforth \citep{pitchforthProposedValidationFramework2013} agrees with this style of structure naming these steps as:
-- Structure
-- Discretisation
-- Parametarisation
-- Model behaviour
-- Validation
+% Pitchforth \citep{pitchforthProposedValidationFramework2013} agrees with this style of structure naming these steps as:
+% - Structure
+% - Discretisation
+% - Parametarisation
+% - Model behaviour
+% - Validation
 
-Korb & Nicholson have a similar view to Pitchforth. utilising a waterfall style developemental approach which include 5 stages:
-- Building the BN
--       - Structure
--       - Parameters
--       - Preferences
-- Validation
--       - Sensitivity Analysis
--       - Accuracy testing
-- Field testing
--       - Alpha/Beta testing
--       - Acceptance testing
-- Industrial use
--       - Collection of Statistics
-- Refinement
--       - Updating procedures
--       - Regression testing
+% Korb & Nicholson have a similar view to Pitchforth. utilising a waterfall style developemental approach which include 5 stages:
+% - Building the BN
+% -       - Structure
+% -       - Parameters
+% -       - Preferences
+% - Validation
+% -       - Sensitivity Analysis
+% -       - Accuracy testing
+% - Field testing
+% -       - Alpha/Beta testing
+% -       - Acceptance testing
+% - Industrial use
+% -       - Collection of Statistics
+% - Refinement
+% -       - Updating procedures
+% -       - Regression testing
 
-Where discretisation and validation are additional steps to assign intervals to continuous factors (discretisation) and to ensure the models appropriateness (validation)
+% Where discretisation and validation are additional steps to assign intervals to continuous factors (discretisation) and to ensure the models appropriateness (validation)
 
-With validation incorporating the expert scrutiny of the models begaviour for scenarios, as well as comparing this to both data and other literature.
+% With validation incorporating the expert scrutiny of the models begaviour for scenarios, as well as comparing this to both data and other literature.
 
-\subsection{Structure and Conditional Probabilities}
+% \subsubsection{Structure and Conditional Probabilities}
 
-\subsection{Validation}
+% \subsubsection{Validation}
 
-\citep{korbBayesianArtificialIntelligence2011}
-
-
+% \citep{korbBayesianArtificialIntelligence2011}
 
 
-% Abstract
 
-1. Introduction to Methodology
 
-    Brief overview of the research approach and the rationale behind using a Bayesian Network (BN) model for sustainability assessment in viticulture.
-    Mention of the collaborative expert elicitation process and the sequential workshops that shaped the model development.
+% % Abstract
 
-2. Identification of Sustainability Indicators
+% 1. Introduction to Methodology
 
-    Description of the process for selecting sustainability indicators, including the use of data from Sustainable Wine Australia.
-    Criteria for indicator selection, focusing on relevance to environmental, economic, and social dimensions of sustainability in winegrowing.
+%     Brief overview of the research approach and the rationale behind using a Bayesian Network (BN) model for sustainability assessment in viticulture.
+%     Mention of the collaborative expert elicitation process and the sequential workshops that shaped the model development.
 
-3. Expert Elicitation Process
+% 2. Identification of Sustainability Indicators
 
-    Overview of the expert panel composition and the expertise represented.
-    Objectives and structure of the expert elicitation process, highlighting the series of workshops conducted.
+%     Description of the process for selecting sustainability indicators, including the use of data from Sustainable Wine Australia.
+%     Criteria for indicator selection, focusing on relevance to environmental, economic, and social dimensions of sustainability in winegrowing.
 
-Workshop 1: Variable Review and Straw Man Model Introduction
+% 3. Expert Elicitation Process
 
-    Objectives: To agree on the sustainability indicators and introduce the initial straw man model.
-    Activities: Discussion on indicator relevance and definitions; presentation of the straw man model.
-    Outcomes: Agreement on initial set of variables and conceptual understanding of the model's direction.
+%     Overview of the expert panel composition and the expertise represented.
+%     Objectives and structure of the expert elicitation process, highlighting the series of workshops conducted.
 
-Workshop 2: Model Structure Refinement and Interpolation Method Introduction
+% Workshop 1: Variable Review and Straw Man Model Introduction
 
-    Objectives: To refine the model's structure and address the complexity of CPTs through an interpolation method.
-    Activities: Examination of variable relationships; identification of complex CPTs; proposal of the linear interpolation method.
-    Outcomes: Revised model structure; decision to develop and implement the interpolation method for complex CPTs.
+%     Objectives: To agree on the sustainability indicators and introduce the initial straw man model.
+%     Activities: Discussion on indicator relevance and definitions; presentation of the straw man model.
+%     Outcomes: Agreement on initial set of variables and conceptual understanding of the model's direction.
 
-Workshop 3: Finalization of CPTs and Case Study Selection
+% Workshop 2: Model Structure Refinement and Interpolation Method Introduction
 
-    Objectives: To finalize CPT values using the interpolation method and select a case study for model application.
-    Activities: Presentation and application of the interpolation method; finalization of CPT values; selection of the Coonawarra wine region for the case study.
-    Outcomes: Completion of model parameterization; selection of case study region emphasizing the model's practical application.
+%     Objectives: To refine the model's structure and address the complexity of CPTs through an interpolation method.
+%     Activities: Examination of variable relationships; identification of complex CPTs; proposal of the linear interpolation method.
+%     Outcomes: Revised model structure; decision to develop and implement the interpolation method for complex CPTs.
 
-4. Development and Implementation of the Interpolation Method
+% Workshop 3: Finalization of CPTs and Case Study Selection
 
-    Detailed explanation of the linear interpolation method developed to manage the complexity of CPTs for variables with extensive connections.
-    Justification for choosing this method and its anticipated impact on the model's usability and accuracy.
+%     Objectives: To finalize CPT values using the interpolation method and select a case study for model application.
+%     Activities: Presentation and application of the interpolation method; finalization of CPT values; selection of the Coonawarra wine region for the case study.
+%     Outcomes: Completion of model parameterization; selection of case study region emphasizing the model's practical application.
 
-5. Case Study Application: Coonawarra Wine Region
+% 4. Development and Implementation of the Interpolation Method
 
-    Rationale for selecting the Coonawarra wine region as a case study to apply and test the BN model.
-    Brief description of how the model was applied to this specific context, including any regional data used and adjustments made for the case study.
+%     Detailed explanation of the linear interpolation method developed to manage the complexity of CPTs for variables with extensive connections.
+%     Justification for choosing this method and its anticipated impact on the model's usability and accuracy.
 
-6. Model Validation
+% 5. Case Study Application: Coonawarra Wine Region
 
-    Overview of the validation process employed to ensure the accuracy and reliability of the BN model.
-    Description of internal and external validation measures, including expert review and comparison with independent datasets.
+%     Rationale for selecting the Coonawarra wine region as a case study to apply and test the BN model.
+%     Brief description of how the model was applied to this specific context, including any regional data used and adjustments made for the case study.
 
-7. Conclusion
+% 6. Model Validation
 
-    Summary of the methodological approach, emphasizing the collaborative expert elicitation process and the innovative solutions developed for model construction and parameterization.
-    Brief mention of the significance of the methodology for sustainability assessment in viticulture and potential implications for future research and practice.
+%     Overview of the validation process employed to ensure the accuracy and reliability of the BN model.
+%     Description of internal and external validation measures, including expert review and comparison with independent datasets.
+
+% 7. Conclusion
+
+%     Summary of the methodological approach, emphasizing the collaborative expert elicitation process and the innovative solutions developed for model construction and parameterization.
+%     Brief mention of the significance of the methodology for sustainability assessment in viticulture and potential implications for future research and practice.
 
 \section{Results}
 
@@ -908,114 +958,104 @@ The two case study BNs are almost identical in their significant factors and int
 
 The findings from the case study align closely with the literature, illustrating more directly how factors that contribute to environmental sustaianbility are connected. The BNs provide a detailed and structured view of primary factors and their relationships to secondary and tertiary concerns within the industry. This detailed evaluation helps prioritise actions and policies that could lead to significant improvements in the sustainability practices of winegrowing regions.
 
+% \subsection{Results notes}
+
+% % =================================
+% Structuring the Results Section Based on These Questions:
+% Introduction to Results
+
+%     Content: Briefly restate the refined research questions.
+%     Explanation: Explain the approach to answering these questions using the BN model and CPT values.
+
+% Primary Factors Identification
+
+% Question: What are the primary factors that significantly impact environmental sustainability in the Australian winegrowing industry?
+
+%     Content: Present the primary factors identified through your analysis.
+%     Data: Use the rigorous definitions and the generic BN to highlight these factors.
+%     Figures/Tables: Include a table or figure showing the key factors and their relative importance.
+
+% Quantitative Measurement and Analysis
+
+% Question: How can these key factors be quantitatively measured and analyzed to assess their contributions to sustainability in the Australian winegrowing industry?
+
+%     Content: Describe the methods used to measure and analyze the key factors.
+%     Data: Show measurements and analytical results from the CPT values in the specific BN models.
+%     Figures/Tables: Include charts or tables showing the measurements and analyses.
+
+% Relationships Between Factors
+
+% Question: What are the direct and indirect relationships between these key factors and environmental sustainability in the Australian winegrowing industry?
+
+%     Content: Discuss the direct and indirect relationships identified.
+%     Data: Present interaction diagrams or tables.
+%     Figures/Tables: Include a BN tree diagram illustrating these relationships.
+
+% Regional Variations
+
+% Question: How do the identified key factors vary across different wine regions in Australia, and what regional characteristics influence these variations?
+
+%     Content: Compare the key factors and their impacts across different regions.
+%     Data: Present comparisons between the two specific BN models from different growers.
+%     Figures/Tables: Include figures comparing regional differences.
+
+% Scenario Analysis
+
+% Question: How do changes in key factors under various environmental and regulatory scenarios influence the overall environmental impact in the Australian winegrowing industry?
+
+%     Content: Analyze the impact of different scenarios on environmental sustainability.
+%     Data: Use scenario-based BN queries to show changes in key factors and their impacts.
+%     Figures/Tables: Include charts or tables summarizing the scenario analysis results.
+
+% Example Framework for Presenting Results:
+% Introduction to Results
+
+% "The results of this study are structured to address five primary research questions aimed at understanding the key factors and their interactions affecting the environmental impact of vineyards in the Australian winegrowing industry. The analysis leverages Bayesian Network models to provide a comprehensive view of these factors and their contributions."
+% Primary Factors Identification
+
+% Question: What are the primary factors that significantly impact environmental sustainability in the Australian winegrowing industry?
+% Results:
+
+%     Identified Factors: Water usage, pesticide application, soil management, etc.
+%     Data Source: Defined terms provided by industry experts and the generic BN model.
+%     Figures: Table 1 shows the key factors and their relative importance derived from the BN analysis.
+
+% Quantitative Measurement and Analysis
+
+% Question: How can these key factors be quantitatively measured and analyzed to assess their contributions to sustainability in the Australian winegrowing industry?
+% Results:
+
+%     Measurements: Quantitative analysis of key factors using CPT values from two specific BN models.
+%     Data Source: CPT values from BN models of two growers.
+%     Figures: Table 2 presents the measurements and analysis results.
+
+% Relationships Between Factors
+
+% Question: What are the direct and indirect relationships between these key factors and environmental sustainability in the Australian winegrowing industry?
+% Results:
+
+%     Interactions: Direct and indirect relationships as illustrated by the BN model.
+%     Data Source: Generic BN model and specific models.
+%     Figures: Figure 1 illustrates the BN tree diagram showing these relationships.
+
+% Regional Variations
+
+% Question: How do the identified key factors vary across different wine regions in Australia, and what regional characteristics influence these variations?
+% Results:
+
+%     Regional Variability: Comparison of factors and impacts across regions using specific BN models.
+%     Data Source: BN models from two growers in different regions.
+%     Figures: Figure 2 compares the BN models for different regions.
+
+% Scenario Analysis
+
+% Question: How do changes in key factors under various environmental and regulatory scenarios influence the overall environmental impact in the Australian winegrowing industry?
+% Results:
+
+%     Scenarios: Impact analysis under different scenarios using BN models.
+%     Data Source: Scenario-based BN queries.
+%     Figures: Table 3 summarizes the scenario analysis results.
+
+% This refined approach ensures that your Results section directly addresses your research questions and clearly presents your findings. Let me know if there are specific details or sections you’d like further refined!
+
 \section{Discussion}
-
-% =================================
-Structuring the Results Section Based on These Questions:
-Introduction to Results
-
-    Content: Briefly restate the refined research questions.
-    Explanation: Explain the approach to answering these questions using the BN model and CPT values.
-
-Primary Factors Identification
-
-Question: What are the primary factors that significantly impact environmental sustainability in the Australian winegrowing industry?
-
-    Content: Present the primary factors identified through your analysis.
-    Data: Use the rigorous definitions and the generic BN to highlight these factors.
-    Figures/Tables: Include a table or figure showing the key factors and their relative importance.
-
-Quantitative Measurement and Analysis
-
-Question: How can these key factors be quantitatively measured and analyzed to assess their contributions to sustainability in the Australian winegrowing industry?
-
-    Content: Describe the methods used to measure and analyze the key factors.
-    Data: Show measurements and analytical results from the CPT values in the specific BN models.
-    Figures/Tables: Include charts or tables showing the measurements and analyses.
-
-Relationships Between Factors
-
-Question: What are the direct and indirect relationships between these key factors and environmental sustainability in the Australian winegrowing industry?
-
-    Content: Discuss the direct and indirect relationships identified.
-    Data: Present interaction diagrams or tables.
-    Figures/Tables: Include a BN tree diagram illustrating these relationships.
-
-Regional Variations
-
-Question: How do the identified key factors vary across different wine regions in Australia, and what regional characteristics influence these variations?
-
-    Content: Compare the key factors and their impacts across different regions.
-    Data: Present comparisons between the two specific BN models from different growers.
-    Figures/Tables: Include figures comparing regional differences.
-
-Scenario Analysis
-
-Question: How do changes in key factors under various environmental and regulatory scenarios influence the overall environmental impact in the Australian winegrowing industry?
-
-    Content: Analyze the impact of different scenarios on environmental sustainability.
-    Data: Use scenario-based BN queries to show changes in key factors and their impacts.
-    Figures/Tables: Include charts or tables summarizing the scenario analysis results.
-
-Example Framework for Presenting Results:
-Introduction to Results
-
-"The results of this study are structured to address five primary research questions aimed at understanding the key factors and their interactions affecting the environmental impact of vineyards in the Australian winegrowing industry. The analysis leverages Bayesian Network models to provide a comprehensive view of these factors and their contributions."
-Primary Factors Identification
-
-Question: What are the primary factors that significantly impact environmental sustainability in the Australian winegrowing industry?
-Results:
-
-    Identified Factors: Water usage, pesticide application, soil management, etc.
-    Data Source: Defined terms provided by industry experts and the generic BN model.
-    Figures: Table 1 shows the key factors and their relative importance derived from the BN analysis.
-
-Quantitative Measurement and Analysis
-
-Question: How can these key factors be quantitatively measured and analyzed to assess their contributions to sustainability in the Australian winegrowing industry?
-Results:
-
-    Measurements: Quantitative analysis of key factors using CPT values from two specific BN models.
-    Data Source: CPT values from BN models of two growers.
-    Figures: Table 2 presents the measurements and analysis results.
-
-Relationships Between Factors
-
-Question: What are the direct and indirect relationships between these key factors and environmental sustainability in the Australian winegrowing industry?
-Results:
-
-    Interactions: Direct and indirect relationships as illustrated by the BN model.
-    Data Source: Generic BN model and specific models.
-    Figures: Figure 1 illustrates the BN tree diagram showing these relationships.
-
-Regional Variations
-
-Question: How do the identified key factors vary across different wine regions in Australia, and what regional characteristics influence these variations?
-Results:
-
-    Regional Variability: Comparison of factors and impacts across regions using specific BN models.
-    Data Source: BN models from two growers in different regions.
-    Figures: Figure 2 compares the BN models for different regions.
-
-Scenario Analysis
-
-Question: How do changes in key factors under various environmental and regulatory scenarios influence the overall environmental impact in the Australian winegrowing industry?
-Results:
-
-    Scenarios: Impact analysis under different scenarios using BN models.
-    Data Source: Scenario-based BN queries.
-    Figures: Table 3 summarizes the scenario analysis results.
-
-This refined approach ensures that your Results section directly addresses your research questions and clearly presents your findings. Let me know if there are specific details or sections you’d like further refined!
-
-\section{Title}
-A Bayesian Network Model based decision support tool for Environmental Sustainability in the Australian Winegrowing Industry.
-
-\section{Abstract}
-
-The assessment of environmental sustainability in the Australian winegrowing industry remains a complex issue involving changing and compounding factors. To address this, we developed a Bayesian Network (BN) using data and expert elicitation to summarise the key factors, their relationships, and how they come together to influence vineyards' environmental outcomes. The study leveraged diverse expert perspectives to mitigate biases in probability estimations and promote discourse.
-
-The development of the BN involved an iterative process, including variable selection and definition, the defining of model structure and variable relationships, and finally the determining of relationship significance through probabilities. Expert input was pivotal in structuring the BN model, ensuring relevance to industry, and how a variables influence changed across regions and scenarios.
-
-Due to the possible variation in any given vineyard scenario the BN model was expanded to review a case study of the Coonawarra wine region in South Australia. This highlighted regional differences between growers whilst also maintaining the significance of industry-wide concerns such as the use of agrochemicals. To promote accessibility and scrutiny the BN was further developed into an application, allowing the possibility of further industry and stakeholder feedback; enabling a systematic re-evaluation of significant factors to the wine growing industry and how they change over time.
-
