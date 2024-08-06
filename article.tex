@@ -36,17 +36,25 @@ An industry panel comprising experts in viticulture and environmental sustainabi
 
 \section{Methods}
 
-In agriculture, the consideration of environment is critical to the success of the industry. The question of environmental sustainability has continued to grow in importance as the industry is affected by international market demands, disease pressures, natural disasters and social change \citep{wineaustraliaNationalVintageReport2022,wineaustraliaNationalVintageReport2020,wineaustraliaNationalVintageReport2021,cassonMultidisciplinaryApproachAssess2022}. The question of sustainability requires the consideration of a multitude of factors, not only due to physical differences between locations/habitats but also due to priorities driven by a myriad of perspectives from as consumers, ecosystems, government and industry \citep{baianoOverviewSustainabilityWine2021,wayeCarbonFootprintsFood2008}. It is important to consider each factor with respect to its relevant perspectives, and to be explicit in how each of these factors and perspectives are defined \citep{santiago-brownSustainabilityAssessmentWineGrape2015}.
+In agriculture, the consideration of environment is critical to the success of the industry. The question of environmental sustainability has continued to grow in importance as the industry is affected by international market demands, disease pressures, natural disasters and social change \citep{wineaustraliaNationalVintageReport2022,wineaustraliaNationalVintageReport2020,wineaustraliaNationalVintageReport2021,cassonMultidisciplinaryApproachAssess2022}. The question of sustainability requires the consideration of a multitude of factors, not only due to physical characteristics and differences between locations and habitats but also due to priorities driven by diverse perspectives including consumers, produces, the community, government and industry \citep{baianoOverviewSustainabilityWine2021,wayeCarbonFootprintsFood2008}. It is important to consider each factor with respect to these perspectives, and to be explicit in how they are defined \citep{santiago-brownSustainabilityAssessmentWineGrape2015}.
 
-Collaboration between experts from different perspectives is a useful method to reconcile opinions of the significance of different factors and their contribution to sustainable outcomes \citep{dichiaraCollaborativeApproachAchieving2024}. In Australia, the views of both industry and consumer are united in their priority to improve greenhouse gas emissions and resource inputs through approaches such as regulating chemicals, water use and fertilisers \citep{dumbrellComparingAustralianPublic2024}. While there is a general agreement on broader regulatory needs, the industry requirements vary greatly between different wine regions; due to climate, soil types and water resources \citep{abbalDecisionSupportSystem2016,agostaRegionalClimateVariability2012}.
-
+Collaboration between experts from different perspectives helps to reconcile opinions regarding different factors and their contribution to sustainable outcomes \citep{dichiaraCollaborativeApproachAchieving2024}. In Australia, all of the above groups mentioned are  united in the priority to improve greenhouse gas emissions and resource inputs through approaches such as regulating chemicals, water use and fertilisers \citep{dumbrellComparingAustralianPublic2024}. While there is a general agreement on broader regulatory needs, the industry requirements vary greatly between different wine regions; due to climate, soil types and water resources \citep{abbalDecisionSupportSystem2016,agostaRegionalClimateVariability2012}.
+% TODO:
+% KM: I Suggest expanding this (the paragraph below) - split into measurement, methods, etc - or leave this para out and absorb refs into the lit review. G, K and F seem quite relevant but this paragraph doesnt do them justice so expand or move.
+% 
+% Review further comments about this paragraph - its not a good piece of work but it is important to consider how impact and sustainability is or could be measured and interpretted. Perhaps go deeper like you did in your confirmation.
 Methods for measuring sustainability comprise a wide variety of approaches with the use of index systems being common \citep{gehringerMappingSustainabilityMeasurement2024}. Other approaches utilise the identification of key factors, and their measurements as a proxy to indicate impact to, or the health of, the environment \citep{floresWhatSustainabilityWine2018}. The measuring of sustainability through the use of these tools can help to manage risk and promote resilience for industries through identifying sustainable goals and key factors of interest that contribute to positive outcomes \citep{klemesAssessingMeasuringEnvironmental2015, beckerSustainabilityScienceManaging2024}. Within this study we focus on measuring key factors and establishing how they interact, and ultimately effect the surrounding environment; the chosen method for this study is a Bayesian Network.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End suggestion.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Literature Review}
 
-The literature review was a crucial component of this study, designed to establish a comprehensive understanding of existing knowledge on environmental sustainability in viticulture. The review aimed to identify key factors influencing sustainability, understanding their interactions, and to compare findings with the results obtained from the Bayesian Network and expert definitions.
+The literature review was designed to access existing knowledge on environmental sustainability in viticulture with the aim of identifying key factors influencing sustainability and understanding their interactions.
 
-A systematic search strategy was employed to ensure a thorough review of the literature. The search included multiple academic journals; with search terms being broadly based on key factors given from the industry panel. This approach was used capture a wide range of relevant literature, incorporating keywords associated with viticulture, sustainability, and other agricultural operations related to the definitions provided by the expert panel. The general query (adapted to different formats for various journals and bibliographic databases) used for the literature search was: 
+These findings were combined with the information derived from the expert consultations to inform the BN construction and quantification. 
+% Clarify that the review helped inform the strawman model and was only used as a comparison point afterwards.
+
+A systematic search of terms, broadly based on key factors given from the industry panel, was conducted. The general query (adapted to different formats for various journals and bibliographic databases) used for the literature search was: 
 
 % This is the query in a code-like format.
 \begin{lstlisting}[language=]
@@ -56,13 +64,14 @@ A systematic search strategy was employed to ensure a thorough review of the lit
     AND
     (Viticulture OR Winegrowing OR Vineyard)
     \end{lstlisting}
-Inclusion and Exclusion Criteria
 
-To ensure the relevance and quality of the literature reviewed, specific inclusion and exclusion criteria were applied. Articles were only excluded if they were not available in full text or were not written in English. Journals beyond those included were also examined especially where they offered in-depth reviews of sustainability within agriculture or winegrowing; methodological reviews within this context were also included.
+Specific inclusion and exclusion criteria were applied in the literature search. Articles were only excluded if they were not available in full text or were not written in English. In-depth reviews of sustainability within agriculture or winegrowing and methodological reviews within this context were also included.
 
-Once relevant articles were identified, data extraction was conducted to gather information on the key factors influencing environmental sustainability in viticulture, their interactions, and the methodologies used in previous studies. The extracted data was then processed using Leximancer to identify common themes and concepts in the existing literature.
+Once relevant articles were identified, data extraction was conducted to gather information on the key factors influencing environmental sustainability in viticulture, their interactions, and the methodologies
+% TODO: Methodologies of what - in this case sustainability, needs to be clarified.
+used in previous studies. The extracted data was then processed using Leximancer to identify common themes and concepts in the existing literature.
 
-An expert panel comprising specialists in viticulture and environmental sustainability was engaged throughout the literature review process. The panel provided guidance on the selection of relevant articles, helped refine the inclusion criteria through their list of key factors. By conducting a thorough literature review, this study aimed to build a solid foundation of existing knowledge, identify gaps, and position the findings from the Bayesian Network models within the broader context of sustainability research in viticulture. This approach ensured that the study's results were not only robust and scientifically sound but also practically relevant and actionable for industry stakeholders.
+The expert panel comprising specialists in viticulture and environmental sustainability was engaged throughout the literature review process. The panel provided guidance on the selection of relevant articles, helped refine the inclusion criteria through their list of key factors. By conducting a thorough literature review, this study aimed to build a solid foundation of existing knowledge, identify gaps, and position the findings from the Bayesian Network models within the broader context of sustainability research in viticulture. This approach ensured that the study's results were not only robust and scientifically sound but also practically relevant and actionable for industry stakeholders.
 
 \subsection{Bayesian Networks}
 
