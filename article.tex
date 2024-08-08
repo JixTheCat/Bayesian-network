@@ -71,25 +71,35 @@ Once relevant articles were identified, data extraction was conducted to gather 
 % TODO: Methodologies of what - in this case sustainability, needs to be clarified.
 used in previous studies. The extracted data was then processed using Leximancer to identify common themes and concepts in the existing literature.
 
-The expert panel comprising specialists in viticulture and environmental sustainability was engaged throughout the literature review process. The panel provided guidance on the selection of relevant articles, helped refine the inclusion criteria through their list of key factors. By conducting a thorough literature review, this study aimed to build a solid foundation of existing knowledge, identify gaps, and position the findings from the Bayesian Network models within the broader context of sustainability research in viticulture. This approach ensured that the study's results were not only robust and scientifically sound but also practically relevant and actionable for industry stakeholders.
+The expert panel comprising specialists in viticulture and environmental sustainability was engaged throughout the literature review process. The panel provided guidance on the selection of relevant articles, helped refine the inclusion criteria through their list of key factors.
+% By conducting a thorough literature review, this study aimed to build a solid foundation of existing knowledge, identify gaps, and position the findings from the Bayesian Network models within the broader context of sustainability research in viticulture. This approach ensured that the study's results were not only robust and scientifically sound but also practically relevant and actionable for industry stakeholders.
 
 \subsection{Bayesian Networks}
 
-A Bayesian Network is a graphical model, being comprised of nodes and edges. Uniquely, Bayesian Networks contain the network's operations within the nodes themselves instead of across the edges. This is done in the form of probability tables, with connections being informed by the edges. There is simplicity within the calculations done within a node, as it is fundamentally achieved through sum and division operations. However, great complexity is introduced when a node is informed by many parents, which can also have many parents themselves. The change in a single parent node effects all children of the network; often resulting in intractable systems, especially when nodes may have numerous classes \citep{korbBayesianArtificialIntelligence2011}. The strength of this complexity over simple operations, is the ability to encapsulate incredibly complex systems with simple definitions.
+A BN is a graphical model, comprising of nodes and edges. Uniquely, Bayesian Networks contain the network's operations within the nodes themselves instead of across the edges. In the BN structure adopted in the study, these operations were encapsulated through a conditional probability table for each node, with connections between the nodes being defined by edges. This results in computational simplicity, since each node is dependent only on its parent and simplicity within the calculations are achieved through sum, multiplication and division operations
+% . However, great complexity is introduced when a node is informed by many parents, which can also have many parents themselves. The change in a single parent node effects all children of the network; often resulting in intractable systems, especially when nodes may have numerous classes 
+\citep{korbBayesianArtificialIntelligence2011}.
+% The strength of this complexity over simple operations, is the ability to encapsulate incredibly complex systems with simple definitions.
 
-The use of a Bayesian Network allows for the ability to include perspectives from industry experts and create a causal structure. The graphical nature of the Bayesian Network also helps to illustrate factors within the model and communicate the complexity and relationships of factors to one another; and ultimately a factor's relation direct or indirect, to a vineyard's environmental impact \citep{pourretBayesianNetworksPractical2008}. Furthermore, data collected across Australia could also be used to help inform both scenarios and the model alongside expert opinion.
+The use of a BN allowed for collaboration between experts to create a causal structure, identifying important factors and agreeing on the relationships between factors
+%. The ability to include perspectives from industry experts and create a causal structure. The graphical nature of the Bayesian Network also helps to illustrate factors within the model and communicate the complexity and relationships of factors to one another; and ultimately a factor's relation direct or indirect, to a vineyard's environmental impact 
+\citep{pourretBayesianNetworksPractical2008}. Furthermore, data collected across Australia could also be used to help inform the model structure as well as quantify the associated conditional probabilities alongside expert opinion.
 
-The calculations of a Bayesian Network are based on Bayes' theorem, shown as follows
-\begin{equation}\label{bayesformula}
-P(A|B)= {P(B|A)P(A)}\over{P(B)}
-\end{equation}.
+% The calculations of a Bayesian Network are based on Bayes' theorem, shown as follows
+% \begin{equation}\label{bayesformula}
+% P(A|B)= {P(B|A)P(A)}\over{P(B)}
+% \end{equation}.
 
-Where we calculate the probability of an event A given an event B, as demonstrated by \cite{bayesLIIEssaySolving1763}. Within a Bayesian Network, an event can be considered any given node and its outcome one of the node's classes. Events are connected by edges within the network, with each node containing the probability of an outcome given parent nodes' outcomes. This is an iterative application of \ref{bayesformula}, which can be achieved through
+% Where we calculate the probability of an event A given an event B, as demonstrated by \cite{bayesLIIEssaySolving1763}. Within a Bayesian Network, an event can be considered any given node and its outcome one of the node's classes. Events are connected by edges within the network, with each node containing the probability of an outcome given parent nodes' outcomes. This is an iterative application of \ref{bayesformula}, which can be achieved through
+
+Given the directed acyclic graph (DAC) structure of the BN, each quantification of a node only depends on the parent of that node, and is conditionally independent of the other nodes in the network collectively, then,
 
 \begin{equation}
-        \mathbb(P) (X_{1}=x_{1},...X_{n}=x_{n})=\prod_{n}^{i=1}p(x_{i}|x_{Parents(i)})
+        p(x_{0}=x_{0}) (X_{1}=x_{1},...X_{n}=x_{n})=p(n|x_{parents})\prod_{n}^{i=1}p(x_{i}|x_{Parents(i)})
 \end{equation},
-for a selected node $i$ given the parents and their local conditional distributions.
+
+% for a selected node $i$ given the parents and their local conditional distributions.
+Where $x_0$ is the target variable and $x_i$ denotes the quantified information in the i$^th$ node, and $p$ denotes its probability distribution.
 
 The iterative nature, or the ability to show the difference in probable outcomes of different sets of events and their uncertainty allows for the ability to conduct inference. This type of Bayesian inference shows the difference between the likelihood of various outcomes with and without different evidence of prior nodes outcomes being present. The sets of different outcomes then stored as a joint probability distribution, which can be decomposed into the conditional probabilities of each set of possible events occurring and their likelihoods.
 
