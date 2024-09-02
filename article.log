@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.2)  2 SEP 2024 11:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.2)  2 SEP 2024 13:54
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/bryce/repositories/Bayesian-network/article.tex
-(c:/Users/bryce/repositories/Bayesian-network/article.tex
+**./article.tex
+(article.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
 (wlscirep.cls
@@ -578,41 +577,7 @@ Package microtype Info: Loading configuration file microtype.cfg.
 
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2024/03/29 v3.1b microtype main configuration file (RS)
-))
-c:/Users/bryce/repositories/Bayesian-network/article.tex:3: Undefined control s
-equence.
-l.3 \lstset
-           {
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:4: LaTeX Error: Missin
-g \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4   b
-       asicstyle=\ttfamily,
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
-.
-(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \hbox (7.55565pt too wide) in paragraph at lines 4--12
-[]\OT1/cmr/m/n/10 basicstyle=\OT1/pcr/m/n/10 , frame=single, backgroundcolor=[]
-, keywordstyle=[],
- []
-
-(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+)) (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
 6.
@@ -620,28 +585,73 @@ LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2024-08-20 v3.3.21 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count323
+\l__siunitx_number_exponent_fixed_int=\count324
+\l__siunitx_number_min_decimal_int=\count325
+\l__siunitx_number_min_integer_int=\count326
+\l__siunitx_number_round_precision_int=\count327
+\l__siunitx_number_lower_threshold_int=\count328
+\l__siunitx_number_upper_threshold_int=\count329
+\l__siunitx_number_group_first_int=\count330
+\l__siunitx_number_group_size_int=\count331
+\l__siunitx_number_group_minimum_int=\count332
+\l__siunitx_angle_tmp_dim=\dimen197
+\l__siunitx_angle_marker_box=\box58
+\l__siunitx_angle_unit_box=\box59
+\l__siunitx_compound_count_int=\count333
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
+ns.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+\l__siunitx_table_tmp_box=\box60
+\l__siunitx_table_tmp_dim=\dimen198
+\l__siunitx_table_column_width_dim=\dimen199
+\l__siunitx_table_integer_box=\box61
+\l__siunitx_table_decimal_box=\box62
+\l__siunitx_table_uncert_box=\box63
+\l__siunitx_table_before_box=\box64
+\l__siunitx_table_after_box=\box65
+\l__siunitx_table_before_dim=\dimen256
+\l__siunitx_table_carry_dim=\dimen257
+\l__siunitx_unit_tmp_int=\count334
+\l__siunitx_unit_position_int=\count335
+\l__siunitx_unit_total_int=\count336
+ (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+\col@sep=\dimen258
+\ar@mcellbox=\box66
+\extrarowheight=\dimen259
+\NC@list=\toks32
+\extratabsurround=\skip75
+\backup@length=\skip76
+\ar@cellbox=\box67
+))
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count323
-\lst@gtempboxa=\box58
-\lst@token=\toks32
-\lst@length=\count324
-\lst@currlwidth=\dimen197
-\lst@column=\count325
-\lst@pos=\count326
-\lst@lostspace=\dimen198
-\lst@width=\dimen199
-\lst@newlines=\count327
-\lst@lineno=\count328
-\lst@maxwidth=\dimen256
+\lst@mode=\count337
+\lst@gtempboxa=\box68
+\lst@token=\toks33
+\lst@length=\count338
+\lst@currlwidth=\dimen260
+\lst@column=\count339
+\lst@pos=\count340
+\lst@lostspace=\dimen261
+\lst@width=\dimen262
+\lst@newlines=\count341
+\lst@lineno=\count342
+\lst@maxwidth=\dimen263
 
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
 )
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
-\c@lstnumber=\count329
-\lst@skipnumbers=\count330
-\lst@framebox=\box59
+\c@lstnumber=\count343
+\lst@skipnumbers=\count344
+\lst@framebox=\box69
 )
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/05/25 1.10b listings configuration
@@ -672,17 +682,17 @@ LaTeX Font Info:    ... okay on input line 39.
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
-\scratchdimen=\dimen257
-\scratchbox=\box60
-\nofMPsegments=\count332
-\nofMParguments=\count333
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count334
-\MPscratchDim=\dimen258
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count345
+\scratchdimen=\dimen264
+\scratchbox=\box70
+\nofMPsegments=\count346
+\nofMParguments=\count347
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count348
+\MPscratchDim=\dimen265
+\MPnumerator=\count349
+\makeMPintoPDFobject=\count350
+\everyMPtoPDFconversion=\toks35
 )
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -733,6 +743,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 39.
+(article.out) (article.out)
 \@outlinefile=\write3
 \openout3 = `article.out'.
 
@@ -752,11 +763,19 @@ LaTeX Info: Redefining \showhyphens on input line 39.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-\c@lstlisting=\count337
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 41
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
+slations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 39.
+\c@lstlisting=\count351
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 51
 .
 
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
@@ -766,139 +785,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:60: Undefined control 
-sequence.
-l.60 ...es or geographic regions. As \textcitation
-                                                  {gehringerMappingSustainab...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:70: Missing \endcsname
- inserted.
-<to be read again> 
-                   \relax 
-l.70 \begin{lstlisting}[language=]\label
-                                        {query}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 70.
-c:/Users/bryce/repositories/Bayesian-network/article.tex:70: Argument of \label
- has an extra }.
-<inserted text> 
-                \par 
-l.70 \begin{lstlisting}[language=]\label
-                                        {query}
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-c:/Users/bryce/repositories/Bayesian-network/article.tex:70: Paragraph ended be
-fore \label was complete.
-<to be read again> 
-                   \par 
-l.70 \begin{lstlisting}[language=]\label
-                                        {query}
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-Package Listings Warning: Text dropped after begin of listing on input line 70.
-
-
-
-Overfull \hbox (2169.54317pt too wide) in paragraph at lines 71--72
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
-3.
-(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \hbox (87.52199pt too wide) in paragraph at lines 73--74
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Missing \endcsname
- inserted.
-<to be read again> 
-                   \relax 
-l.76     \end{lstlisting}
-                         
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Extra \fi.
-<argument> \string \newlabel {\fi 
-                                  }{{\@currentlabel }{\thepage }{\@currentla...
-l.76     \end{lstlisting}
-                         
-I'm ignoring this; it doesn't match any \if.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Bad space factor (
-0).
-<recently read> \@savsf 
-                        
-l.76     \end{lstlisting}
-                         
-I allow only values in the range 1..32767 here.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Extra \endcsname.
-\lst@SaveFirstNumber ...st@intname \fi \endcsname 
-                                                  {\the \c@lstnumber }
-l.76     \end{lstlisting}
-                         
-I'm ignoring this, since I wasn't doing a \csname.
-
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:76: LaTeX Error: \begi
-n{document} ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76     \end{lstlisting}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.76     \end{lstlisting}
-                         
-Things are pretty mixed up, but I think the worst is over.
-
-
-Overfull \vbox (319.31726pt too high) has occurred while \output is active []
-
-
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 82.
-
-[1
-
-{C:/Users/bryce/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/bryc
-e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 105.
+ 53.
 
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -908,123 +796,22 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 105.
+ 53.
 
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 105.
+ 53.
 
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 105.
+ 53.
 
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-05.
-
-(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:118: Undefined control
- sequence.
-l.118 ...g the format recommended by \textcitation
-                                                  {korbBayesianArtificialInt...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 127.
-
-[2]
-c:/Users/bryce/repositories/Bayesian-network/article.tex:144: Undefined control
- sequence.
-l.144 ...dress criteria presented by \textcitation
-                                                  {pitchforthProposedValidat...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 152.
-
-[3]
-c:/Users/bryce/repositories/Bayesian-network/article.tex:159: Undefined control
- sequence.
-l.159 ... the algorithm developed by \textcitation
-                                                  {article}; an optimisation...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:159: Undefined control
- sequence.
-l.159 ...rticle}; an optimisation of \textcitation
-                                                  {Castillo1996ANM} and \tex...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:159: Undefined control
- sequence.
-l.159 ...tation{Castillo1996ANM} and \textcitation
-                                                  {Gaag1998PracticableSA}. T...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package amsmath Warning: Foreign command \over;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 166.
-
-
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 202.
-
-[4]
-
-LaTeX Warning: Reference `tab:definitions' on page 5 undefined on input line 20
-7.
-
-c:/Users/bryce/repositories/Bayesian-network/article.tex:219: You can't use `\h
-rule' here except with leaders.
-\caption@hrule ->\hrule 
-                        \@height \z@ 
-l.219 ...ng behind concepts and how they related.}
-                                                  
-To put a horizontal rule in an hbox 
+File: mt-msa.cfg 2006/02/04
