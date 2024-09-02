@@ -1,114 +1,587 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  27 JUN 2024 11:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.2)  2 SEP 2024 11:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/bryce/repositories/Bayesian-network/article.tex
-(/home/bryce/repositories/Bayesian-network/article.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count185
-\l__pdf_internal_box=\box50
-) (./article.aux)
-\openout1 = `article.aux'.
+**c:/Users/bryce/repositories/Bayesian-network/article.tex
+(c:/Users/bryce/repositories/Bayesian-network/article.tex
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-16>
+(wlscirep.cls
+Document Class: wlscirep 08/08/2020, v1.4
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/08/29 v24.9 The Babel package
+\babel@savecnt=\count194
+\U@D=\dimen141
+\l@unhyphenated=\language79
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count195
 
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
+df
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel
+-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count196
+\calc@Bcount=\count197
+\calc@Adimen=\dimen142
+\calc@Bdimen=\dimen143
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count198
+\calc@Cskip=\skip51
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip52
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count199
+\c@section=\count266
+\c@subsection=\count267
+\c@subsubsection=\count268
+\c@paragraph=\count269
+\c@subparagraph=\count270
+\c@figure=\count271
+\c@table=\count272
+\abovecaptionskip=\skip53
+\belowcaptionskip=\skip54
+\bibindent=\dimen144
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/05/23 v2.17q AMS math features
+\@mathmargin=\skip55
 
-/home/bryce/repositories/Bayesian-network/article.tex:2: LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
+For additional information on amsmath, use the `?' option.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 \begin{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen145
+))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen146
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count273
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count274
+\leftroot@=\count275
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count276
+\DOTSCASE@=\count277
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count278
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count279
+\dotsspace@=\muskip17
+\c@parentequation=\count280
+\dspbrk@lvl=\count281
+\tag@help=\toks20
+\row@=\count282
+\column@=\count283
+\maxfields@=\count284
+\andhelp@=\toks21
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks22
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-/home/bryce/repositories/Bayesian-network/article.tex:3: LaTeX Error: Can be used only in preamble.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \documentclass
-                  [12pt]{article}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
 
-/home/bryce/repositories/Bayesian-network/article.tex:4: LaTeX Error: Can be used only in preamble.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen154
+\Gin@req@width=\dimen155
+) (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \usepackage
-               {graphicx}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen156
+\lightrulewidth=\dimen157
+\cmidrulewidth=\dimen158
+\belowrulesep=\dimen159
+\belowbottomsep=\dimen160
+\aboverulesep=\dimen161
+\abovetopsep=\dimen162
+\cmidrulesep=\dimen163
+\cmidrulekern=\dimen164
+\defaultaddspace=\dimen165
+\@cmidla=\count285
+\@cmidlb=\count286
+\@aboverulesep=\dimen166
+\@belowrulesep=\dimen167
+\@thisruleclass=\count287
+\@lastruleclass=\count288
+\@thisrulewidth=\dimen168
+) (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip58
+\@affilsep=\skip59
+\c@Maxaffil=\count289
+\c@authors=\count290
+\c@affil=\count291
+) (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count292
+\Gm@cntv=\count293
+\c@Gm@tempcnt=\count294
+\Gm@bindingoffset=\dimen169
+\Gm@wd@mp=\dimen170
+\Gm@odd@mp=\dimen171
+\Gm@even@mp=\dimen172
+\Gm@layoutwidth=\dimen173
+\Gm@layoutheight=\dimen174
+\Gm@layouthoffset=\dimen175
+\Gm@layoutvoffset=\dimen176
+\Gm@dimlist=\toks25
 
-/home/bryce/repositories/Bayesian-network/article.tex:5: LaTeX Error: Can be used only in preamble.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 \usepackage
-               {booktabs}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen177
+\captionmargin=\dimen178
+\caption@leftmargin=\dimen179
+\caption@rightmargin=\dimen180
+\caption@width=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count295
+\c@continuedfloat=\count296
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
 
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-/home/bryce/repositories/Bayesian-network/article.tex:6: LaTeX Error: Can be used only in preamble.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \usepackage
-               {listings}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-/home/bryce/repositories/Bayesian-network/article.tex:7: LaTeX Error: Can be used only in preamble.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count297
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen185
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+ (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count301
+ (C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count302
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 \usepackage
-               {xcolor}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen186
 
-/home/bryce/repositories/Bayesian-network/article.tex:9: Undefined control sequence.
-l.9 \lstset
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count303
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip60
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+LaTeX Info: Redefining \cite on input line 441.
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip61
+\f@nch@O@elh=\skip62
+\f@nch@O@erh=\skip63
+\f@nch@O@olh=\skip64
+\f@nch@O@orh=\skip65
+\f@nch@O@elf=\skip66
+\f@nch@O@erf=\skip67
+\f@nch@O@olf=\skip68
+\f@nch@O@orf=\skip69
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2024/07/07 v2.1c lastpage: 2.09 or 2e? (HMM)
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+Package: lastpage2e 2024/07/07 v2.1c Decide which 2e lastpage version to use (H
+MM)
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern
+.sty
+Package: lastpagemodern 2024-07-07 v2.1c Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count309
+) 
+))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box54
+\beforetitleunit=\skip70
+\aftertitleunit=\skip71
+\ttl@plus=\dimen189
+\ttl@minus=\dimen190
+\ttl@toksa=\toks26
+\titlewidth=\dimen191
+\titlewidthlast=\dimen192
+\titlewidthfirst=\dimen193
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.sty
+Package: titletoc 2023/10/27 v2.16 TOC entries
+\ttl@leftsep=\dimen194
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip72
+\enit@outerparindent=\dimen195
+\enit@toks=\toks27
+\enit@inbox=\box55
+\enit@count@id=\count310
+\enitdp@description=\count311
+)
+\tocsep=\skip73
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-08-16 L3 programming layer (loader) 
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count312
+\l__pdf_internal_box=\box56
+))
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count313
+\l__lipsum_a_int=\count314
+\l__lipsum_b_int=\count315
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+) (jabbrv.sty
+Package: jabbrv 2010/08/18 v0.2 Automatic Journal Title Abbreviation Package
+\temp@journal@text=\toks28
+\temp@journal@text@=\toks29
+\c@jabbrv@strlen@count=\count316
+\c@jabbrv@gobble@temp=\count317
+\c@jabbrv@loop@i=\count318
+\c@jabbrv@loop@max=\count319
+\c@jabbrv@word@count=\count320
+ (jabbrv-ltwa-all.ldf) (jabbrv-ltwa-en.ldf))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2024/03/29 v3.1b Micro-typographical refinements (RS)
+\MT@toks=\toks30
+\MT@tempbox=\box57
+\MT@count=\count321
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1061.
+LaTeX Info: Redefining \leftprotrusion on input line 1062.
+\MT@prot@toks=\toks31
+LaTeX Info: Redefining \rightprotrusion on input line 1081.
+LaTeX Info: Redefining \textls on input line 1392.
+\MT@outer@kern=\dimen196
+LaTeX Info: Redefining \textmicrotypecontext on input line 2013.
+\MT@listname@count=\count322
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
+tex.def
+File: microtype-pdftex.def 2024/03/29 v3.1b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip74
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2024/03/29 v3.1b microtype main configuration file (RS)
+))
+c:/Users/bryce/repositories/Bayesian-network/article.tex:3: Undefined control s
+equence.
+l.3 \lstset
            {
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -116,204 +589,187 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/bryce/repositories/Bayesian-network/article.tex:12: Undefined control sequence.
-l.12   backgroundcolor=\color
-                             {lightgray!20},
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-/home/bryce/repositories/Bayesian-network/article.tex:13: Undefined control sequence.
-l.13   keywordstyle=\color
-                          {blue},
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+c:/Users/bryce/repositories/Bayesian-network/article.tex:4: LaTeX Error: Missin
+g \begin{document}.
 
-/home/bryce/repositories/Bayesian-network/article.tex:14: Undefined control sequence.
-l.14   commentstyle=\color
-                          {gray},
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4   b
+       asicstyle=\ttfamily,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-/home/bryce/repositories/Bayesian-network/article.tex:15: Undefined control sequence.
-l.15   stringstyle=\color
-                         {green},
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
+.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Overfull \hbox (7.55565pt too wide) in paragraph at lines 4--12
+[]\OT1/cmr/m/n/10 basicstyle=\OT1/pcr/m/n/10 , frame=single, backgroundcolor=[]
+, keywordstyle=[],
+ []
 
-/home/bryce/repositories/Bayesian-network/article.tex:415: Undefined control sequence.
-l.415 \section
-              {Title}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
 
-/home/bryce/repositories/Bayesian-network/article.tex:418: Undefined control sequence.
-l.418 \section
-              {Abstract}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count323
+\lst@gtempboxa=\box58
+\lst@token=\toks32
+\lst@length=\count324
+\lst@currlwidth=\dimen197
+\lst@column=\count325
+\lst@pos=\count326
+\lst@lostspace=\dimen198
+\lst@width=\dimen199
+\lst@newlines=\count327
+\lst@lineno=\count328
+\lst@maxwidth=\dimen256
 
-/home/bryce/repositories/Bayesian-network/article.tex:422: Undefined control sequence.
-l.422 \section
-              {Introduction}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
+\c@lstnumber=\count329
+\lst@skipnumbers=\count330
+\lst@framebox=\box59
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/05/25 1.10b listings configuration
+))
+Package: listings 2024/05/25 1.10b (Carsten Heinz)
+(article.aux)
+\openout1 = `article.aux'.
 
-/home/bryce/repositories/Bayesian-network/article.tex:424: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.424 ...oEnvironmentalSustainabilityPrograms2014}
-                                                  . This is especially true ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count331
+\scratchdimen=\dimen257
+\scratchbox=\box60
+\nofMPsegments=\count332
+\nofMParguments=\count333
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen258
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
+\everyMPtoPDFconversion=\toks34
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
 
-LaTeX Warning: Citation `baianoOverviewSustainabilityWine2021' on page  undefined on input line 424.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
+* v-part:(T,H,B)=(64.01869pt, 666.9326pt, 64.01869pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=500.484pt
+* \textheight=666.9326pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-45.2513pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=15.6491pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-/home/bryce/repositories/Bayesian-network/article.tex:424: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.424 ...oEnvironmentalSustainabilityPrograms2014}
-                                                  . This is especially true ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 39.
+\@outlinefile=\write3
+\openout3 = `article.out'.
 
+LaTeX Info: Redefining \microtypecontext on input line 39.
+Package microtype Info: Applying patch `item' on input line 39.
+Package microtype Info: Applying patch `toc' on input line 39.
+Package microtype Info: Applying patch `eqnum' on input line 39.
+Package microtype Info: Applying patch `footnote' on input line 39.
+Package microtype Info: Applying patch `verbatim' on input line 39.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 39.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+\c@lstlisting=\count337
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 41
+.
 
-LaTeX Warning: Citation `corboEnvironmentalSustainabilityPrograms2014' on page  undefined on input line 424.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-/home/bryce/repositories/Bayesian-network/article.tex:424: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.424 ...ility2018,ferraraLifeCycleAssessment2018}
-                                                  . This study investigates ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `longbottomExploringLinksSustainability2018' on page  undefined on input line 424.
-
-/home/bryce/repositories/Bayesian-network/article.tex:424: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.424 ...ility2018,ferraraLifeCycleAssessment2018}
-                                                  . This study investigates ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `ferraraLifeCycleAssessment2018' on page  undefined on input line 424.
-
-/home/bryce/repositories/Bayesian-network/article.tex:426: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.426 ...e{korbBayesianArtificialIntelligence2011}
-                                                  . By integrating expert kn...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `korbBayesianArtificialIntelligence2011' on page  undefined on input line 426.
-
-/home/bryce/repositories/Bayesian-network/article.tex:436: Undefined control sequence.
-l.436 \section
-              {Methods}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:438: Undefined control sequence.
-l.438 ...atural disasters and social change \citep
-                                                  {wineaustraliaNationalVint...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:438: Undefined control sequence.
-l.438 ...cosystems, government and industry \citep
-                                                  {baianoOverviewSustainabil...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:438: Undefined control sequence.
-l.438 ...ctors and perspectives are defined \citep
-                                                  {santiago-brownSustainabil...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:440: Undefined control sequence.
-l.440 ...ntribution to sustainable outcomes \citep
-                                                  {dichiaraCollaborativeAppr...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:440: Undefined control sequence.
-l.440 ...emicals, water use and fertilisers \citep
-                                                  {dumbrellComparingAustrali...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:440: Undefined control sequence.
-l.440 ...te, soil types and water resources \citep
-                                                  {abbalDecisionSupportSyste...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:442: Undefined control sequence.
-l.442 ... use of index systems being common \citep
+c:/Users/bryce/repositories/Bayesian-network/article.tex:60: Undefined control 
+sequence.
+l.60 ...es or geographic regions. As \textcitation
                                                   {gehringerMappingSustainab...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -321,70 +777,176 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/bryce/repositories/Bayesian-network/article.tex:442: Undefined control sequence.
-l.442 ... or the health of, the environment \citep
-                                                  {floresWhatSustainabilityW...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+c:/Users/bryce/repositories/Bayesian-network/article.tex:70: Missing \endcsname
+ inserted.
+<to be read again> 
+                   \relax 
+l.70 \begin{lstlisting}[language=]\label
+                                        {query}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/home/bryce/repositories/Bayesian-network/article.tex:442: Undefined control sequence.
-l.442 ...at contribute to positive outcomes \citep
-                                                  {klemesAssessingMeasuringE...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 70.
+c:/Users/bryce/repositories/Bayesian-network/article.tex:70: Argument of \label
+ has an extra }.
+<inserted text> 
+                \par 
+l.70 \begin{lstlisting}[language=]\label
+                                        {query}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
-/home/bryce/repositories/Bayesian-network/article.tex:444: Undefined control sequence.
-l.444 \subsection
-                 {Literature Review}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Runaway argument?
+c:/Users/bryce/repositories/Bayesian-network/article.tex:70: Paragraph ended be
+fore \label was complete.
+<to be read again> 
+                   \par 
+l.70 \begin{lstlisting}[language=]\label
+                                        {query}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 
-/home/bryce/repositories/Bayesian-network/article.tex:451: LaTeX Error: Environment lstlisting undefined.
+Package Listings Warning: Text dropped after begin of listing on input line 70.
+
+
+
+Overfull \hbox (2169.54317pt too wide) in paragraph at lines 71--72
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
+3.
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (87.52199pt too wide) in paragraph at lines 73--74
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Missing \endcsname
+ inserted.
+<to be read again> 
+                   \relax 
+l.76     \end{lstlisting}
+                         
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Extra \fi.
+<argument> \string \newlabel {\fi 
+                                  }{{\@currentlabel }{\thepage }{\@currentla...
+l.76     \end{lstlisting}
+                         
+I'm ignoring this; it doesn't match any \if.
+
+c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Bad space factor (
+0).
+<recently read> \@savsf 
+                        
+l.76     \end{lstlisting}
+                         
+I allow only values in the range 1..32767 here.
+
+c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Extra \endcsname.
+\lst@SaveFirstNumber ...st@intname \fi \endcsname 
+                                                  {\the \c@lstnumber }
+l.76     \end{lstlisting}
+                         
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+c:/Users/bryce/repositories/Bayesian-network/article.tex:76: LaTeX Error: \begi
+n{document} ended by \end{lstlisting}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.451 \begin{lstlisting}
-                        [language=]
+l.76     \end{lstlisting}
+                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-/home/bryce/repositories/Bayesian-network/article.tex:457: LaTeX Error: \begin{document} ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.457     \end{lstlisting}
+c:/Users/bryce/repositories/Bayesian-network/article.tex:76: Extra \endgroup.
+<recently read> \endgroup 
                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.76     \end{lstlisting}
+                         
+Things are pretty mixed up, but I think the worst is over.
 
-/home/bryce/repositories/Bayesian-network/article.tex:466: Undefined control sequence.
-l.466 \subsection
-                 {Bayesian Networks}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-/home/bryce/repositories/Bayesian-network/article.tex:468: Undefined control sequence.
-l.468 ...en nodes may have numerous classes \citep
+Overfull \vbox (319.31726pt too high) has occurred while \output is active []
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 82.
+
+[1
+
+{C:/Users/bryce/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/bryc
+e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 105.
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 105.
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 105.
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 105.
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+05.
+
+(C:\Users\bryce\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
+
+c:/Users/bryce/repositories/Bayesian-network/article.tex:118: Undefined control
+ sequence.
+l.118 ...g the format recommended by \textcitation
                                                   {korbBayesianArtificialInt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -392,158 +954,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/bryce/repositories/Bayesian-network/article.tex:470: Undefined control sequence.
-l.470 ... a vineyard's environmental impact \citep
-                                                  {pourretBayesianNetworksPr...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 473.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 473.
-/home/bryce/repositories/Bayesian-network/article.tex:477: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.477 ...trated by \cite{bayesLIIEssaySolving1763}
-                                                  . Within a Bayesian Networ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `bayesLIIEssaySolving1763' on page  undefined on input line 477.
 
-/home/bryce/repositories/Bayesian-network/article.tex:477: Undefined control sequence.
-<write> ...erence `bayesformula' on page \thepage 
-                                                  \space undefined\on@line .
-l.477 ...erative application of \ref{bayesformula}
-                                                  , which can be achieved th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 127.
 
-
-LaTeX Warning: Reference `bayesformula' on page  undefined on input line 477.
-
-/home/bryce/repositories/Bayesian-network/article.tex:480: Undefined control sequence.
-l.480         \mathbb
-                     (P) (X_{1}=x_{1},...X_{n}=x_{n})=\prod_{n}^{i=1}p(x_{i}...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:488: Undefined control sequence.
-l.488 ...udy were created using BayesFusion \citep
-                                                  {bayesfusionGeNIeModelerUS...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:488: Undefined control sequence.
-l.488 ...he GUI interface and the SMILE API \citep
-                                                  {bayesfusionGeNIeModelerUS...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:488: Undefined control sequence.
-l.488 ...eModelerUSER2022} system using C++ \citep
-                                                  {ISO:2012:III}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:490: Undefined control sequence.
-l.490 \subsection
-                 {Elicitation}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:492: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.492 ...itchforthProposedValidationFramework2013}
-                                                  . Where, we progressed ite...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `korbBayesianArtificialIntelligence2011' on page  undefined on input line 492.
-
-/home/bryce/repositories/Bayesian-network/article.tex:492: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.492 ...itchforthProposedValidationFramework2013}
-                                                  . Where, we progressed ite...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `pitchforthProposedValidationFramework2013' on page  undefined on input line 492.
-
-/home/bryce/repositories/Bayesian-network/article.tex:508: Undefined control sequence.
-l.508 \subsection
-                 {CPT interpolating}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:510: Undefined control sequence.
-l.510 ...efined within the Bayesian Network \citep
-                                                  {korbBayesianArtificialInt...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:521: Undefined control sequence.
-l.521         \text
-                   { and }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:526: Undefined control sequence.
-l.526 \subsection
-                 {Validation}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:528: Undefined control sequence.
-l.528 ...t to address concerns presented by \citep
+[2]
+c:/Users/bryce/repositories/Bayesian-network/article.tex:144: Undefined control
+ sequence.
+l.144 ...dress criteria presented by \textcitation
                                                   {pitchforthProposedValidat...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -551,52 +970,36 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/bryce/repositories/Bayesian-network/article.tex:528: Undefined control sequence.
-l.528 ...y vineyard outcomes and priorities \citep
-                                                  {abbalDecisionSupportSyste...
+
+
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 152.
+
+[3]
+c:/Users/bryce/repositories/Bayesian-network/article.tex:159: Undefined control
+ sequence.
+l.159 ... the algorithm developed by \textcitation
+                                                  {article}; an optimisation...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/bryce/repositories/Bayesian-network/article.tex:530: Undefined control sequence.
-l.530 ... the findings of other researchers \citep
-                                                  {abbalDecisionSupportSyste...
+c:/Users/bryce/repositories/Bayesian-network/article.tex:159: Undefined control
+ sequence.
+l.159 ...rticle}; an optimisation of \textcitation
+                                                  {Castillo1996ANM} and \tex...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/bryce/repositories/Bayesian-network/article.tex:530: Undefined control sequence.
-l.530 ... the model and highly interrelated \citep
-                                                  {carmonaUseParticipatoryOb...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:532: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.532 ...12,hallWithinseasonTemporalVariation2011}
-                                                  . Furthermore, these types...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `abbalDecisionSupportSystem2016' on page  undefined on input line 532.
-
-/home/bryce/repositories/Bayesian-network/article.tex:532: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.532 ...12,hallWithinseasonTemporalVariation2011}
-                                                  . Furthermore, these types...
+c:/Users/bryce/repositories/Bayesian-network/article.tex:159: Undefined control
+ sequence.
+l.159 ...tation{Castillo1996ANM} and \textcitation
+                                                  {Gaag1998PracticableSA}. T...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -604,1460 +1007,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `campsGrapeHarvestYield2012' on page  undefined on input line 532.
-
-/home/bryce/repositories/Bayesian-network/article.tex:532: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.532 ...12,hallWithinseasonTemporalVariation2011}
-                                                  . Furthermore, these types...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 166.
 
 
-LaTeX Warning: Citation `hallWithinseasonTemporalVariation2011' on page  undefined on input line 532.
-
-/home/bryce/repositories/Bayesian-network/article.tex:532: Undefined control sequence.
-l.532 ...ch as yield and water respectively \citep
-                                                  {heFruitYieldPrediction202...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:534: Undefined control sequence.
-l.534 ...emoval and adding additional nodes \citep
-                                                  {korbBayesianArtificialInt...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:536: Undefined control sequence.
-l.536 ...e prevalent outcomes such as yield \citep
-                                                  {laurentReviewIssuesMethod...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:538: Undefined control sequence.
-l.538 \subsection
-                 {Sensitivity analysis}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:540: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.540 ...the algorithm developed by \cite{article}
-                                                  ; an optimisation of \auto...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `article' on page  undefined on input line 540.
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 202.
 
-/home/bryce/repositories/Bayesian-network/article.tex:540: Undefined control sequence.
-l.540 ...te{article}; an optimisation of \autocite
-                                                  {Castillo1996ANM} and \cit...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[4]
 
-/home/bryce/repositories/Bayesian-network/article.tex:540: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.540 ...1996ANM} and \cite{Gaag1998PracticableSA}
-                                                  . The method allows for ef...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: Reference `tab:definitions' on page 5 undefined on input line 20
+7.
 
-
-LaTeX Warning: Citation `Gaag1998PracticableSA' on page  undefined on input line 540.
-
-/home/bryce/repositories/Bayesian-network/article.tex:578: Undefined control sequence.
-l.578 \subsection
-                 {Case study: Coonawarra}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:791: Undefined control sequence.
-l.791 \section
-              {Results}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:793: Undefined control sequence.
-l.793 \subsection
-                 {Industry definitions}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:795: Undefined control sequence.
-<write> ...nce `tab:definitions' on page \thepage 
-                                                  \space undefined\on@line .
-l.795 ...d as shown in Table \ref{tab:definitions}
-                                                  . By utilising these defin...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `tab:definitions' on page  undefined on input line 795.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:804: LaTeX Error: Environment table undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+c:/Users/bryce/repositories/Bayesian-network/article.tex:219: You can't use `\h
+rule' here except with leaders.
+\caption@hrule ->\hrule 
+                        \@height \z@ 
+l.219 ...ng behind concepts and how they related.}
                                                   
-l.804 \begin{table}
-                   [h]\label{tab:definitions}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:806: Undefined control sequence.
-l.806     \toprule
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:807: Undefined control sequence.
-<recently read> \midrule 
-                         
-l.807 ...deal Class} & Not Ideal Class \\ \midrule
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:836: Undefined control sequence.
-<recently read> \bottomrule 
-                            
-l.836 ...oided. & \textbf{Yes} & No \\ \bottomrule
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:838: LaTeX Error: \begin{document} ended by \end{table}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.838 \end{table}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:842: Undefined control sequence.
-l.842 \subsection
-                 {Key Factors Impacting Environmental Sustainability in Aust...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:844: Undefined control sequence.
-<write> ...ce `figure:generalBN' on page \thepage 
-                                                  \space undefined\on@line .
-l.844 ...el are depicted in~\ref{figure:generalBN}
-                                                   as nodes in the Bayesian ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `figure:generalBN' on page  undefined on input line 844.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:854: LaTeX Error: Environment figure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.854 \begin{figure}
-                    [h!]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:857: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.857     \caption
-                  {The resultant Bayesian network after initial discussions ...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:858: LaTeX Error: \begin{document} ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.858 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:862: Undefined control sequence.
-<write> ...rence `fig:generalBN' on page \thepage 
-                                                  \space undefined\on@line .
-l.862 Figure~\ref{fig:generalBN}
-                                , illustrates the importance of water, disea...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:generalBN' on page  undefined on input line 862.
-
-/home/bryce/repositories/Bayesian-network/article.tex:864: Undefined control sequence.
-l.864 \subsection
-                 {Comparative Analysis of Literature and Industry Perspectives}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:866: Undefined control sequence.
-<write> ... Reference `tab:lexi' on page \thepage 
-                                                  \space undefined\on@line .
-l.866 ...ncept was water (see Table \ref{tab:lexi}
-                                                  ). The critical importance...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `tab:lexi' on page  undefined on input line 866.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:875: LaTeX Error: Environment table undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.875 \begin{table}
-                   [h]\label{tab:lexi}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:877: Undefined control sequence.
-l.877     \toprule
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:878: Missing $ inserted.
-<inserted text> 
-                $
-l.878 ...lumn{1}{l}{\textbf{Relevance_percentage}}
-                                                   \\ \midrule
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/bryce/repositories/Bayesian-network/article.tex:878: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.878 ...lumn{1}{l}{\textbf{Relevance_percentage}}
-                                                   \\ \midrule
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/bryce/repositories/Bayesian-network/article.tex:878: Extra }, or forgotten $.
-\@preamble ...ignorespaces \@sharp \unskip \hfil }
-                                                  \hskip \tabcolsep 
-l.878 ...lumn{1}{l}{\textbf{Relevance_percentage}}
-                                                   \\ \midrule
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/bryce/repositories/Bayesian-network/article.tex:878: Missing $ inserted.
-<inserted text> 
-                $
-l.878 ...lumn{1}{l}{\textbf{Relevance_percentage}}
-                                                   \\ \midrule
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/bryce/repositories/Bayesian-network/article.tex:878: Missing } inserted.
-<inserted text> 
-                }
-l.878 ...lumn{1}{l}{\textbf{Relevance_percentage}}
-                                                   \\ \midrule
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/bryce/repositories/Bayesian-network/article.tex:878: Missing } inserted.
-<inserted text> 
-                }
-l.878 ...lumn{1}{l}{\textbf{Relevance_percentage}}
-                                                   \\ \midrule
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/bryce/repositories/Bayesian-network/article.tex:878: Undefined control sequence.
-<recently read> \midrule 
-                         
-l.878 ...textbf{Relevance_percentage}} \\ \midrule
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:888: Undefined control sequence.
-<recently read> \bottomrule 
-                            
-l.888     different & 300 & 23 \\ \bottomrule
-                                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:890: LaTeX Error: \begin{document} ended by \end{table}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.890     \end{table}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:897: Undefined control sequence.
-<write> ... Reference `tab:lexi' on page \thepage 
-                                                  \space undefined\on@line .
-l.897 ...sustainable practices (see \ref{tab:lexi}
-                                                  ). Furthermore, change and...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `tab:lexi' on page  undefined on input line 897.
-
-/home/bryce/repositories/Bayesian-network/article.tex:899: Undefined control sequence.
-<write> ... Reference `fig:lexi' on page \thepage 
-                                                  \space undefined\on@line .
-l.899 ...sually described in Figure \ref{fig:lexi}
-                                                  , with the network depicti...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:lexi' on page  undefined on input line 899.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:901: LaTeX Error: Environment figure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.901 \begin{figure}
-                    [h]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:903: Undefined control sequence.
-l.903     \includegraphics
-                          [width=\linewidth]{Winegrowing-concept-map}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:903: Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.903     \includegraphics[width=\linewidth]
-                                            {Winegrowing-concept-map}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/home/bryce/repositories/Bayesian-network/article.tex:903: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.903     \includegraphics[width=\linewidth]
-                                            {Winegrowing-concept-map}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:904: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.904     \caption
-                  {Your caption here}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:906: LaTeX Error: \begin{document} ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.906 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:910: Undefined control sequence.
-l.910 \subsection
-                 {Sustainability specifics: Coonawarra Winegrowing}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:912: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.912 ...e{hallidayAustralianWineEncyclopedia2009}
-                                                  . Due to the region's dist...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `hallidayAustralianWineEncyclopedia2009' on page  undefined on input line 912.
-
-/home/bryce/repositories/Bayesian-network/article.tex:914: Undefined control sequence.
-<write> ...ng: Reference `fig:b' on page \thepage 
-                                                  \space undefined\on@line .
-l.914 ...eric Bayesian Network (Figure \ref{fig:b}
-                                                  ) model to the Coonawarra-...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:b' on page  undefined on input line 914.
-
-/home/bryce/repositories/Bayesian-network/article.tex:914: Undefined control sequence.
-<write> ...Reference `fig:robyn' on page \thepage 
-                                                  \space undefined\on@line .
-l.914 ...ra-specific model (Figure \ref{fig:robyn}
-                                                   and Figure \ref{fig:marce...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:robyn' on page  undefined on input line 914.
-
-/home/bryce/repositories/Bayesian-network/article.tex:914: Undefined control sequence.
-<write> ...eference `fig:marcel' on page \thepage 
-                                                  \space undefined\on@line .
-l.914 ...ef{fig:robyn} and Figure \ref{fig:marcel}
-                                                  ), we identified regional ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:marcel' on page  undefined on input line 914.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:926: LaTeX Error: Environment figure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.926 \begin{figure}
-                    [h!]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:928: Undefined control sequence.
-l.928     \includegraphics
-                          [width=\linewidth]{robyn}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:928: Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.928     \includegraphics[width=\linewidth]
-                                            {robyn}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/home/bryce/repositories/Bayesian-network/article.tex:928: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.928     \includegraphics[width=\linewidth]
-                                            {robyn}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:929: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.929     \caption
-                  {Coonawarra-specific Bayesian Network illustrating key fac...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:930: LaTeX Error: \begin{document} ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.930 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:932: LaTeX Error: Environment figure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.932 \begin{figure}
-                    [h!]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:934: Undefined control sequence.
-l.934     \includegraphics
-                          [width=\linewidth]{marcel}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:934: Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.934     \includegraphics[width=\linewidth]
-                                            {marcel}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/home/bryce/repositories/Bayesian-network/article.tex:934: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.934     \includegraphics[width=\linewidth]
-                                            {marcel}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:935: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.935     \caption
-                  {Coonawarra-specific Bayesian Network illustrating key fac...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/bryce/repositories/Bayesian-network/article.tex:936: LaTeX Error: \begin{document} ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.936 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bryce/repositories/Bayesian-network/article.tex:943: Undefined control sequence.
-<write> ...Reference `fig:robyn' on page \thepage 
-                                                  \space undefined\on@line .
-l.943 ... the expert panel. Figure \ref{fig:robyn}
-                                                   and \ref{fig:marcel} high...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:robyn' on page  undefined on input line 943.
-
-/home/bryce/repositories/Bayesian-network/article.tex:943: Undefined control sequence.
-<write> ...eference `fig:marcel' on page \thepage 
-                                                  \space undefined\on@line .
-l.943 ...gure \ref{fig:robyn} and \ref{fig:marcel}
-                                                   highlight the unique envi...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:marcel' on page  undefined on input line 943.
-
-/home/bryce/repositories/Bayesian-network/article.tex:945: Undefined control sequence.
-<write> ...Reference `fig:robyn' on page \thepage 
-                                                  \space undefined\on@line .
-l.945 ...n the two BNs (see Figure~\ref{fig:robyn}
-                                                   and~\ref{fig:marcel}) lie...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:robyn' on page  undefined on input line 945.
-
-/home/bryce/repositories/Bayesian-network/article.tex:945: Undefined control sequence.
-<write> ...eference `fig:marcel' on page \thepage 
-                                                  \space undefined\on@line .
-l.945 ...gure~\ref{fig:robyn} and~\ref{fig:marcel}
-                                                  ) lies in vineyard floor m...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:marcel' on page  undefined on input line 945.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1059: Undefined control sequence.
-l.1059 \section
-               {Discussion}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1061: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1061 ...{chawlaWaterProductivityAgriculture2023}
-                                                  , essential for both the h...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `chawlaWaterProductivityAgriculture2023' on page  undefined on input line 1061.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1061: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1061 ...ureauofstatisticsWaterUseAustralian2021}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `australianbureauofstatisticsWaterUseAustralian2021' on page  undefined on input line 1061.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...isease~\cite{boisClimateVsGrapevine2017}
-                                                  . Of great concern to clim...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `boisClimateVsGrapevine2017' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...tion2021,sharmaChapterImpactClimate2014}
-                                                  . In a more general sense ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `agostaRegionalClimateVariability2012' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...tion2021,sharmaChapterImpactClimate2014}
-                                                  . In a more general sense ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `alsafadiFutureScenariosBioclimatic2023' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...tion2021,sharmaChapterImpactClimate2014}
-                                                  . In a more general sense ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `barriguinhaVineyardYieldEstimation2021' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...tion2021,sharmaChapterImpactClimate2014}
-                                                  . In a more general sense ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `sharmaChapterImpactClimate2014' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...ation2021,antonComparativeStudyRisk2012}
-                                                  , erosion~\cite{biddoccuEv...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `barriguinhaVineyardYieldEstimation2021' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...ation2021,antonComparativeStudyRisk2012}
-                                                  , erosion~\cite{biddoccuEv...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `antonComparativeStudyRisk2012' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...rosion2020,doi:10.1177/0309133319861833}
-                                                  , and are further determin...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `biddoccuEvaluationSoilErosion2020' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...rosion2020,doi:10.1177/0309133319861833}
-                                                  , and are further determin...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `doi:10.1177/0309133319861833' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...22, petriashviliImpactClimateChange2023}
-                                                  . The BN models captured t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `topferGrapeVarietiesAre2022' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1063: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1063 ...22, petriashviliImpactClimateChange2023}
-                                                  . The BN models captured t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `petriashviliImpactClimateChange2023' on page  undefined on input line 1063.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1065: Undefined control sequence.
-<write> ...Reference `fig:robyn' on page \thepage 
-                                                  \space undefined\on@line .
-l.1065 ...nd tractors (see Figures~\ref{fig:robyn}
-                                                   and~\ref{fig:marcel}). A ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:robyn' on page  undefined on input line 1065.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1065: Undefined control sequence.
-<write> ...eference `fig:marcel' on page \thepage 
-                                                  \space undefined\on@line .
-l.1065 ...res~\ref{fig:robyn} and~\ref{fig:marcel}
-                                                  ). A major concern from th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:marcel' on page  undefined on input line 1065.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1065: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1065 ...es-lopezAssessmentPesticideResidues2021}
-                                                  . The model emphasised the...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `alonsogonzalezUnveilingTerroirEvaluating2024' on page  undefined on input line 1065.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1065: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1065 ...es-lopezAssessmentPesticideResidues2021}
-                                                  . The model emphasised the...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `manjarres-lopezAssessmentPesticideResidues2021' on page  undefined on input line 1065.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1065: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1065 ...te{baianoOverviewSustainabilityWine2021}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `baianoOverviewSustainabilityWine2021' on page  undefined on input line 1065.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1067 ...ite{olatinwoChapterWeatherbasedPest2014}
-                                                  . Furthermore, literature ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `olatinwoChapterWeatherbasedPest2014' on page  undefined on input line 1067.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1067 ...e2022a,laurentLocalInfluenceClimate2022}
-                                                  . Tools such as Bayesian n...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `naigeonDATADecisionmakingViticulture2023' on page  undefined on input line 1067.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1067 ...e2022a,laurentLocalInfluenceClimate2022}
-                                                  . Tools such as Bayesian n...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `stefaniniBayesianCausalModel2022' on page  undefined on input line 1067.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1067 ...e2022a,laurentLocalInfluenceClimate2022}
-                                                  . Tools such as Bayesian n...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `fincoCombiningPrecisionViticulture2022a' on page  undefined on input line 1067.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1067 ...e2022a,laurentLocalInfluenceClimate2022}
-                                                  . Tools such as Bayesian n...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `laurentLocalInfluenceClimate2022' on page  undefined on input line 1067.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1067 ...rmonaUseParticipatoryObjectOriented2011}
-                                                   or vineyard placement \ci...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `carmonaUseParticipatoryObjectOriented2011' on page  undefined on input line 1067.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1067 ...nt \cite{abbalDecisionSupportSystem2016}
-                                                  . However, the combination...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `abbalDecisionSupportSystem2016' on page  undefined on input line 1067.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-l.1067 ...ew novel sustainable practices \autocite
-                                                  {mayfieldDesigningExpertle...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1067: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1067 ...e{dumbrellComparingAustralianPublic2024}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `dumbrellComparingAustralianPublic2024' on page  undefined on input line 1067.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1069: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1069 ...,korbBayesianArtificialIntelligence2011}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `kimphuctranMachineLearningProbabilistic2022' on page  undefined on input line 1069.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1069: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1069 ...,korbBayesianArtificialIntelligence2011}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `kollerObjectOrientedBayesianNetworks1997' on page  undefined on input line 1069.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1069: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1069 ...,korbBayesianArtificialIntelligence2011}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `korbBayesianArtificialIntelligence2011' on page  undefined on input line 1069.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...aigeonDATADecisionmakingViticulture2023}
-                                                  . Additionally, the need t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `fragaClimateChangeNew2020' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...aigeonDATADecisionmakingViticulture2023}
-                                                  . Additionally, the need t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `tofaloClimateChangeWine2023' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...aigeonDATADecisionmakingViticulture2023}
-                                                  . Additionally, the need t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `naigeonDATADecisionmakingViticulture2023' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...hangEstimatingEconomicEnvironmental2019}
-                                                   and conversely how climat...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `pilafidisAssessingEnergyUse2023' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...hangEstimatingEconomicEnvironmental2019}
-                                                   and conversely how climat...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `cechPesticideUseAssociated2022' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...hangEstimatingEconomicEnvironmental2019}
-                                                   and conversely how climat...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `zhangEstimatingEconomicEnvironmental2019' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...ature2023,atakClimateChangeAdaptive2024}
-                                                  , suggesting future resear...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `barnaEditorialImprovingSustainability2023' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...ature2023,atakClimateChangeAdaptive2024}
-                                                  , suggesting future resear...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `costaRoleSoilTemperature2023' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...ature2023,atakClimateChangeAdaptive2024}
-                                                  , suggesting future resear...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `atakClimateChangeAdaptive2024' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1071: Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.1071 ...ite{pereiraViticultureClimateChange2023}
-                                                  . This integrated perspect...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `pereiraViticultureClimateChange2023' on page  undefined on input line 1071.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1077: Undefined control sequence.
-l.1077 \section
-               {Conclusion}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1087: Undefined control sequence.
-l.1087 \section
-               {References}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-No file article.bbl.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1092: LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1092 \end{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-/home/bryce/repositories/Bayesian-network/article.tex:1092: Undefined control sequence.
-<write> \newlabel{bayesformula}{{1}{\thepage 
-                                             }}
-l.1092 \end{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1092: Undefined control sequence.
-<write> \newlabel{tab:definitions}{{}{\thepage 
-                                               }}
-l.1092 \end{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1092: Undefined control sequence.
-<write> \newlabel{fig:generalBN}{{}{\thepage 
-                                             }}
-l.1092 \end{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1092: Undefined control sequence.
-<write> \newlabel{tab:lexi}{{}{\thepage 
-                                        }}
-l.1092 \end{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1092: Undefined control sequence.
-<write> \newlabel{fig:lexi}{{}{\thepage 
-                                        }}
-l.1092 \end{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1092: Undefined control sequence.
-<write> \newlabel{fig:robyn}{{}{\thepage 
-                                         }}
-l.1092 \end{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/bryce/repositories/Bayesian-network/article.tex:1092: Undefined control sequence.
-<write> \newlabel{fig:marcel}{{}{\thepage 
-                                          }}
-l.1092 \end{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-] (./article.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
-Here is how much of TeX's memory you used:
- 218 strings out of 478287
- 5367 string characters out of 5849289
- 495102 words of memory out of 5000000
- 18501 multiletter control sequences out of 15000+600000
- 469735 words of font info for 30 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 28i,8n,34p,2492b,169s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on article.pdf (1 page, 133852 bytes).
-PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+To put a horizontal rule in an hbox 
